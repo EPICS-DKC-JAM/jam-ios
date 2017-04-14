@@ -12,10 +12,10 @@
 		4964145F1E99D3B60086BC84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4964145D1E99D3B60086BC84 /* Main.storyboard */; };
 		496414611E99D3B60086BC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496414601E99D3B60086BC84 /* Assets.xcassets */; };
 		496414641E99D3B60086BC84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496414621E99D3B60086BC84 /* LaunchScreen.storyboard */; };
-		4964146C1E99D4130086BC84 /* FullMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4964146B1E99D4130086BC84 /* FullMenu.storyboard */; };
 		4964146E1E99D4C10086BC84 /* FullMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4964146D1E99D4C10086BC84 /* FullMenuViewController.swift */; };
 		496414701E99D60E0086BC84 /* HelpMeDecide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4964146F1E99D60E0086BC84 /* HelpMeDecide.storyboard */; };
 		496414721E99D6510086BC84 /* HelpMeDecideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496414711E99D6510086BC84 /* HelpMeDecideViewController.swift */; };
+		49D188281EA06E2700F008AC /* FullMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D188271EA06E2700F008AC /* FullMenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		496414601E99D3B60086BC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		496414631E99D3B60086BC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		496414651E99D3B60086BC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4964146B1E99D4130086BC84 /* FullMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FullMenu.storyboard; sourceTree = "<group>"; };
 		4964146D1E99D4C10086BC84 /* FullMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullMenuViewController.swift; sourceTree = "<group>"; };
 		4964146F1E99D60E0086BC84 /* HelpMeDecide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HelpMeDecide.storyboard; sourceTree = "<group>"; };
 		496414711E99D6510086BC84 /* HelpMeDecideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpMeDecideViewController.swift; sourceTree = "<group>"; };
+		49D188271EA06E2700F008AC /* FullMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullMenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +65,7 @@
 				496414591E99D3B60086BC84 /* AppDelegate.swift */,
 				4964145B1E99D3B60086BC84 /* ViewController.swift */,
 				4964145D1E99D3B60086BC84 /* Main.storyboard */,
-				4964146B1E99D4130086BC84 /* FullMenu.storyboard */,
+				49D188271EA06E2700F008AC /* FullMenuTableViewController.swift */,
 				4964146F1E99D60E0086BC84 /* HelpMeDecide.storyboard */,
 				496414711E99D6510086BC84 /* HelpMeDecideViewController.swift */,
 				4964146D1E99D4C10086BC84 /* FullMenuViewController.swift */,
@@ -138,7 +138,6 @@
 				496414641E99D3B60086BC84 /* LaunchScreen.storyboard in Resources */,
 				496414701E99D60E0086BC84 /* HelpMeDecide.storyboard in Resources */,
 				496414611E99D3B60086BC84 /* Assets.xcassets in Resources */,
-				4964146C1E99D4130086BC84 /* FullMenu.storyboard in Resources */,
 				4964145F1E99D3B60086BC84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4964146E1E99D4C10086BC84 /* FullMenuViewController.swift in Sources */,
+				49D188281EA06E2700F008AC /* FullMenuTableViewController.swift in Sources */,
 				4964145C1E99D3B60086BC84 /* ViewController.swift in Sources */,
 				496414721E99D6510086BC84 /* HelpMeDecideViewController.swift in Sources */,
 				4964145A1E99D3B60086BC84 /* AppDelegate.swift in Sources */,
@@ -315,6 +315,7 @@
 				4964146A1E99D3B60086BC84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
