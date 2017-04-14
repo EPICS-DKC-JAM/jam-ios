@@ -13,9 +13,13 @@ class SectionsData {
     func getSectionsFromData() -> [Section] {
         var sectionsArray = [Section]()
         
-        let beverages = Section(title: "Beverages", objects: ["Latte", "Mocha", "Jamaican Joe", "Espresso", "Hot Chocolate", "Pour Over", "Frappe", "Fruit Smoothie", "Milk Shake", "Brewsicle", "Iced Coffee", "JA Bottle Energy", "Iced Latte", "Nitro", "Iced Chai", "Oreo Blizzard", "Affogato", "Americano"])
-        let foods = Section(title: "Foods", objects: ["Cheesecake", "Cookie", "Salad", "Sandwich", "Wrap", "Cinnamon Roll"])
-        let beans = Section(title: "Beans", objects: ["Roasted Beans"])
+        var beverages = Section(title: "Beverages", objects: ["Latte", "Mocha", "Jamaican Joe", "Espresso", "Hot Chocolate", "Pour Over", "Frappe", "Fruit Smoothie", "Milk Shake", "Brewsicle", "Iced Coffee", "JA Bottle Energy", "Iced Latte", "Nitro", "Iced Chai", "Oreo Blizzard", "Affogato", "Americano"])
+        var foods = Section(title: "Foods", objects: ["Cheesecake", "Cookie", "Salad", "Sandwich", "Wrap", "Cinnamon Roll"])
+        var beans = Section(title: "Beans", objects: ["Roasted Beans"])
+        
+        beverages.items.sort()
+        foods.items.sort()
+        beans.items.sort()
         
         sectionsArray.append(beverages)
         sectionsArray.append(foods)
