@@ -16,6 +16,8 @@
 		496414701E99D60E0086BC84 /* HelpMeDecide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4964146F1E99D60E0086BC84 /* HelpMeDecide.storyboard */; };
 		496414721E99D6510086BC84 /* HelpMeDecideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496414711E99D6510086BC84 /* HelpMeDecideViewController.swift */; };
 		49D188281EA06E2700F008AC /* FullMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D188271EA06E2700F008AC /* FullMenuTableViewController.swift */; };
+		A80843A91EA08F71000E3FE0 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80843A81EA08F71000E3FE0 /* Section.swift */; };
+		A80843AB1EA08FD3000E3FE0 /* SectionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80843AA1EA08FD3000E3FE0 /* SectionsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4964146F1E99D60E0086BC84 /* HelpMeDecide.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HelpMeDecide.storyboard; sourceTree = "<group>"; };
 		496414711E99D6510086BC84 /* HelpMeDecideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpMeDecideViewController.swift; sourceTree = "<group>"; };
 		49D188271EA06E2700F008AC /* FullMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullMenuTableViewController.swift; sourceTree = "<group>"; };
+		A80843A81EA08F71000E3FE0 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		A80843AA1EA08FD3000E3FE0 /* SectionsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				496414601E99D3B60086BC84 /* Assets.xcassets */,
 				496414621E99D3B60086BC84 /* LaunchScreen.storyboard */,
 				496414651E99D3B60086BC84 /* Info.plist */,
+				A80843A81EA08F71000E3FE0 /* Section.swift */,
+				A80843AA1EA08FD3000E3FE0 /* SectionsData.swift */,
 			);
 			path = "jam-ios";
 			sourceTree = "<group>";
@@ -149,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80843AB1EA08FD3000E3FE0 /* SectionsData.swift in Sources */,
 				4964146E1E99D4C10086BC84 /* FullMenuViewController.swift in Sources */,
 				49D188281EA06E2700F008AC /* FullMenuTableViewController.swift in Sources */,
 				4964145C1E99D3B60086BC84 /* ViewController.swift in Sources */,
+				A80843A91EA08F71000E3FE0 /* Section.swift in Sources */,
 				496414721E99D6510086BC84 /* HelpMeDecideViewController.swift in Sources */,
 				4964145A1E99D3B60086BC84 /* AppDelegate.swift in Sources */,
 			);
