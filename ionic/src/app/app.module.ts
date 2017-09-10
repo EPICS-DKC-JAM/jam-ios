@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { ItemPage } from '../pages/item/item';
+import { FormPage } from '../pages/form/form';
+
 
 
 import { MyApp } from './app.component';
@@ -13,7 +15,8 @@ import { HomePage } from '../pages/home/home';
   declarations: [
     MyApp,
     HomePage,
-    ItemPage
+    ItemPage,
+    FormPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    ItemPage
+    ItemPage,
+    FormPage
   ],
   providers: [
     StatusBar,

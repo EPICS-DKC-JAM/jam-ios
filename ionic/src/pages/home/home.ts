@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ItemPage } from '../item/item';
+import { FormPage } from '../form/form';
 
 
 @Component({
@@ -15,8 +16,12 @@ export class HomePage {
 
   }
 
-  openPage(item) {
+  openFullMenu() {
     this.navCtrl.push(ItemPage);
+  }
+
+  openForm() {
+    this.navCtrl.push(FormPage);
   }
 
 }
