@@ -1,12 +1,24 @@
-<ion-nav>
+<ion-content center text-center>
+  <div>
 
-</ion-nav>
-
-<ion-content padding>
-  <button ion-button (click)="openPage(ItemPage)">
-    Full menu!
-  </button>
-  <button ion-button (click)="openPage(form)">
-    Help me decide!
-  </button>
+    <ion-grid>
+      <ion-row center>
+        <ion-col>
+          <h4>Welcome to Deaf Can Coffee</h4>
+        </ion-col>
+      </ion-row>
+      <ion-row center>
+        <ion-col>
+          <button ion-button (click)="openPage(ItemPage)">
+            Full Menu
+          </button>
+          <button ion-button (click)="openPage(ItemPage)">
+            Help Me Decide
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>
+
+
