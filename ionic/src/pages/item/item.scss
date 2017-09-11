@@ -1,3 +1,65 @@
-page-item {
 
+/*===================== ALL / HEADER */
+.scroll-content { // set entire background to dark gray
+  //margin-top: 70px !important;
+  //background-color: #343330;
+}
+
+.toolbar-background-md { // background color of top toolbar
+  background-color: #dcbf85;
+}
+
+.toolbar-title-md { // centers the title of the item page
+  text-align: center;
+  color: #8b635c;
+  font-size: 200%;
+}
+
+.row { // set row height to 40% of viewheight
+  height: 40vh;
+}
+
+.col { // centers text within the columns
+  text-align: center;
+}
+
+.grid {
+  padding: 30px;
+}
+
+
+/*===================== CARD */
+.card-md { // ad 10px padding to card, background light tan, font color burgundy
+  padding: 10px;
+  background-color: #dcbf85;
+  color: #8b635c;
+}
+
+.card-content-md { // increase font size to 200%
+  font-size: 225%;
+}
+
+
+/*===================== BUTTONS */
+.button-md { // adds top/bottom margin between buttons
+  margin-bottom: 20px;
+  border-color: #dcbf85 !important;
+  color: #dcbf85 !important;
+  background-color: #8b635c !important;
+  font-size: 140%;
+}
+
+.caf { // amount of caffeine button width/height
+  width: 47.8%;
+  height: 50px;
+}
+
+.size { // item size button width/height
+  width: 31.5%;
+  height: 50px;
+}
+
+.add { // add to cart button width/height
+  width: 96.8%;
+  height: 100px;
 }
