@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { ItemPage } from '../item/item';
 import { FormPage } from '../form/form';
 import { MenuPage } from "../menu/menu";
+import {RecommendationsPage} from "../recommendations/recommendations";
 
 
 @Component({
@@ -27,6 +28,10 @@ export class HomePage {
 
   openItemPage() {
     this.navCtrl.push(ItemPage);
+  }
+
+  openRecommendationsPage() {
+    this.navCtrl.push(RecommendationsPage);
   }
 
 }

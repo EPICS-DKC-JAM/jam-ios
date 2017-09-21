@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { ItemPage } from '../pages/item/item';
 import { FormPage } from '../pages/form/form';
 import { MenuPage } from '../pages/menu/menu';
+import { RecommendationsPage } from '../pages/recommendations/recommendations';
 
 
 
@@ -18,7 +19,8 @@ import { HomePage } from '../pages/home/home';
     HomePage,
     ItemPage,
     FormPage,
-    MenuPage
+    MenuPage,
+    RecommendationsPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { HomePage } from '../pages/home/home';
     HomePage,
     ItemPage,
     FormPage,
-    MenuPage
+    MenuPage,
+    RecommendationsPage
   ],
   providers: [
     StatusBar,
