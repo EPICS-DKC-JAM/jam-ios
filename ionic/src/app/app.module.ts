@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { ItemPage } from '../pages/item/item';
 import { FormPage } from '../pages/form/form';
+import { MenuPage } from '../pages/menu/menu';
 
 
 
@@ -16,7 +17,8 @@ import { HomePage } from '../pages/home/home';
     MyApp,
     HomePage,
     ItemPage,
-    FormPage
+    FormPage,
+    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { HomePage } from '../pages/home/home';
     MyApp,
     HomePage,
     ItemPage,
-    FormPage
+    FormPage,
+    MenuPage
   ],
   providers: [
     StatusBar,

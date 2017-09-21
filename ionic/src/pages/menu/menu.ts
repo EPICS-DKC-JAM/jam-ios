@@ -1,16 +1,13 @@
-/**
- * Created by shai on 9/20/17.
- */
-
 import { Component } from '@angular/core';
-
-import { NavController, NavParams } from 'ionic-angular';
-
+import { NavController } from 'ionic-angular';
+import {NavParams} from "ionic-angular/index";
+import {ItemPage} from "../item/item";
 
 @Component({
-  templateUrl: 'menu-details.html',
+  selector: 'page-menu',
+  templateUrl: 'menu.html'
 })
-export class NavigationDetailsPage {
+export class MenuPage {
   item;
 
   constructor(params: NavParams) {
@@ -97,8 +94,8 @@ export class BasicPage {
     ]
   }
 
-  openNavDetailsPage(item) {
-    this.nav.push(NavigationDetailsPage, { item: item });
+  openItemPage(item) {
+    this.nav.push(ItemPage, { item: item });
   }
 
 }

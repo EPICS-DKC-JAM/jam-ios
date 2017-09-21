@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ItemPage } from '../item/item';
 import { FormPage } from '../form/form';
+import { MenuPage } from "../menu/menu";
 
 
 @Component({
@@ -12,12 +13,12 @@ import { FormPage } from '../form/form';
 
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl:NavController) {
 
   }
 
   openFullMenu() {
-    this.navCtrl.push(ItemPage);
+    this.navCtrl.push(MenuPage);
   }
 
   openForm() {
