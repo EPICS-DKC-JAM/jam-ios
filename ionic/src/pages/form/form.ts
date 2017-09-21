@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
+import { RecommendationsPage } from '../recommendations/recommendations'
 
 @Component({
   selector: 'page-form',
@@ -14,9 +15,9 @@ export class FormPage {
   private maxSlideIndex: number;
   private choices: number[];
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
     this.maxSlideIndex = 0;
-    this.choices = new Array(3);
+    this.choices = new Array(3); // TODO change to dynamic
   }
 
   ionViewDidLoad() {
@@ -26,8 +27,30 @@ export class FormPage {
   selectChoice(choice) { 
     let currentIndex = this.slides.getActiveIndex();
     this.choices[currentIndex] = choice;
+
     console.log(this.choices);
-    this.next(500);
+
+    if (currentIndex == this.choices.length - 1) {
+        // Finished with choices, display recommendations
+        let recommendations = this.getRecommendations();
+        let modal = this.modalCtrl.create(RecommendationsPage, recommendations);
+        modal.present();
+    } else {
+        // Go to next question
+        this.next(500);
+    }
+  }
+
+  getRecommendations() {
+    let data = {
+        items : [
+            {
+                title: "Example item",
+                description: "Example description for our example item"
+            }
+        ]
+    } 
+    return data;
   }
 
   slideChanged() {

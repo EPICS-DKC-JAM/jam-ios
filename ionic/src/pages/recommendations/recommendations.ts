@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-recommendations',
@@ -8,7 +8,10 @@ import { NavController } from 'ionic-angular';
 
 export class RecommendationsPage {
 
-  constructor(public navCtrl: NavController) {
-  }
+    items;
+
+    constructor(public navCtrl: NavController, public navParams: NavParams) {
+        this.items = navParams.data.items[0]; 
+    }
 
 }
