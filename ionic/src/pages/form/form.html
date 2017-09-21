@@ -1,15 +1,39 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+       Help Me Decide 
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-slides page>
-    <ion-slide style="background-color: lightseagreen">
-      <h2>Slide 1</h2>
+  <ion-slides #slides (ionSlideDidChange)="slideChanged()">
+    <ion-slide>
+      <h2>Do you prefer your drink hot or cold?</h2>
+      <button ion-button (click)="selectChoice(0)">
+        Hot 
+      </button>
+      <button ion-button (click)="selectChoice(1)">
+        Cold 
+      </button>
+    </ion-slide>
+    <ion-slide>
+      <h2>Would you like your drink to be caffeinated?</h2>
+      <button ion-button (click)="selectChoice(0)">
+        Yes 
+      </button>
+      <button ion-button (click)="selectChoice(1)">
+        No 
+      </button>
+    </ion-slide>
+    <ion-slide>
+      <h2>Would you like your drink to be milk-based?</h2>
+      <button ion-button (click)="selectChoice(0)">
+        Yes
+      </button>
+      <button ion-button (click)="selectChoice(1)">
+        No
+      </button>
     </ion-slide>
   </ion-slides>
 </ion-content>
