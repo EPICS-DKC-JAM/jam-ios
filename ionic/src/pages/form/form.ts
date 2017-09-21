@@ -24,7 +24,7 @@ export class FormPage {
     this.slides.lockSwipeToNext(true);
   }
 
-  selectChoice(choice) { 
+  selectChoice(choice) {
     let currentIndex = this.slides.getActiveIndex();
     this.choices[currentIndex] = choice;
 
@@ -44,12 +44,17 @@ export class FormPage {
   getRecommendations() {
     let data = {
         items : [
-            {
-                title: "Example item",
-                description: "Example description for our example item"
-            }
+          {
+            'name': 'Cup of Jamaican Joe',
+            'description': 'The cup of Jamaican Joe is our rendition of the classic cup ',
+            //'jslImage': ''
+            //'itemImage': ''
+            'caffeine': true,
+            'modifiers': '',
+            'size:': 'List(String)'
+          }
         ]
-    } 
+    };
     return data;
   }
 
