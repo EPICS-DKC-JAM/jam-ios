@@ -24,4 +24,8 @@ export class HomePage {
     this.navCtrl.push(FormPage);
   }
 
+  openItemPage() {
+    this.navCtrl.push(ItemPage);
+  }
+
 }
