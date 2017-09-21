@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Jamaican Cup of Joe
+      {{ item.name }}
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -19,9 +19,7 @@
         <ion-card> <!-- CARD BEGINS -->
           <!--<ion-card-header>Header</ion-card-header>-->
           <ion-card-content>
-              The Cup of Jamaican Joe is our rendition of the classic Cup of Joe,
-              one of the most popular drinks in the world. It has a slightly nutty,
-              mellow flavor, as well as acidic, sweet, and winey nuances.
+            {{ item.description }}
           </ion-card-content>
         </ion-card>
       </ion-col> <!-- END COL 2 -->
@@ -35,8 +33,10 @@
       </ion-col> <!-- END COL 3 -->
 
       <ion-col col-6> <!-- COL 4 -->
-        <button ion-button class="caf">Decaf</button>
-        <button ion-button class="caf">Regular</button>
+        <div *ngIf="item.caffeine">
+          <button ion-button class="caf">Decaf</button>
+          <button ion-button class="caf">Regular</button>
+        </div>
 
         <button ion-button class="size">Small</button>
         <button ion-button class="size">Regular</button>
