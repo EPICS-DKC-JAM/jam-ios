@@ -38,7 +38,6 @@ export class MenuPage {
         'caffeine': true,
         'modifiers': '',
         'size:': 'List(String)'
-
       },
     ]
   }
