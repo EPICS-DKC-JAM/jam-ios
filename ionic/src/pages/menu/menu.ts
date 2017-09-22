@@ -33,9 +33,18 @@ export class MenuPage {
       {
         'name': 'Cup of Jamaican Joe',
         'description': 'The cup of Jamaican Joe is our rendition of the classic cup ',
-        //'jslImage': ''
-        //'itemImage': ''
+        'jslImage': '',
+        'itemImage': '',
         'caffeine': true,
+        'modifiers': '',
+        'size:': 'List(String)'
+      },
+      {
+        'name': 'Cup of Jamaican Joe Decaffeinated',
+        'description': 'The cup of Jamaican Joe is our rendition of the classic cup with no caffeine',
+        'jslImage': '',
+        'itemImage': '',
+        'caffeine': false,
         'modifiers': '',
         'size:': 'List(String)'
       },
@@ -43,8 +52,8 @@ export class MenuPage {
   }
 
   openItemPage(item) {
-    this.nav.push(ItemPage);
-    //this.nav.push(ItemPage, { item: item });
+    //noinspection TypeScriptValidateTypes
+    this.nav.push(ItemPage, { item: item });
   }
 
 }
