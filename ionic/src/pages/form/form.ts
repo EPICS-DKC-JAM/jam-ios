@@ -31,27 +31,29 @@ export class FormPage {
     console.log(this.choices);
 
     if (currentIndex == this.choices.length - 1) {
-        // Finished with choices, display recommendations
         let recommendations = this.getRecommendations();
         let modal = this.modalCtrl.create(RecommendationsPage, recommendations);
         modal.present();
     } else {
-        // Go to next question
         this.next(500);
     }
   }
 
+  /* 
+   * Send choices bit string to backend to receive json recommendations
+   */
   getRecommendations() {
     let data = {
         items : [
           {
             'name': 'Cup of Jamaican Joe',
             'description': 'The cup of Jamaican Joe is our rendition of the classic cup ',
-            //'jslImage': ''
-            //'itemImage': ''
+            'jslImage': '',
+            'itemImage': '',
             'caffeine': true,
             'modifiers': '',
-            'size:': 'List(String)'
+            'size:': ['small', 'medium', 'large'],
+            'price': 10
           }
         ]
     };

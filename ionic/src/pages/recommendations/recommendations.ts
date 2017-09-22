@@ -16,8 +16,7 @@ export class RecommendationsPage {
   }
 
   openItemPage(item) {
-    this.navCtrl.push(ItemPage);
-    //this.nav.push(ItemPage, { item: item });
+    this.navCtrl.push(ItemPage, item);
   }
 
 }
