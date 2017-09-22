@@ -28,8 +28,6 @@ export class FormPage {
     let currentIndex = this.slides.getActiveIndex();
     this.choices[currentIndex] = choice;
 
-    console.log(this.choices);
-
     if (currentIndex == this.choices.length - 1) {
         let recommendations = this.getRecommendations();
         let modal = this.modalCtrl.create(RecommendationsPage, recommendations);
