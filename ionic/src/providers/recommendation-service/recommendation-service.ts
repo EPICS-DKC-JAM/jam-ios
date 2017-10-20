@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class RecommendationServiceProvider {
 
-  recommendationsUrl = 'http://localhost:3000/consumables/get/all';
+  recommendationsUrl = 'http://localhost:3000/consumables/get/1';
 
   constructor(public http: Http) {
     console.log('Hello RecommendationServiceProvider Provider');
@@ -19,7 +19,7 @@ export class RecommendationServiceProvider {
 
   data: any;
 
-  getAllItems() {
+  getAllItems(answers) {
     if (this.data) {
       return Promise.resolve(this.data);
     }
