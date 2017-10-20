@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {NavParams} from "ionic-angular/index";
 import {ItemPage} from "../item/item";
+import { ItemService } from "../../providers/item-service/item-service"
 
 @Component({
   selector: 'page-menu',
-  templateUrl: 'menu.html'
+  templateUrl: 'menu.html',
+  providers: [ItemService]
 })
 
 @Component({
@@ -28,27 +30,34 @@ import {ItemPage} from "../item/item";
 export class MenuPage {
   items = [];
 
-  constructor(public nav: NavController) {
-    this.items = [
-      {
-        'name': 'Cup of Jamaican Joe',
-        'description': 'The cup of Jamaican Joe is our rendition of the classic cup ',
-        'jslImage': '',
-        'itemImage': '',
-        'caffeine': true,
-        'modifiers': '',
-        'size:': 'List(String)'
-      },
-      {
-        'name': 'Cup of Jamaican Joe Decaffeinated',
-        'description': 'The cup of Jamaican Joe is our rendition of the classic cup with no caffeine',
-        'jslImage': '',
-        'itemImage': '',
-        'caffeine': false,
-        'modifiers': '',
-        'size:': 'List(String)'
-      },
-    ]
+  constructor(public nav: NavController, public itemService: ItemService) {
+
+    this.itemService.getAllItems()
+      .then(data => {
+        this.items = data;
+        console.log(this.items);
+      });
+
+    //this.items = [
+    //  {
+    //    'name': 'Cup of Jamaican Joe',
+    //    'description': 'The cup of Jamaican Joe is our rendition of the classic cup ',
+    //    'jslImage': '',
+    //    'itemImage': '',
+    //    'caffeine': true,
+    //    'modifiers': '',
+    //    'size:': 'List(String)'
+    //  },
+    //  {
+    //    'name': 'Cup of Jamaican Joe Decaffeinated',
+    //    'description': 'The cup of Jamaican Joe is our rendition of the classic cup with no caffeine',
+    //    'jslImage': '',
+    //    'itemImage': '',
+    //    'caffeine': false,
+    //    'modifiers': '',
+    //    'size:': 'List(String)'
+    //  },
+    //]
   }
 
   openItemPage(item) {
