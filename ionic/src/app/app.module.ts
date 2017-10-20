@@ -14,6 +14,7 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ItemService } from '../providers/item-service/item-service';
+import { RecommendationServiceProvider } from '../providers/recommendation-service/recommendation-service';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ItemService } from '../providers/item-service/item-service';
     SplashScreen,
     ItemService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RecommendationServiceProvider,
   ]
 })
 export class AppModule {}
