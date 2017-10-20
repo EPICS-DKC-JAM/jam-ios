@@ -12,12 +12,14 @@ import { RecommendationsPage } from '../recommendations/recommendations'
 export class FormPage {
 
   @ViewChild(Slides) slides: Slides;
+  private questions;
   private maxSlideIndex: number;
   private choices: number[];
 
   constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
     this.maxSlideIndex = 0;
-    this.choices = new Array(3); // TODO change to dynamic
+    this.questions = this.getQuestions();
+    this.choices = new Array(this.questions.length);
   }
 
   ionViewDidLoad() {
@@ -28,32 +30,50 @@ export class FormPage {
     let currentIndex = this.slides.getActiveIndex();
     this.choices[currentIndex] = choice;
 
+    console.log(this.choices);
+
     if (currentIndex == this.choices.length - 1) {
-        let recommendations = this.getRecommendations();
-        let modal = this.modalCtrl.create(RecommendationsPage, recommendations);
-        modal.present();
+      // Finished with choices, display recommendations
+      let recommendations = this.getRecommendations();
+      let modal = this.modalCtrl.create(RecommendationsPage, recommendations);
+      modal.present();
     } else {
-        this.next(500);
+      // Go to next question
+      this.next(500);
     }
   }
 
-  /* 
-   * Send choices bit string to backend to receive json recommendations
-   */
+  getQuestions() {
+    let questions = {
+      questions: [
+        {
+          'prompt': 'Do you prefer you drink hot or cold?',
+          'option1': 'Hot',
+          'option2': 'Cold'
+        },
+        {
+          'prompt': 'Do you like that this is the second question?',
+          'option1': 'Yes',
+          'option2': 'Hell Yes'
+        }
+      ]
+    };
+    return questions.questions;
+  }
+
   getRecommendations() {
     let data = {
-        items : [
-          {
-            'name': 'Cup of Jamaican Joe',
-            'description': 'The cup of Jamaican Joe is our rendition of the classic cup ',
-            'jslImage': '',
-            'itemImage': '',
-            'caffeine': true,
-            'modifiers': '',
-            'size:': ['small', 'medium', 'large'],
-            'price': 10
-          }
-        ]
+      items : [
+        {
+          'name': 'Cup of Jamaican Joe',
+          'description': 'The cup of Jamaican Joe is our rendition of the classic cup ',
+          //'jslImage': ''
+          //'itemImage': ''
+          'caffeine': true,
+          'modifiers': '',
+          'size:': 'List(String)'
+        }
+      ]
     };
     return data;
   }
@@ -61,9 +81,9 @@ export class FormPage {
   slideChanged() {
     let currentIndex = this.slides.getActiveIndex();
     if (currentIndex < this.maxSlideIndex) {
-        this.slides.lockSwipeToNext(false);
+      this.slides.lockSwipeToNext(false);
     } else {
-        this.slides.lockSwipeToNext(true);
+      this.slides.lockSwipeToNext(true);
     }
   }
 
