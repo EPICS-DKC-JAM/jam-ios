@@ -3,10 +3,12 @@ import { NavController, ModalController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { RecommendationsPage } from '../recommendations/recommendations'
+import { RecommendationServiceProvider } from '../../providers/recommendation-service/recommendation-service'
 
 @Component({
   selector: 'page-form',
-  templateUrl: 'form.html'
+  templateUrl: 'form.html',
+  providers: [RecommendationServiceProvider]
 })
 
 export class FormPage {
@@ -14,9 +16,9 @@ export class FormPage {
   @ViewChild(Slides) slides: Slides;
   private questions;
   private maxSlideIndex: number;
-  private choices: number[];
+  private choices: String[];
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public recommendationService: RecommendationServiceProvider) {
     this.maxSlideIndex = 0;
     this.questions = this.getQuestions();
     this.choices = new Array(this.questions.length);
@@ -28,10 +30,7 @@ export class FormPage {
 
   selectChoice(choice) {
     let currentIndex = this.slides.getActiveIndex();
-    this.choices[currentIndex] = choice;
-
-    console.log(this.choices);
-
+    this.choices[currentIndex] = this.questions[currentIndex].options[choice];
     if (currentIndex == this.choices.length - 1) {
       // Finished with choices, display recommendations
       let recommendations = this.getRecommendations();
@@ -48,13 +47,8 @@ export class FormPage {
       questions: [
         {
           'prompt': 'Do you prefer you drink hot or cold?',
-          'option1': 'Hot',
-          'option2': 'Cold'
-        },
-        {
-          'prompt': 'Do you like that this is the second question?',
-          'option1': 'Yes',
-          'option2': 'Hell Yes'
+          'options': ['Hot', 'Cold', 'Red'],
+          'questionOrder': 0
         }
       ]
     };
@@ -62,19 +56,12 @@ export class FormPage {
   }
 
   getRecommendations() {
-    let data = {
-      items : [
-        {
-          'name': 'Cup of Jamaican Joe',
-          'description': 'The cup of Jamaican Joe is our rendition of the classic cup ',
-          //'jslImage': ''
-          //'itemImage': ''
-          'caffeine': true,
-          'modifiers': '',
-          'size:': 'List(String)'
-        }
-      ]
-    };
+    let answerString = "";
+    for (var i = 0; i < this.choices.length; i++) {
+      answerString += this.choices[i];
+    }
+
+    let data = this.recommendationService.getAllItems(answerString);
     return data;
   }
 

@@ -10,11 +10,8 @@
   <ion-slides #slides (ionSlideDidChange)="slideChanged()">
     <ion-slide *ngFor="let question of questions">
       <h2>{{ question.prompt }}</h2>
-      <button ion-button (click)="selectChoice(0)">
-        {{ question.option1 }}
-      </button>
-      <button ion-button (click)="selectChoice(1)">
-        {{ question.option2 }}
+      <button ion-button *ngFor="let option of question.options; let i = index" (click)="selectChoice(i)">
+        {{ option }}
       </button>
     </ion-slide>
   </ion-slides>
