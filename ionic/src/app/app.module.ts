@@ -8,7 +8,7 @@ import { FormPage } from '../pages/form/form';
 import { MenuPage } from '../pages/menu/menu';
 import { RecommendationsPage } from '../pages/recommendations/recommendations';
 import { HttpModule } from '@angular/http';
-
+import { CheckoutPage } from '../pages/checkout/checkout'
 
 
 import { MyApp } from './app.component';
@@ -22,7 +22,9 @@ import { ItemService } from '../providers/item-service/item-service';
     ItemPage,
     FormPage,
     MenuPage,
-    RecommendationsPage
+    RecommendationsPage,
+    CheckoutPage
+
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { ItemService } from '../providers/item-service/item-service';
     ItemPage,
     FormPage,
     MenuPage,
-    RecommendationsPage
+    RecommendationsPage,
+    CheckoutPage
   ],
   providers: [
     StatusBar,
