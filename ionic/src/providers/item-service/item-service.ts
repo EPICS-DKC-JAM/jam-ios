@@ -7,7 +7,7 @@ export class ItemService {
 
   data: any;
 
-  allConsumablesUrl = 'http://localhost:3000/consumables/get/all';
+  allConsumablesUrl = 'https://calm-meadow-62208.herokuapp.com/consumables/get/all';
 
   constructor(public http: Http) {
     console.log('Hello ItemServiceProvider Provider');

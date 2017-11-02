@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class RecommendationServiceProvider {
 
-  recommendationsUrl = 'http://localhost:3000/consumables/get/1';
+  recommendationsUrl = 'https://calm-meadow-62208.herokuapp.com/recommendations/1';
 
   constructor(public http:Http) {
     console.log('Hello RecommendationServiceProvider Provider');
