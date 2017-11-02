@@ -13,6 +13,7 @@ export class ItemPage {
   modifierOpts: {title: string, subTitle: string}
   caffeineOpts: {title: string, subTitle: string}
   item = {};
+  answers: {itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
 
   constructor(public navCtrl:NavController, navParams:NavParams) {
     this.item = navParams.data.item;
@@ -33,6 +34,15 @@ export class ItemPage {
     this.caffeineOpts = {
       title: 'Caffeination',
       subTitle: 'Select the caffeine level!'
+    };
+
+    // SELECTED OPTIONS
+    this.answers = {
+      itemName: navParams.data.item.itemName,
+      size: '',
+      modifiers: [],
+      caffeine: '',
+      price: navParams.data.item.price
     };
   }
 }

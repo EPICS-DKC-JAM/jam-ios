@@ -4,6 +4,7 @@ import { ItemPage } from '../item/item';
 import { FormPage } from '../form/form';
 import { MenuPage } from "../menu/menu";
 import {RecommendationsPage} from "../recommendations/recommendations";
+import { CheckoutPage } from '../checkout/checkout'
 
 
 @Component({
@@ -34,4 +35,7 @@ export class HomePage {
     this.navCtrl.push(RecommendationsPage);
   }
 
+  openCheckoutPage() {
+    this.navCtrl.push(CheckoutPage);
+  }
 }

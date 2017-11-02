@@ -29,14 +29,22 @@
 
 
 /*===================== CARD */
-.card-md { // ad 10px padding to card, background light tan, font color burgundy
+.description {//.card-md { // ad 10px padding to card, background light tan, font color burgundy
   padding: 10px;
   background-color: #dcbf85;
   color: #8b635c;
+  font-size: 200%;
 }
 
-.card-content-md { // increase font size to 200%
-  font-size: 225%;
+.price { // for price card
+  padding: 10px;
+  background-color: #dcbf85;
+  width: 50%;
+  color: #8b635c;
+}
+
+.priceinner { // for content of price card
+  font-size: 200%;
 }
 
 

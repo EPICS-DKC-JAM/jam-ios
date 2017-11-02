@@ -8,7 +8,7 @@ import { FormPage } from '../pages/form/form';
 import { MenuPage } from '../pages/menu/menu';
 import { RecommendationsPage } from '../pages/recommendations/recommendations';
 import { HttpModule } from '@angular/http';
-
+import { CheckoutPage } from '../pages/checkout/checkout'
 
 
 import { MyApp } from './app.component';
@@ -23,7 +23,9 @@ import { RecommendationServiceProvider } from '../providers/recommendation-servi
     ItemPage,
     FormPage,
     MenuPage,
-    RecommendationsPage
+    RecommendationsPage,
+    CheckoutPage
+
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { RecommendationServiceProvider } from '../providers/recommendation-servi
     ItemPage,
     FormPage,
     MenuPage,
-    RecommendationsPage
+    RecommendationsPage,
+    CheckoutPage
   ],
   providers: [
     StatusBar,
