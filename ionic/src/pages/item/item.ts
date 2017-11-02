@@ -9,18 +9,30 @@ import {NavParams} from "ionic-angular/index";
 
 export class ItemPage {
 
+  sizeOpts: {title: string, subTitle: string}
+  modifierOpts: {title: string, subTitle: string}
+  caffeineOpts: {title: string, subTitle: string}
   item = {};
+
   constructor(public navCtrl:NavController, navParams:NavParams) {
     this.item = navParams.data.item;
-  //  this.item =
-  //    {
-  //      'name': 'Cup of Jamaican Joe',
-  //      'description': 'The cup of Jamaican Joe is our rendition of the classic cup of Joe, one of the most popular drinks in the world. It has a slightly nutty, mellow flavor, as well as acidic, sweet, and winey nuances.',
-  //      'jslImage': '',
-  //      'itemImage': '',
-  //      'caffeine': true,
-  //      'modifiers': '',
-  //      'size:': 'List(String)'
-  //    }
+
+    // options for size
+    this.sizeOpts = {
+      title: 'Size',
+      subTitle: 'Select a size!'
+    };
+
+    // options for modifiers
+    this.modifierOpts = {
+      title: 'Modifiers',
+      subTitle: 'Select a modifier!'
+    };
+
+    // options for caffeination
+    this.caffeineOpts = {
+      title: 'Caffeination',
+      subTitle: 'Select the caffeine level!'
+    };
   }
 }

@@ -12,12 +12,11 @@
     <ion-row> <!-- FIRST ROW -->
 
       <ion-col col-6> <!-- COL 1 -->
-        <h2>SIGN LANGUAGE IMAGE</h2>
+        <img class="itemImg" src="{{ item.jslImage }}">
       </ion-col> <!-- END COL 1 -->
 
       <ion-col col-6> <!-- COL 2 -->
         <ion-card> <!-- CARD BEGINS -->
-          <!--<ion-card-header>Header</ion-card-header>-->
           <ion-card-content>
             {{ item.description }}
           </ion-card-content>
@@ -29,20 +28,44 @@
     <ion-row>
 
       <ion-col col-6> <!-- COL 3 -->
-        <h2>ITEM IMAGE</h2>
+        <img class="itemImg" src="{{ item.itemImage }}">
       </ion-col> <!-- END COL 3 -->
 
       <ion-col col-6> <!-- COL 4 -->
+        <ion-item>
+          <ion-label>Size</ion-label>
+          <ion-select [(ngModel)]="size" [selectOptions]="sizeOpts">
+            <ion-option class="options" *ngFor="let size of item.size">{{ size }}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Modifiers</ion-label>
+          <ion-select [(ngModel)]="modifiers" [selectOptions]="modifierOpts" multiple="true">
+            <ion-option class="options" *ngFor="let modifier of item.modifiers">{{ modifier }}</ion-option>
+          </ion-select>
+        </ion-item>
+
+        <div *ngIf="item.caffeine">
+          <ion-item>
+            <ion-label>Caffeine</ion-label>
+            <ion-select [(ngModel)]="caffeine" [selectOptions]="caffeineOpts">
+              <ion-option class="options">Regular</ion-option>
+              <ion-option class="options">Decaf</ion-option>
+            </ion-select>
+          </ion-item>
+        </div>
+        <!--
         <div *ngIf="item.caffeine">
           <button ion-button class="caf">Decaf</button>
           <button ion-button class="caf">Regular</button>
         </div>
 
-        <button ion-button class="size">Small</button>
-        <button ion-button class="size">Regular</button>
-        <button ion-button class="size">Large</button>
+        <button ion-button class="size" *ngFor="let size of item.size">{{ size }}</button>
+        <button ion-button class="modifiers" *ngFor="let modifier of item.modifiers">{{ modifier }}</button>
 
         <button ion-button class="add">Add To Cart</button>
+        -->
       </ion-col> <!-- END COL 4 -->
 
     </ion-row>

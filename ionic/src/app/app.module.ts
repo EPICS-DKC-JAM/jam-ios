@@ -7,11 +7,14 @@ import { ItemPage } from '../pages/item/item';
 import { FormPage } from '../pages/form/form';
 import { MenuPage } from '../pages/menu/menu';
 import { RecommendationsPage } from '../pages/recommendations/recommendations';
+import { HttpModule } from '@angular/http';
 
 
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ItemService } from '../providers/item-service/item-service';
+import { RecommendationServiceProvider } from '../providers/recommendation-service/recommendation-service';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,6 +42,9 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    ItemService,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RecommendationServiceProvider,
   ]
 })
 export class AppModule {}
