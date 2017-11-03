@@ -42,7 +42,8 @@
         <ion-item>
           <ion-label>Modifiers</ion-label>
           <ion-select [(ngModel)]="answers.modifiers" [selectOptions]="modifierOpts" multiple="true">
-            <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of item.modifiers">{{ modifier }}</ion-option>
+            <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of item.modifiers">{{ modifier }}
+            </ion-option>
           </ion-select>
         </ion-item>
 
@@ -56,9 +57,9 @@
           </ion-item>
         </div>
 
-        <p>Size Selected: {{ answers.size }}</p>
-        <p>Modifiers Selected: {{ answers.modifiers }}</p>
-        <p>Caffeine Selected: {{ answers.caffeine }}</p>
+        <!--<p>Size Selected: {{ answers.size }}</p>-->
+        <!--<p>Modifiers Selected: {{ answers.modifiers }}</p>-->
+        <!--<p>Caffeine Selected: {{ answers.caffeine }}</p>-->
 
         <ion-card class="price">
           <ion-card-content class="priceinner">
@@ -66,6 +67,9 @@
           </ion-card-content>
         </ion-card>
 
+        <button ion-button (click)="addToCart(item)">
+          Add To Cart
+        </button>
       </ion-col> <!-- END COL 4 -->
 
     </ion-row>

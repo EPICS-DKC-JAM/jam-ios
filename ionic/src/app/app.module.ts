@@ -15,6 +15,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ItemService } from '../providers/item-service/item-service';
 import { RecommendationServiceProvider } from '../providers/recommendation-service/recommendation-service';
+import { CheckoutService } from '../providers/checkout-service/checkout-service';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { RecommendationServiceProvider } from '../providers/recommendation-servi
     ItemService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RecommendationServiceProvider,
+    CheckoutService,
   ]
 })
 export class AppModule {}

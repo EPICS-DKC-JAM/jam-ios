@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {NavParams} from "ionic-angular/index";
+import { CheckoutService } from '../../providers/checkout-service/checkout-service'
 
 @Component({
   selector: 'page-item',
@@ -15,7 +16,7 @@ export class ItemPage {
   item = {};
   answers: {itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
 
-  constructor(public navCtrl:NavController, navParams:NavParams) {
+  constructor(public navCtrl:NavController, navParams:NavParams, public checkoutService: CheckoutService) {
     this.item = navParams.data.item;
 
     // options for size
@@ -44,5 +45,9 @@ export class ItemPage {
       caffeine: '',
       price: navParams.data.item.price
     };
+  }
+
+  addToCart(item) {
+    this.checkoutService.addItem(item)
   }
 }
