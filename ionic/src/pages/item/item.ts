@@ -39,7 +39,7 @@ export class ItemPage {
 
     // SELECTED OPTIONS
     this.answers = {
-      itemName: navParams.data.item.itemName,
+      itemName: navParams.data.item.name,
       size: '',
       modifiers: [],
       caffeine: '',

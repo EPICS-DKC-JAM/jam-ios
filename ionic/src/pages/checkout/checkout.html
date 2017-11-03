@@ -17,36 +17,24 @@
         <ion-card style="text-align: left"> <!--*ngFor="let item of cart.items"-->
           <ion-card-header>
             <!--{{ item.name }}-->
-            Jamaican Cup of Joe - $4.99
           </ion-card-header>
           <ion-card-content>
-            - Small<br>
-            - Milk, Cream<br>
-            - Caffeine<br>
           </ion-card-content>
         </ion-card>
 
         <ion-card style="text-align: left"> <!--*ngFor="let item of cart.items"-->
           <ion-card-header>
             <!--{{ item.name }}-->
-            Caffe Latte - $9.99
           </ion-card-header>
           <ion-card-content>
-            - Extra Medium<br>
-            - Pumpkin Spice, Birkenstocks<br>
-            - Caffeine, White Lightning<br>
           </ion-card-content>
         </ion-card>
 
         <ion-card style="text-align: left"> <!--*ngFor="let item of cart.items"-->
           <ion-card-header>
             <!--{{ item.name }}-->
-            Prune Juice - Your Firstborn Son
           </ion-card-header>
           <ion-card-content>
-            - Extra Extra Large<br>
-            - Blood of My Enemies<br>
-            - No Caffeine
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -62,6 +50,10 @@
             Items in Cart: 3
           </ion-card-content>
         </ion-card>
+
+        <button ion-button (click)="printCart()">
+          Test
+        </button>
       </ion-col>
     </ion-row>
 
