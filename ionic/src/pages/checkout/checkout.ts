@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {NavParams} from "ionic-angular/index";
+import { CheckoutService} from "../../providers/checkout-service/checkout-service";
 
 @Component({
   selector: 'page-checkout',
@@ -9,6 +10,36 @@ import {NavParams} from "ionic-angular/index";
 
 export class CheckoutPage {
 
-  constructor(public navCtrl:NavController, navParams:NavParams) {
+  items = [];
+  constructor(public navCtrl:NavController, navParams:NavParams, public checkoutService:CheckoutService) {
+    this.items = checkoutService.getCart()
+    this.items = [
+      {
+        itemName: 'Cup of Jamaican Joe',
+        size: 'small',
+        modifiers: ['vanilla', 'hazlenut'],
+        caffeine: 'Regular',
+        price: 4.99
+      },
+      {
+        itemName: 'Cafe Latte',
+        size: 'medium',
+        modifiers: ['vanilla', 'double shot'],
+        caffeine: 'Decaf',
+        price: 3.99
+      },
+    ]
+  }
+
+  removeItem(item) {
+    this.items = this.checkoutService.removeItem(item);
+  }
+
+  clearCart() {
+    this.items = this.checkoutService.clearCart();
+  }
+
+  printCart() {
+    console.log(this.items);
   }
 }
