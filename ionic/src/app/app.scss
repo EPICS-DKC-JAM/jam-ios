@@ -14,3 +14,32 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+/*===================== ALL / HEADER */
+.content-md { // set blur background image
+  background-image: url("../assets/images/blur-background.jpg");
+  //background-size: 100% 100%;
+}
+
+.toolbar-background-md { // background color of top toolbar
+  background-color: #dcbf85;
+}
+
+.toolbar-title-md { // centers the title each page
+  text-align: center;
+  color: #8b635c;
+  font-size: 200%;
+}
+
+//.description {
+.card-md { // ad 10px padding to card, background light tan, font color burgundy
+  padding: 10px;
+  background-color: #dcbf85;
+  color: #fff;
+  font-size: 200%;
+}
+
+.card-header-md {
+  color: #8b635c;
+}
