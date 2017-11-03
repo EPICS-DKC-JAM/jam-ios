@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d44aab06-8419-445d-ad40-0407cbc32f51" name="Default" comment="Updated step multi-form">
+    <list default="true" id="d44aab06-8419-445d-ad40-0407cbc32f51" name="Default" comment="Updated font to 'Open Sans'.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/.sourcemaps/main.js.map" afterPath="$PROJECT_DIR$/ionic/.sourcemaps/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/src/app/app.module.ts" afterPath="$PROJECT_DIR$/ionic/src/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/src/app/app.scss" afterPath="$PROJECT_DIR$/ionic/src/app/app.scss" />
     </list>
     <ignored path="jam-ios.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -15,124 +15,93 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="jam-ios" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="recommendations.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/src/pages/form/form.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4615386">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding>
-                <marker date="1508379862619" expanded="true" signature="720:908" placeholder="{...}" />
-                <marker date="1508379862619" expanded="true" signature="898:908" placeholder="{...}" />
-                <marker date="1508379862619" expanded="true" signature="1559:1571" placeholder="{&quot;name&quot;: 'Cup of Jamaican Joe'...}" />
-                <marker date="1508379862619" expanded="true" signature="1559:1581" placeholder="[...]" />
-                <marker date="1508379862619" expanded="true" signature="1559:1587" placeholder="{...}" />
-                <marker date="1508379862619" expanded="true" signature="1559:1609" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ionic/src/app/app.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47577092">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/node_modules/@angular/http/src/http.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.5769231">
-              <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-              <folding>
-                <marker date="1506104781216" expanded="true" signature="288:387" placeholder="..." />
-                <marker date="1506104781216" expanded="true" signature="307:369" placeholder="..." />
-                <marker date="1506104781216" expanded="true" signature="405:702" placeholder="..." />
-                <marker date="1506104781216" expanded="true" signature="422:683" placeholder="..." />
-                <marker date="1506104781216" expanded="true" signature="515:665" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.666667">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service-worker.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/src/service-worker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.846153">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="item.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.48343903">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="checkout.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ionic/src/pages/checkout/checkout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#ion-card#1;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#ion-card#2;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="item.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <marker date="1509733238488" expanded="true" signature="1978:1994" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="checkout.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ionic/src/pages/checkout/checkout.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="item.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                  <folding>
+                    <marker date="1509733238488" expanded="true" signature="236:335" ph="{...}" />
+                    <marker date="1509733238488" expanded="true" signature="449:641" ph="{...}" />
+                    <marker date="1509733238488" expanded="true" signature="648:725" ph="{...}" />
+                    <marker date="1509733238488" expanded="true" signature="733:801" ph="{...}" />
+                    <marker date="1509733238488" expanded="true" signature="808:879" ph="{...}" />
+                    <marker date="1509733238488" expanded="true" signature="925:984" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ionic/src/app/app.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="750">
+                  <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -141,9 +110,36 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="provider" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="checkout-page" />
+                <branch-info repo="$PROJECT_DIR$" source="item-page" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
   </component>
   <component name="GithubProjectSettings">
     <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
@@ -155,39 +151,40 @@
       <list>
         <option value="$PROJECT_DIR$/ionic/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/ionic/src/pages/home/home.scss" />
-        <option value="$PROJECT_DIR$/ionic/src/pages/home/home.ts" />
         <option value="$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.html" />
-        <option value="$PROJECT_DIR$/ionic/src/pages/item/item.ts" />
         <option value="$PROJECT_DIR$/ionic/src/pages/menu/menu.ts" />
         <option value="$PROJECT_DIR$/ionic/src/pages/form/form.ts" />
         <option value="$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.ts" />
         <option value="$PROJECT_DIR$/ionic/src/app/itemController.ts" />
-        <option value="$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts" />
-        <option value="$PROJECT_DIR$/ionic/src/pages/home/home.html" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/checkout/checkout.ts" />
         <option value="$PROJECT_DIR$/ionic/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/home/home.html" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/item/item.ts" />
+        <option value="$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/home/home.ts" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/item/item.html" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/item/item.scss" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/checkout/checkout.scss" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/checkout/checkout.html" />
+        <option value="$PROJECT_DIR$/ionic/src/app/app.scss" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/ionic/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="27" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -203,252 +200,159 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recommendations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="item" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="form" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jam-ios" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ionic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="checkout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="providers" type="462c0819:PsiDirectoryNode" />
+              <item name="item-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jam-ios" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jam-ios" type="462c0819:PsiDirectoryNode" />
+              <item name="ionic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jam-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="editor.config.accepted" value="true" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="typescript-compiler-editor-notification" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ionic/src/assets/images" />
+      <recent name="$PROJECT_DIR$/ionic/src/assets/logos" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ionic_test/testApp" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter />
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -471,34 +375,16 @@
       <option name="filePath" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
@@ -511,51 +397,156 @@
       <changelist id="d44aab06-8419-445d-ad40-0407cbc32f51" name="Default" comment="" />
       <created>1504290312676</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1504290312676</updated>
+      <workItem from="1508467535024" duration="628000" />
+      <workItem from="1508469375479" duration="6148000" />
+      <workItem from="1508499468722" duration="2000" />
+      <workItem from="1508521507469" duration="2993000" />
+      <workItem from="1509580184689" duration="4990000" />
+      <workItem from="1509653269048" duration="3789000" />
+      <workItem from="1509667477625" duration="1753000" />
+      <workItem from="1509716302679" duration="3263000" />
+      <workItem from="1509726960948" duration="1284000" />
+      <workItem from="1509729697276" duration="350000" />
+      <workItem from="1509730482140" duration="1902000" />
+      <workItem from="1509733019040" duration="260000" />
     </task>
     <task id="LOCAL-00001" summary="Added buttons on home">
       <created>1505076994515</created>
       <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1505076994515</updated>
     </task>
     <task id="LOCAL-00002" summary="Added ionic">
       <created>1505080766897</created>
       <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1505080766897</updated>
     </task>
     <task id="LOCAL-00003" summary="Added NavParam for ItemPage&#10;Enabled Item Passing for Menu.ts">
       <created>1506103633138</created>
       <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
       <updated>1506103633138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated item page html, scss, and ts files.">
+      <created>1508475871842</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1508475871842</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added checkout page">
+      <created>1509585362754</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1509585362754</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added extra example cards, changed column width ratio, changed CSS to extend to all cards.">
+      <created>1509719038178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1509719038178</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated font to 'Open Sans'.">
+      <created>1509719455989</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1509719455989</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Updated font to 'Open Sans'.">
+      <created>1509729759038</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1509729759038</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Updated font to 'Open Sans'.">
+      <created>1509730630536</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1509730630536</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updated card and page header text font color to 'eggshell white'.">
+      <created>1509730891789</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1509730891789</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated font to 'Open Sans'.">
+      <created>1509733268957</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1509733268957</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="27362000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17406625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286445" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/Reflect.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/Reflect.d.ts" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/Reflect.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-definemetadata.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-definemetadata.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-getmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-metadata.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-metadata.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-getmetadata.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-getmetadata.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-getownmetadatakeys.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-getownmetadata.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-getownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-hasownmetadata.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-hasownmetadata.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-decorate.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-decorate.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-deletemetadata.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-deletemetadata.js.map" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-hasmetadata.js" />
+        <option value="$PROJECT_DIR$/ionic/node_modules/reflect-metadata/test/reflect-hasmetadata.js.map" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -572,453 +563,368 @@
     <MESSAGE value="Added buttons on home" />
     <MESSAGE value="Added ionic" />
     <MESSAGE value="Added NavParam for ItemPage&#10;Enabled Item Passing for Menu.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added NavParam for ItemPage&#10;Enabled Item Passing for Menu.ts" />
+    <MESSAGE value="Updated item page html, scss, and ts files." />
+    <MESSAGE value="Added checkout page" />
+    <MESSAGE value="Added extra example cards, changed column width ratio, changed CSS to extend to all cards." />
+    <MESSAGE value="Updated card and page header text font color to 'eggshell white'." />
+    <MESSAGE value="Updated font to 'Open Sans'." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated font to 'Open Sans'." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/form/form.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <marker date="1508379862619" expanded="true" signature="720:908" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="898:908" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1571" placeholder="{&quot;name&quot;: 'Cup of Jamaican Joe'...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1581" placeholder="[...]" />
-            <marker date="1508379862619" expanded="true" signature="1559:1587" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1609" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506104781216" expanded="true" signature="288:387" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="307:369" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="405:702" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="422:683" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="515:665" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts" />
     <entry file="file://$PROJECT_DIR$/ionic/src/theme/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <marker date="1509585539425" expanded="true" signature="1167:1169" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html" />
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/form/form.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <marker date="1508379862619" expanded="true" signature="720:908" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="898:908" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1571" placeholder="{&quot;name&quot;: 'Cup of Jamaican Joe'...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1581" placeholder="[...]" />
-            <marker date="1508379862619" expanded="true" signature="1559:1587" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1609" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506104781216" expanded="true" signature="288:387" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="307:369" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="405:702" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="422:683" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="515:665" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts" />
     <entry file="file://$PROJECT_DIR$/ionic/src/theme/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <marker date="1509585539425" expanded="true" signature="1167:1169" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html" />
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/form/form.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding>
-            <marker date="1508379862619" expanded="true" signature="720:908" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="898:908" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1571" placeholder="{&quot;name&quot;: 'Cup of Jamaican Joe'...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1581" placeholder="[...]" />
-            <marker date="1508379862619" expanded="true" signature="1559:1587" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1609" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="52" column="21" lean-forward="false" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1506104781216" expanded="true" signature="288:387" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="307:369" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="405:702" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="422:683" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="515:665" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts" />
     <entry file="file://$PROJECT_DIR$/ionic/src/theme/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <marker date="1509585539425" expanded="true" signature="1167:1169" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html" />
     <entry file="file://$PROJECT_DIR$/ionic/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1509585539425" expanded="true" signature="1167:1169" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1509585539425" expanded="true" signature="1167:1169" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/app/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509585539425" expanded="true" signature="1167:1169" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/app/app.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/app/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/theme/variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.html" />
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/recommendations/recommendations.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding>
-            <marker date="1506104781216" expanded="true" signature="288:387" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="307:369" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="405:702" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="422:683" placeholder="..." />
-            <marker date="1506104781216" expanded="true" signature="515:665" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/service-worker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.846153">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/form/form.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4615386">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1508379862619" expanded="true" signature="720:908" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="898:908" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1571" placeholder="{&quot;name&quot;: 'Cup of Jamaican Joe'...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1581" placeholder="[...]" />
-            <marker date="1508379862619" expanded="true" signature="1559:1587" placeholder="{...}" />
-            <marker date="1508379862619" expanded="true" signature="1559:1609" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/node_modules/@angular/http/src/http.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5769231">
-          <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="678">
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.html">
+    <entry file="file://$PROJECT_DIR$/ionic/src/service-worker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/theme/variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47577092">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="495">
+          <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/app/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/form/form.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/assets/images/rainbow-blur.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="62" column="1" lean-forward="false" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <marker date="1509585539425" expanded="true" signature="1167:1169" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/checkout/checkout.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="17" lean-forward="false" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="81" lean-forward="false" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1509733238488" expanded="true" signature="236:335" ph="{...}" />
+            <marker date="1509733238488" expanded="true" signature="449:641" ph="{...}" />
+            <marker date="1509733238488" expanded="true" signature="648:725" ph="{...}" />
+            <marker date="1509733238488" expanded="true" signature="733:801" ph="{...}" />
+            <marker date="1509733238488" expanded="true" signature="808:879" ph="{...}" />
+            <marker date="1509733238488" expanded="true" signature="925:984" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/checkout/checkout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1509733238488" expanded="true" signature="1978:1994" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/checkout/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-card#1;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-card#2;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="16" lean-forward="false" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
           <folding />
         </state>
       </provider>
