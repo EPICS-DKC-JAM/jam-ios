@@ -16,6 +16,11 @@
 // automatically applied to the <body> element in the app.
 
 
+* {
+  //font-family: "Helvetica Neue";
+  font-family: "Open Sans";
+}
+
 /*===================== ALL / HEADER */
 .content-md { // set blur background image
   background-image: url("../assets/images/blur-background.jpg");
