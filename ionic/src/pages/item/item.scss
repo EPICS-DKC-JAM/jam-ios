@@ -1,20 +1,4 @@
-
-/*===================== ALL / HEADER */
-.scroll-content { // set entire background to dark gray
-  //margin-top: 70px !important;
-  //background-color: #343330;
-}
-
-.toolbar-background-md { // background color of top toolbar
-  background-color: #dcbf85;
-}
-
-.toolbar-title-md { // centers the title of the item page
-  text-align: center;
-  color: #8b635c;
-  font-size: 200%;
-}
-
+/*===================== GENERAL */
 .row { // set row height to 40% of viewheight
   height: 40vh;
 }
@@ -29,12 +13,6 @@
 
 
 /*===================== CARD */
-.description {//.card-md { // ad 10px padding to card, background light tan, font color burgundy
-  padding: 10px;
-  background-color: #dcbf85;
-  color: #8b635c;
-  font-size: 200%;
-}
 
 .price { // for price card
   padding: 10px;
