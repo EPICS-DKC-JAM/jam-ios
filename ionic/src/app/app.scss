@@ -39,12 +39,17 @@
 
 //.description {
 .card-md { // ad 10px padding to card, background light tan, font color burgundy
-  padding: 10px;
-  background-color: #dcbf85;
-  color: #fff;
-  font-size: 200%;
+  background-color: #f0ead6;
+}
+
+.card-content-md {
+  font-size: 120%;
+  color: #8b635c;
+  margin-top: 8px;
 }
 
 .card-header-md {
-  color: #8b635c;
+  color: #fff;
+  background-color: #dcbf85;
+  font-size: 150%;
 }
