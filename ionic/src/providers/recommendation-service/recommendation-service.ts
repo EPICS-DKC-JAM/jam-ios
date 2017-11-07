@@ -40,20 +40,20 @@ export class RecommendationServiceProvider {
       ],
       __v: 0
     };
-    if (this.data) {
-      return Promise.resolve(this.data);
-    }
-
-    return new Promise(resolve => {
-      var recommendationsUrl = this.urlService.build('/consumables/get/all');
-      //noinspection TypeScriptUnresolvedFunction
-      this.http.get(recommendationsUrl)
-        .map(res => res.json())
-        .subscribe(data => {
-          this.data = data.data;
-          resolve(this.data);
-        });
-    });
+    //if (this.data) {
+    //  return Promise.resolve(this.data);
+    //}
+    //
+    //return new Promise(resolve => {
+    //  var recommendationsUrl = this.urlService.build('/consumables/get/all');
+    //  //noinspection TypeScriptUnresolvedFunction
+    //  this.http.get(recommendationsUrl)
+    //    .map(res => res.json())
+    //    .subscribe(data => {
+    //      this.data = data.data;
+    //      resolve(this.data);
+    //    });
+    //});
   }
 
 }
