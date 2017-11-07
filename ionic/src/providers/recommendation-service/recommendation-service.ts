@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { UrlService } from '../url-service/url-service'
 import 'rxjs/add/operator/map';
 
 /*
@@ -11,9 +12,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class RecommendationServiceProvider {
 
-  recommendationsUrl = 'https://calm-meadow-62208.herokuapp.com/recommendations/1';
-
-  constructor(public http:Http) {
+  constructor(public http:Http, public urlService:UrlService) {
     console.log('Hello RecommendationServiceProvider Provider');
   }
 
@@ -46,8 +45,9 @@ export class RecommendationServiceProvider {
     //}
     //
     //return new Promise(resolve => {
+    //  var recommendationsUrl = this.urlService.build('/consumables/get/all');
     //  //noinspection TypeScriptUnresolvedFunction
-    //  this.http.get(this.recommendationsUrl)
+    //  this.http.get(recommendationsUrl)
     //    .map(res => res.json())
     //    .subscribe(data => {
     //      this.data = data.data;
