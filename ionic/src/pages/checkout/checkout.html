@@ -11,52 +11,51 @@
 <ion-content padding>
 
   <ion-grid>
-
     <ion-row>
-      <ion-col col-8 style="border-right: 1px solid #fff">
-        <ion-card style="text-align: left"> <!--*ngFor="let item of cart.items"-->
+      <ion-col col-12 style="margin: 0 auto">
+
+        <!-- cart card -->
+        <ion-card>
           <ion-card-header>
-            <!--{{ item.name }}-->
+            My Cart
           </ion-card-header>
           <ion-card-content>
+            <!-- header -->
+            <div class="row">
+              <div class="col"><strong>Item Name</strong></div>
+              <div class="col"><strong>Size</strong></div>
+              <div class="col"><strong>Modifiers</strong></div>
+              <div class="col"><strong>Price</strong></div>
+              <div class="col"><strong>Options</strong></div>
+            </div>
+            <!-- each item -->
+            <div class="row row-border" *ngFor="let item of items">
+              <div class="col">{{item.itemName}}</div>
+              <div class="col">{{item.size}}</div>
+              <div class="col">
+                <ng-container *ngFor="let modifier of item.modifiers">
+                  {{ modifier }}<br>
+                </ng-container>
+              </div>
+              <div class="col">{{item.price}}</div>
+              <div class="col">
+                <button ion-button clear class="button button-checkout">Edit</button>
+                <button ion-button clear class="button button-checkout">Remove</button>
+              </div>
+            </div>
           </ion-card-content>
         </ion-card>
 
-        <ion-card style="text-align: left"> <!--*ngFor="let item of cart.items"-->
-          <ion-card-header>
-            <!--{{ item.name }}-->
-          </ion-card-header>
+        <!-- summary card -->
+        <ion-card>
           <ion-card-content>
+            TOTAL: $420.69
           </ion-card-content>
         </ion-card>
 
-        <ion-card style="text-align: left"> <!--*ngFor="let item of cart.items"-->
-          <ion-card-header>
-            <!--{{ item.name }}-->
-          </ion-card-header>
-          <ion-card-content>
-          </ion-card-content>
-        </ion-card>
       </ion-col>
 
-
-      <ion-col col-4>
-        <ion-card style="text-align: left">
-          <ion-card-header>
-            Order Details
-          </ion-card-header>
-          <ion-card-content>
-            Total: $14.98<br>
-            Items in Cart: 3
-          </ion-card-content>
-        </ion-card>
-
-        <button ion-button (click)="printCart()">
-          Test
-        </button>
-      </ion-col>
     </ion-row>
-
   </ion-grid>
 
 </ion-content>
