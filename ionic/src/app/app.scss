@@ -22,34 +22,43 @@
 }
 
 /*===================== ALL / HEADER */
-.content-md { // set blur background image
-  background-image: url("../assets/images/table-blur.jpg");
+.content { // set blur background image
+  background-image: url("../assets/images/tan-gradient.svg");
   background-size: 100% 100%;
 }
 
-.toolbar-background-md { // background color of top toolbar
+.toolbar-background { // background color of top toolbar
   background-color: #8b635c;
 }
 
-.toolbar-title-md { // centers the title each page
+.toolbar-title { // centers the title each page
   text-align: center;
   color: #f0ead6;
   font-size: 200%;
 }
 
 //.description {
-.card-md { // ad 10px padding to card, background light tan, font color burgundy
-  background-color: #f0ead6;
+.card { // ad 10px padding to card, background light tan, font color burgundy
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-content-md {
+.card-content {
   font-size: 120%;
   color: #8b635c;
   margin-top: 8px;
 }
 
-.card-header-md {
+.card-header {
   color: #f0ead6;
   background-color: #8b635c;
   font-size: 150%;
+}
+
+/*===================== BUTTONS */
+.button { // adds top/bottom margin between buttons
+  border-color: #dcbf85;
+  color: #f0ead6;
+  background-color: #8b635c;
+  font-size: 100%;
 }

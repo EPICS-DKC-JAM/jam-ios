@@ -16,17 +16,38 @@ export class CheckoutPage {
     this.items = [
       {
         itemName: 'Cup of Jamaican Joe',
-        size: 'small',
-        modifiers: ['vanilla', 'hazlenut'],
+        size: 'Small',
+        modifiers: ['Vanilla', 'Hazlenut'],
         caffeine: 'Regular',
         price: 4.99
       },
       {
         itemName: 'Cafe Latte',
-        size: 'medium',
-        modifiers: ['vanilla', 'double shot'],
+        size: 'Medium',
+        modifiers: ['Vanilla', 'Double Shot'],
         caffeine: 'Decaf',
         price: 3.99
+      },
+      {
+        itemName: 'Cup of Jamaican Joe',
+        size: 'Small',
+        modifiers: ['Vanilla', 'Hazlenut'],
+        caffeine: 'Regular',
+        price: 4.99
+      },
+      {
+        itemName: 'Cup of Jamaican Joe',
+        size: 'Small',
+        modifiers: ['Vanilla', 'Hazlenut'],
+        caffeine: 'Regular',
+        price: 4.99
+      },
+      {
+        itemName: 'Cup of Jamaican Joe',
+        size: 'Small',
+        modifiers: ['Vanilla', 'Hazlenut'],
+        caffeine: 'Regular',
+        price: 4.99
       },
     ]
   }

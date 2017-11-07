@@ -19,6 +19,7 @@ import { CheckoutService } from '../providers/checkout-service/checkout-service'
 import { UrlService } from '../providers/url-service/url-service';
 import { AdminPage } from '../pages/admin/admin'
 
+
 @NgModule({
   declarations: [
     MyApp,
