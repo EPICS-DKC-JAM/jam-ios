@@ -13,43 +13,15 @@ export class CheckoutPage {
   items = [];
   constructor(public navCtrl:NavController, navParams:NavParams, public checkoutService:CheckoutService) {
     this.items = checkoutService.getCart()
-    this.items = [
-      {
-        itemName: 'Cup of Jamaican Joe',
-        size: 'Small',
-        modifiers: ['Vanilla', 'Hazlenut'],
-        caffeine: 'Regular',
-        price: 4.99
-      },
-      {
-        itemName: 'Cafe Latte',
-        size: 'Medium',
-        modifiers: ['Vanilla', 'Double Shot'],
-        caffeine: 'Decaf',
-        price: 3.99
-      },
-      {
-        itemName: 'Cup of Jamaican Joe',
-        size: 'Small',
-        modifiers: ['Vanilla', 'Hazlenut'],
-        caffeine: 'Regular',
-        price: 4.99
-      },
-      {
-        itemName: 'Cup of Jamaican Joe',
-        size: 'Small',
-        modifiers: ['Vanilla', 'Hazlenut'],
-        caffeine: 'Regular',
-        price: 4.99
-      },
-      {
-        itemName: 'Cup of Jamaican Joe',
-        size: 'Small',
-        modifiers: ['Vanilla', 'Hazlenut'],
-        caffeine: 'Regular',
-        price: 4.99
-      },
-    ]
+  }
+
+  findTotal() {
+    let total = 0;
+    this.items.forEach( (item) => {
+      total += item.price;
+    });
+
+    return total.toFixed(2);
   }
 
   removeItem(item) {
