@@ -18,7 +18,7 @@
 
 * {
   //font-family: "Helvetica Neue";
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /*===================== ALL / HEADER */
@@ -32,15 +32,17 @@
 }
 
 .toolbar-title { // centers the title each page
-  text-align: center;
+  //text-align: center;
   color: #f0ead6;
   font-size: 200%;
+  font-weight: 0;
 }
 
 //.description {
 .card { // ad 10px padding to card, background light tan, font color burgundy
   background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-content {

@@ -10,8 +10,14 @@
   padding: 15px 0px 15px 0px;
 }
 
-.button-checkout { // adds top/bottom margin between buttons
+.edit, .remove {
   color: #8b635c;
   background-color: transparent;
   font-size: 80%;
+}
+
+.clear {
+  color: #f0ead6;
+  float: right;
+  height: 0%;
 }
