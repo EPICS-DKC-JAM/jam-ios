@@ -18,6 +18,7 @@ import { RecommendationServiceProvider } from '../providers/recommendation-servi
 import { CheckoutService } from '../providers/checkout-service/checkout-service';
 import { UrlService } from '../providers/url-service/url-service';
 import { AdminPage } from '../pages/admin/admin'
+import { IonicStorageModule } from '@ionic/storage';
 
 
 
@@ -36,7 +37,8 @@ import { AdminPage } from '../pages/admin/admin'
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -3,8 +3,9 @@ import { NavController } from 'ionic-angular';
 import { ItemPage } from '../item/item';
 import { FormPage } from '../form/form';
 import { MenuPage } from "../menu/menu";
-import {RecommendationsPage} from "../recommendations/recommendations";
+import { RecommendationsPage } from "../recommendations/recommendations";
 import { CheckoutPage } from '../checkout/checkout';
+import { AdminPage } from "../admin/admin";
 
 
 @Component({
@@ -45,7 +46,7 @@ export class HomePage {
     this.adminCount++;
     if (this.adminCount >= 10) {
       this.adminCount = 0;
-      this.navCtrl.push(MenuPage);
+      this.navCtrl.push(AdminPage);
     }
   }
 }

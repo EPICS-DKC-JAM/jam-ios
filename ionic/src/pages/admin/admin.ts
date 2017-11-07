@@ -7,6 +7,7 @@ import { RecommendationsPage } from "../recommendations/recommendations";
 import { CheckoutPage } from '../checkout/checkout';
 import { UrlService } from '../../providers/url-service/url-service';
 import { AlertController } from "ionic-angular/index";
+import { ItemService } from "../../providers/item-service/item-service"
 
 @Component({
   selector: 'page-admin',
@@ -16,7 +17,7 @@ import { AlertController } from "ionic-angular/index";
 
 export class AdminPage {
 
-  constructor(public navCtrl:NavController, public urlService:UrlService, public alertCtrl:AlertController) {
+  constructor(public navCtrl:NavController, public itemService: ItemService, public urlService:UrlService, public alertCtrl:AlertController) {
 
   }
 
@@ -40,8 +41,8 @@ export class AdminPage {
         {
           text: 'Save',
           handler: data => {
-            this.changeHost(data);
-            console.log('Saved clicked');
+            this.changeHost(data.URL);
+            console.log(data);
           }
         }
       ]
@@ -51,5 +52,9 @@ export class AdminPage {
 
   changeHost(host) {
     this.urlService.changeHost(host);
+  }
+
+  updateItems() {
+    this.itemService.refreshAllItems();
   }
 }
