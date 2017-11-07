@@ -17,6 +17,7 @@ import { ItemService } from '../providers/item-service/item-service';
 import { RecommendationServiceProvider } from '../providers/recommendation-service/recommendation-service';
 import { CheckoutService } from '../providers/checkout-service/checkout-service';
 
+
 @NgModule({
   declarations: [
     MyApp,

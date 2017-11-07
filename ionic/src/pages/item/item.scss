@@ -3,10 +3,6 @@
   height: 40vh;
 }
 
-.col { // centers text within the columns
-  text-align: center;
-}
-
 .grid {
   padding: 30px;
 }
@@ -23,16 +19,6 @@
 
 .priceinner { // for content of price card
   font-size: 200%;
-}
-
-
-/*===================== BUTTONS */
-.button-md { // adds top/bottom margin between buttons
-  margin-bottom: 20px;
-  border-color: #dcbf85 !important;
-  color: #dcbf85 !important;
-  background-color: #8b635c !important;
-  font-size: 140%;
 }
 
 .caf { // amount of caffeine button width/height

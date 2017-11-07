@@ -15,8 +15,10 @@ import { CheckoutPage } from '../checkout/checkout';
 
 export class HomePage {
 
-  constructor(public navCtrl:NavController) {
+  adminCount = 0;
 
+  constructor(public navCtrl:NavController) {
+    this.adminCount = 0;
   }
 
   openFullMenu() {
@@ -37,5 +39,13 @@ export class HomePage {
 
   openCheckoutPage() {
     this.navCtrl.push(CheckoutPage);
+  }
+
+  openAdminPage() {
+    this.adminCount++;
+    if (this.adminCount >= 10) {
+      this.adminCount = 0;
+      this.navCtrl.push(MenuPage);
+    }
   }
 }
