@@ -7,7 +7,6 @@ import { ItemService } from "../../providers/item-service/item-service"
 @Component({
   selector: 'page-menu',
   templateUrl: 'menu.html',
-  providers: [ItemService]
 })
 
 @Component({
