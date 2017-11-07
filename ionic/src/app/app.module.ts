@@ -16,6 +16,8 @@ import { HomePage } from '../pages/home/home';
 import { ItemService } from '../providers/item-service/item-service';
 import { RecommendationServiceProvider } from '../providers/recommendation-service/recommendation-service';
 import { CheckoutService } from '../providers/checkout-service/checkout-service';
+import { UrlService } from '../providers/url-service/url-service';
+import { AdminPage } from '../pages/admin/admin'
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { CheckoutService } from '../providers/checkout-service/checkout-service'
     FormPage,
     MenuPage,
     RecommendationsPage,
-    CheckoutPage
+    CheckoutPage,
+    AdminPage
 
   ],
   imports: [
@@ -41,7 +44,8 @@ import { CheckoutService } from '../providers/checkout-service/checkout-service'
     FormPage,
     MenuPage,
     RecommendationsPage,
-    CheckoutPage
+    CheckoutPage,
+    AdminPage
   ],
   providers: [
     StatusBar,
@@ -50,6 +54,7 @@ import { CheckoutService } from '../providers/checkout-service/checkout-service'
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RecommendationServiceProvider,
     CheckoutService,
+    UrlService,
   ]
 })
 export class AppModule {}
