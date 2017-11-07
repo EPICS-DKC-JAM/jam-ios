@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d44aab06-8419-445d-ad40-0407cbc32f51" name="Default" comment="Added Checkout Provider">
+    <list default="true" id="d44aab06-8419-445d-ad40-0407cbc32f51" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/.sourcemaps/main.js.map" afterPath="$PROJECT_DIR$/ionic/.sourcemaps/main.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/config.xml" afterPath="$PROJECT_DIR$/ionic/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/ionic.config.json" afterPath="$PROJECT_DIR$/ionic/ionic.config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/package.json" afterPath="$PROJECT_DIR$/ionic/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/src/app/app.module.ts" afterPath="$PROJECT_DIR$/ionic/src/app/app.module.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/src/pages/admin/admin.html" afterPath="$PROJECT_DIR$/ionic/src/pages/admin/admin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/src/pages/admin/admin.ts" afterPath="$PROJECT_DIR$/ionic/src/pages/admin/admin.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/src/pages/home/home.ts" afterPath="$PROJECT_DIR$/ionic/src/pages/home/home.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/src/pages/menu/menu.ts" afterPath="$PROJECT_DIR$/ionic/src/pages/menu/menu.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts" afterPath="$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts" />
     </list>
     <ignored path="jam-ios.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,18 +30,18 @@
           <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/app/app.module.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-28.692308">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="admin.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="admin.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ionic/src/pages/admin/admin.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-28.692308">
-                  <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+                <state vertical-scroll-proportion="1.1299559">
+                  <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -58,7 +50,7 @@
           <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/pages/admin/admin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-12.666667">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding />
                 </state>
@@ -68,18 +60,18 @@
           <file leaf-file-name="url-service.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/providers/url-service/url-service.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-12.461538">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="item-service.ts" pinned="false" current-in-tab="true">
+          <file leaf-file-name="item-service.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.45594713">
-                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
                   <folding />
                 </state>
               </provider>
@@ -88,8 +80,8 @@
           <file leaf-file-name="menu.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.230769">
-                  <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
                   <folding>
                     <marker date="1510095516009" expanded="true" signature="361:460" placeholder="..." />
                     <marker date="1510095516009" expanded="true" signature="380:442" placeholder="..." />
@@ -104,7 +96,7 @@
           <file leaf-file-name="recommendation-service.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/providers/recommendation-service/recommendation-service.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
@@ -114,8 +106,8 @@
           <file leaf-file-name="admin.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/pages/admin/admin.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -124,7 +116,7 @@
           <file leaf-file-name="home.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-11.076923">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
                   <folding />
                 </state>
@@ -134,7 +126,7 @@
           <file leaf-file-name="item.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-16.0">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
                   <folding />
                 </state>
@@ -158,27 +150,27 @@
           <file leaf-file-name="checkout.ts" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/pages/checkout/checkout.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-42.23077">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ionic/src/app/app.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6118048">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="item.ts" pinned="false" current-in-tab="false">
+          <file leaf-file-name="item.ts" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
+                <state vertical-scroll-proportion="0.7709251">
                   <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
                   <folding />
                 </state>
@@ -235,9 +227,9 @@
         <option value="$PROJECT_DIR$/ionic/src/app/app.scss" />
         <option value="$PROJECT_DIR$/ionic/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/ionic/src/pages/menu/menu.ts" />
-        <option value="$PROJECT_DIR$/ionic/src/pages/admin/admin.ts" />
         <option value="$PROJECT_DIR$/ionic/src/pages/admin/admin.html" />
         <option value="$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts" />
+        <option value="$PROJECT_DIR$/ionic/src/pages/admin/admin.ts" />
       </list>
     </option>
   </component>
@@ -279,6 +271,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -636,7 +629,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -757,7 +749,13 @@
       <option name="project" value="LOCAL" />
       <updated>1509585017468</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented Offline Storage">
+      <created>1510095691179</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1510095691181</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -833,7 +831,8 @@
     <MESSAGE value="Added ionic" />
     <MESSAGE value="Added NavParam for ItemPage&#10;Enabled Item Passing for Menu.ts" />
     <MESSAGE value="Changed to cloud" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed to cloud" />
+    <MESSAGE value="Implemented Offline Storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Offline Storage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -851,7 +850,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510095516009" expanded="true" signature="361:460" placeholder="..." />
+            <marker date="1510095516009" expanded="true" signature="380:442" placeholder="..." />
+            <marker date="1510095516009" expanded="true" signature="478:775" placeholder="..." />
+            <marker date="1510095516009" expanded="true" signature="495:756" placeholder="..." />
+            <marker date="1510095516009" expanded="true" signature="588:738" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -881,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -896,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +914,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1510095516009" expanded="true" signature="361:460" placeholder="..." />
+            <marker date="1510095516009" expanded="true" signature="380:442" placeholder="..." />
+            <marker date="1510095516009" expanded="true" signature="478:775" placeholder="..." />
+            <marker date="1510095516009" expanded="true" signature="495:756" placeholder="..." />
+            <marker date="1510095516009" expanded="true" signature="588:738" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -956,7 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1051,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,25 +1104,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/checkout/checkout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.925926">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/checkout/checkout.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-42.23077">
+        <state vertical-scroll-proportion="0.0">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
@@ -1128,7 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7358491">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1136,13 +1130,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.666667">
           <caret line="16" column="23" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/home/home.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.076923">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding />
         </state>
@@ -1150,23 +1143,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/admin/admin.scss">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/providers/url-service/url-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.461538">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
@@ -1180,26 +1165,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/app/app.scss">
+    <entry file="file://$PROJECT_DIR$/ionic/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6118048">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/admin/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.692308">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/admin/admin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/app/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/menu/menu.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.230769">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
             <marker date="1510095516009" expanded="true" signature="361:460" placeholder="..." />
             <marker date="1510095516009" expanded="true" signature="380:442" placeholder="..." />
@@ -1210,26 +1219,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ionic/src/pages/item/item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7709251">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ionic/src/pages/admin/admin.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.692308">
-          <caret line="57" column="39" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/pages/admin/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ionic/src/providers/item-service/item-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45594713">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.1299559">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
