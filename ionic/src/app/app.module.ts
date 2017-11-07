@@ -20,6 +20,7 @@ import { UrlService } from '../providers/url-service/url-service';
 import { AdminPage } from '../pages/admin/admin'
 
 
+
 @NgModule({
   declarations: [
     MyApp,
