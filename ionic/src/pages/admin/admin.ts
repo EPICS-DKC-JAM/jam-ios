@@ -52,6 +52,39 @@ export class AdminPage {
     prompt.present();
   }
 
+  authenticateApp() {
+    let prompt = this.alertCtrl.create({
+      title: 'Authenticate App',
+      message: "Enter username and password",
+      inputs: [
+        {
+          name: 'username',
+          placeholder: 'Username'
+        },
+        {
+          name: 'password',
+          placeholder: 'Password',
+          type: 'password'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Authenticate',
+          handler: data => {
+            this.urlService.authenticate(data.username, data.password);
+          }
+        }
+      ]
+    });
+    prompt.present();
+  }
+
   changeHost(host) {
     this.urlService.changeHost(host);
   }
