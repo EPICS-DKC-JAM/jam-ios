@@ -36,6 +36,20 @@ export class UrlService {
     }
   }
 
+  isLoggedIn() {
+    if (this.loggedIn) {
+      return true;
+    } else {
+      let alert = this.alertCtrl.create({
+        title: 'App Not Authorized',
+        subTitle: 'Please authorize this app',
+        buttons: ['OK']
+      });
+      alert.present();
+      return false;
+    }
+  }
+
   authenticate(user, pass) {
     let loader = this.loadingCtrl.create({
       content: 'Attempting to authenticate...'

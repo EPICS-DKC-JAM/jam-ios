@@ -90,28 +90,30 @@ export class AdminPage {
   }
 
   updateItems() {
-    let loader = this.loadingCtrl.create({
-      content: 'Updating items...'
-    });
-    loader.present();
-    this.itemService.refreshAllItems()
-      .then(data => {
-        if (data) {
-          let toast = this.toastCtrl.create({
-            message: 'Successfully updated items!',
-            duration: 3000,
-            position: 'bottom'
-          });
-          toast.present();
-        } else {
-          let toast = this.toastCtrl.create({
-            message: 'Could not update items',
-            duration: 3000,
-            position: 'bottom'
-          });
-          toast.present();
-        }
+    if (this.urlService.isLoggedIn()) {
+      let loader = this.loadingCtrl.create({
+        content: 'Updating items...'
       });
-    loader.dismiss();
+      loader.present();
+      this.itemService.refreshAllItems()
+        .then(data => {
+          if (data) {
+            let toast = this.toastCtrl.create({
+              message: 'Successfully updated items!',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          } else {
+            let toast = this.toastCtrl.create({
+              message: 'Could not update items',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          }
+        });
+      loader.dismiss();
+    }
   }
 }
