@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {NavParams} from "ionic-angular/index";
 import { CheckoutService } from '../../providers/checkout-service/checkout-service'
+import { LoadingController } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-item',
@@ -10,13 +12,13 @@ import { CheckoutService } from '../../providers/checkout-service/checkout-servi
 
 export class ItemPage {
 
-  sizeOpts: {title: string, subTitle: string}
-  modifierOpts: {title: string, subTitle: string}
-  caffeineOpts: {title: string, subTitle: string}
+  sizeOpts:{title: string, subTitle: string}
+  modifierOpts:{title: string, subTitle: string}
+  caffeineOpts:{title: string, subTitle: string}
   item = {};
-  answers: {itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
+  answers:{itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
 
-  constructor(public navCtrl:NavController, navParams:NavParams, public checkoutService: CheckoutService) {
+  constructor(public navCtrl:NavController, public toastCtrl:ToastController, public loadingCtrl:LoadingController, navParams:NavParams, public checkoutService:CheckoutService) {
     this.item = navParams.data.item;
 
     // options for size
@@ -48,6 +50,20 @@ export class ItemPage {
   }
 
   addToCart(item) {
-    this.checkoutService.addItem(item)
+    let loader = this.loadingCtrl.create({
+      content: 'Adding ' + item.itemName + ' to cart...',
+    });
+    loader.present();
+
+    setTimeout(() => {
+      loader.dismiss();
+      this.checkoutService.addItem(item);
+      let toast = this.toastCtrl.create({
+        message: item.itemName + " added to cart!",
+        duration: 2000,
+        position: 'bottom'
+      });
+      toast.present();
+    }, 500);
   }
 }
