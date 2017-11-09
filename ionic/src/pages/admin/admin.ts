@@ -52,33 +52,68 @@ export class AdminPage {
     prompt.present();
   }
 
+  authenticateApp() {
+    let prompt = this.alertCtrl.create({
+      title: 'Authenticate App',
+      message: "Enter username and password",
+      inputs: [
+        {
+          name: 'username',
+          placeholder: 'Username'
+        },
+        {
+          name: 'password',
+          placeholder: 'Password',
+          type: 'password'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Authenticate',
+          handler: data => {
+            this.urlService.authenticate(data.username, data.password);
+          }
+        }
+      ]
+    });
+    prompt.present();
+  }
+
   changeHost(host) {
     this.urlService.changeHost(host);
   }
 
   updateItems() {
-    let loader = this.loadingCtrl.create({
-      content: 'Updating items...'
-    });
-    loader.present();
-    this.itemService.refreshAllItems()
-      .then(data => {
-        if (data) {
-          let toast = this.toastCtrl.create({
-            message: 'Successfully updated items!',
-            duration: 3000,
-            position: 'bottom'
-          });
-          toast.present();
-        } else {
-          let toast = this.toastCtrl.create({
-            message: 'Could not update items',
-            duration: 3000,
-            position: 'bottom'
-          });
-          toast.present();
-        }
+    if (this.urlService.isLoggedIn()) {
+      let loader = this.loadingCtrl.create({
+        content: 'Updating items...'
       });
-    loader.dismiss();
+      loader.present();
+      this.itemService.refreshAllItems()
+        .then(data => {
+          if (data) {
+            let toast = this.toastCtrl.create({
+              message: 'Successfully updated items!',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          } else {
+            let toast = this.toastCtrl.create({
+              message: 'Could not update items',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          }
+        });
+      loader.dismiss();
+    }
   }
 }
