@@ -16,9 +16,15 @@
 // automatically applied to the <body> element in the app.
 
 
-* {
-  //font-family: "Helvetica Neue";
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  //src: url('../assets/fonts/agnextregular-webfont.eot');
+  //src: url('../assets/fonts/agnextregular-webfont.eot?#iefix') format('embedded-opentype'),
+  //local('Akzidenz-Grotesk Next'),
+  //local('Akzidenz-Grotesk Next'),
+  //url('../assets/fonts/agnextregular-webfont.woff') format('woff')
 }
 
 /*===================== ALL / HEADER */
@@ -35,20 +41,16 @@
   //text-align: center;
   color: #f0ead6;
   font-size: 200%;
-  font-weight: 0;
 }
 
-//.description {
-.card { // ad 10px padding to card, background light tan, font color burgundy
+.card {
   background-color: #fff;
-  border-radius: 8px;
-  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
 }
 
 .card-content {
   font-size: 120%;
   color: #8b635c;
-  margin-top: 8px;
 }
 
 .card-header {
@@ -58,9 +60,13 @@
 }
 
 /*===================== BUTTONS */
-.button { // adds top/bottom margin between buttons
+.button, .button-default, .button-ios {
   border-color: #dcbf85;
   color: #f0ead6;
   background-color: #8b635c;
   font-size: 100%;
+}
+
+.clickable:active {
+  background-color: lightgray !important;
 }
