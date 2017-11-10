@@ -7,7 +7,10 @@ import { RecommendationsPage } from "../recommendations/recommendations";
 import { CheckoutPage } from '../checkout/checkout';
 import { UrlService } from '../../providers/url-service/url-service';
 import { AlertController } from "ionic-angular/index";
-import { ItemService } from "../../providers/item-service/item-service"
+import { ItemService } from "../../providers/item-service/item-service";
+import { LoadingController } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
+
 
 @Component({
   selector: 'page-admin',
@@ -17,8 +20,7 @@ import { ItemService } from "../../providers/item-service/item-service"
 
 export class AdminPage {
 
-  constructor(public navCtrl:NavController, public itemService: ItemService, public urlService:UrlService, public alertCtrl:AlertController) {
-
+  constructor(public navCtrl:NavController, public toastCtrl:ToastController, public loadingCtrl:LoadingController, public itemService:ItemService, public urlService:UrlService, public alertCtrl:AlertController) {
   }
 
   showPrompt() {
@@ -50,11 +52,68 @@ export class AdminPage {
     prompt.present();
   }
 
+  authenticateApp() {
+    let prompt = this.alertCtrl.create({
+      title: 'Authenticate App',
+      message: "Enter username and password",
+      inputs: [
+        {
+          name: 'username',
+          placeholder: 'Username'
+        },
+        {
+          name: 'password',
+          placeholder: 'Password',
+          type: 'password'
+        }
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Authenticate',
+          handler: data => {
+            this.urlService.authenticate(data.username, data.password);
+          }
+        }
+      ]
+    });
+    prompt.present();
+  }
+
   changeHost(host) {
     this.urlService.changeHost(host);
   }
 
   updateItems() {
-    this.itemService.refreshAllItems();
+    if (this.urlService.isLoggedIn()) {
+      let loader = this.loadingCtrl.create({
+        content: 'Updating items...'
+      });
+      loader.present();
+      this.itemService.refreshAllItems()
+        .then(data => {
+          if (data) {
+            let toast = this.toastCtrl.create({
+              message: 'Successfully updated items!',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          } else {
+            let toast = this.toastCtrl.create({
+              message: 'Could not update items',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          }
+        });
+      loader.dismiss();
+    }
   }
 }
