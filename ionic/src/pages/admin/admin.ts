@@ -87,14 +87,12 @@ export class AdminPage {
 
   changeHost(host) {
     this.urlService.changeHost(host);
+    this.urlService.checkConnection();
   }
 
   updateItems() {
     if (this.urlService.isLoggedIn()) {
-      let loader = this.loadingCtrl.create({
-        content: 'Updating items...'
-      });
-      loader.present();
+
       this.itemService.refreshAllItems()
         .then(data => {
           if (data) {
@@ -113,7 +111,6 @@ export class AdminPage {
             toast.present();
           }
         });
-      loader.dismiss();
     }
   }
 }

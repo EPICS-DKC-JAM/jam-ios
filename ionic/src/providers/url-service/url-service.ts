@@ -18,7 +18,7 @@ export class UrlService {
   apiToken = '';
   loggedIn = false;
 
-  constructor(public http: Http, public loadingCtrl: LoadingController, public alertCtrl: AlertController) {
+  constructor(public http:Http, public loadingCtrl:LoadingController, public alertCtrl:AlertController) {
     console.log('Hello UrlService Provider');
   }
 
@@ -27,6 +27,9 @@ export class UrlService {
   }
 
   changeHost(host) {
+    if (host.endsWith('/')) {
+      host = host.substr(0, host.length - 1);
+    }
     this.host = host;
   }
 
@@ -41,13 +44,51 @@ export class UrlService {
       return true;
     } else {
       let alert = this.alertCtrl.create({
-        title: 'App Not Authorized',
-        subTitle: 'Please authorize this app',
+        title: 'App Not Authenticated',
+        subTitle: 'Please authenticate this app',
         buttons: ['OK']
       });
       alert.present();
       return false;
     }
+  }
+
+  checkConnection() {
+    let loader = this.loadingCtrl.create({
+      content: 'Checking connection...'
+    });
+    loader.present();
+
+    return new Promise(resolve => {
+      let opt:RequestOptions;
+      let headers:Headers = new Headers;
+      opt = new RequestOptions({
+        headers: headers
+      });
+      headers.set('x-access-token', this.getToken());
+
+      //noinspection TypeScriptUnresolvedFunction
+      this.http.get(this.build('/me'), opt)
+        .map(res => res.json())
+        .subscribe(data => {
+          let alert = this.alertCtrl.create({
+            title: 'Connection Successful!',
+            buttons: ['OK']
+          });
+          loader.dismiss();
+          alert.present();
+          resolve(true);
+        }, err => {
+          let alert = this.alertCtrl.create({
+            title: 'Error',
+            subTitle: err,
+            buttons: ['OK']
+          });
+          loader.dismiss();
+          alert.present();
+          resolve(false);
+        });
+    });
   }
 
   authenticate(user, pass) {
@@ -61,7 +102,7 @@ export class UrlService {
     headers.append('Accept', 'application/json');
 
     //noinspection TypeScriptUnresolvedFunction
-    this.http.post(this.build('/auth'), { username: user, password: pass }, headers)
+    this.http.post(this.build('/auth'), {username: user, password: pass}, headers)
       .map(res => res.json())
       .subscribe(data => {
         loader.dismiss();
@@ -69,7 +110,7 @@ export class UrlService {
           console.log(data.token);
           let alert = this.alertCtrl.create({
             title: 'Authentication Successful',
-            subTitle: 'Credentials were successfully!',
+            subTitle: data.message,
             buttons: ['OK']
           });
           alert.present();
@@ -78,13 +119,21 @@ export class UrlService {
         } else {
           let alert = this.alertCtrl.create({
             title: 'Authentication Failed',
-            subTitle: 'Please check username or password',
+            subTitle: data.message,
             buttons: ['OK']
           });
           alert.present();
           this.loggedIn = false;
           this.apiToken = '';
         }
+      }, err => {
+        loader.dismiss();
+        let alert = this.alertCtrl.create({
+          title: 'Error',
+          subTitle: err,
+          buttons: ['OK']
+        });
+        alert.present();
       });
   }
 }
