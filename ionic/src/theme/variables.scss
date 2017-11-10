@@ -34,13 +34,16 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  primary:     lightgray,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222
 );
 
+$font-family-md-base: "Open Sans";
+$font-family-ios-base: "Open Sans";
+$font-family-wp-base: "Open Sans";
 
 // App iOS Variables
 // --------------------------------------------------
