@@ -15,7 +15,7 @@
       <ion-col col-12 style="margin: 0 auto">
 
         <!-- cart card -->
-        <ion-card>
+        <ion-card class="checkout">
           <ion-card-header>
             My Cart
             <button ion-button clear class="clear" (click)="clearCart()">Clear</button>
@@ -40,15 +40,15 @@
               </div>
               <div class="col">{{item.price}}</div>
               <div class="col">
-                <button ion-button clear class="edit">Edit</button>
-                <button ion-button clear class="remove" (click)="removeItem(item)">Remove</button>
+                <button ion-button clear class="edit clickable">Edit</button>
+                <button ion-button clear class="remove clickable" (click)="removeItem(item)">Remove</button>
               </div>
             </div>
           </ion-card-content>
         </ion-card>
 
         <!-- summary card -->
-        <ion-card>
+        <ion-card class="checkout">
           <ion-card-content style="text-align: center">
             Show this page to the cashier! | TOTAL: ${{ findTotal() }}
           </ion-card-content>
