@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Headers, RequestOptions } from '@angular/http';
 import { UrlService } from '../url-service/url-service'
+import { Storage } from '@ionic/storage';
+import { AlertController } from "ionic-angular/index";
+import { LoadingController } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 
+@Injectable()
 /*
  Generated class for the RecommendationServiceProvider provider.
 
@@ -10,50 +14,125 @@ import 'rxjs/add/operator/map';
  for more info on providers and Angular DI.
  */
 @Injectable()
-export class RecommendationServiceProvider {
+export class RecommendationService {
 
-  constructor(public http:Http, public urlService:UrlService) {
-    console.log('Hello RecommendationServiceProvider Provider');
+  private questions:any;
+  private answers:any;
+
+  constructor(public http:Http, public loadingCtrl: LoadingController, public alertCtrl:AlertController, public urlService:UrlService, public storage:Storage) {
+    // Check if in storage, if not, get from API
+    storage.get('questions').then((data) => {
+      if (data) {
+        console.log('Already in storage');
+        this.questions = data;
+      } else {
+        console.log('Not in storage');
+        this.questions = this.refreshAllQuestions();
+      }
+    });
+    storage.get('answers').then((data) => {
+      if (data) {
+        console.log('Already in storage');
+        this.answers = data;
+      } else {
+        console.log('Not in storage');
+        this.answers = this.refreshAllAnswers();
+      }
+    });
   }
 
-  data:any;
 
-  getAllItems(answers) {
-    return {
-      _id: 24,
-      name: "Caffe Latte",
-      description: "Espresso and steamed milk, nothing beats this classic! Add flavors to taste",
-      price: 4,
-      jslImage: "https://www.deafcancoffee.com/images/portfolio/IMG_6369.JPG",
-      itemImage: "https://www.deafcancoffee.com/images/portfolio/IMG_6369.JPG",
-      caffeine: true,
-      modifiers: [
-        "mocha",
-        "vanilla",
-        "ice",
-        "no ice"
-      ],
-      size: [
-        "small",
-        "medium",
-        "large"
-      ],
-      __v: 0
-    };
-    //if (this.data) {
-    //  return Promise.resolve(this.data);
-    //}
-    //
-    //return new Promise(resolve => {
-    //  var recommendationsUrl = this.urlService.build('/consumables/get/all');
-    //  //noinspection TypeScriptUnresolvedFunction
-    //  this.http.get(recommendationsUrl)
-    //    .map(res => res.json())
-    //    .subscribe(data => {
-    //      this.data = data.data;
-    //      resolve(this.data);
-    //    });
-    //});
+  refreshAllQuestions() {
+    return new Promise(resolve => {
+      var allQuestionsURL = this.urlService.build('/recommendations/questions/get');
+      let opt:RequestOptions;
+      let headers:Headers = new Headers;
+      opt = new RequestOptions({
+        headers: headers
+      });
+      headers.set('x-access-token', this.urlService.getToken());
+
+      let loader = this.loadingCtrl.create({
+        content: 'Updating questions...'
+      });
+      loader.present();
+
+      console.log("Refreshing questions");
+      console.log("QUESTION URL: " + allQuestionsURL);
+
+      //noinspection TypeScriptUnresolvedFunction
+      this.http.get(allQuestionsURL, opt)
+        .map(res => res.json())
+        .subscribe(data => {
+          this.questions = data.data;
+          this.storage.set("questions", this.questions);
+          loader.dismiss();
+          resolve(this.questions);
+        }, err => {
+          let alert = this.alertCtrl.create({
+            title: 'Error',
+            subTitle: err,
+            buttons: ['OK']
+          });
+          alert.present();
+          loader.dismiss();
+        });
+    });
+  }
+
+  refreshAllAnswers() {
+    return new Promise(resolve => {
+      var allAnswersURL = this.urlService.build('/recommendations/answers/get');
+      let opt:RequestOptions;
+      let headers:Headers = new Headers;
+      opt = new RequestOptions({
+        headers: headers
+      });
+      headers.set('x-access-token', this.urlService.getToken());
+
+      let loader = this.loadingCtrl.create({
+        content: 'Updating answers...'
+      });
+      loader.present();
+
+      //noinspection TypeScriptUnresolvedFunction
+      this.http.get(allAnswersURL, opt)
+        .map(res => res.json())
+        .subscribe(data => {
+          this.answers = data.data;
+          this.storage.set("answers", this.answers);
+          loader.dismiss();
+          resolve(this.answers);
+        }, err => {
+          let alert = this.alertCtrl.create({
+            title: 'Error',
+            subTitle: err,
+            buttons: ['OK']
+          });
+          alert.present();
+          loader.dismiss();
+        });
+    });
+  }
+
+  getAllQuestions() {
+    if (this.questions) {
+      console.log('Already have questions');
+      console.log("Questions: " + this.questions);
+      return Promise.resolve(this.questions);
+    } else {
+      return this.refreshAllQuestions();
+    }
+  }
+
+  getAllAnswers() {
+    if (this.answers) {
+      console.log('Already have answers');
+      console.log('Answers: ' + this.answers);
+      return Promise.resolve(this.answers);
+    } else {
+      return this.refreshAllAnswers();
+    }
   }
 
 }

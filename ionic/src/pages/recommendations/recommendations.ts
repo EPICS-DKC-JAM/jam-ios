@@ -12,7 +12,7 @@ export class RecommendationsPage {
   items = [];
 
   constructor(public navCtrl:NavController, public navParams:NavParams) {
-    this.items = navParams.data.items;
+    this.items = navParams.data;
   }
 
   openItemPage(item) {

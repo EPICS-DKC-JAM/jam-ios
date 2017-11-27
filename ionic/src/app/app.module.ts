@@ -14,7 +14,7 @@ import { CheckoutPage } from '../pages/checkout/checkout'
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ItemService } from '../providers/item-service/item-service';
-import { RecommendationServiceProvider } from '../providers/recommendation-service/recommendation-service';
+import { RecommendationService } from '../providers/recommendation-service/recommendation-service';
 import { CheckoutService } from '../providers/checkout-service/checkout-service';
 import { UrlService } from '../providers/url-service/url-service';
 import { AdminPage } from '../pages/admin/admin'
@@ -56,7 +56,7 @@ import { IonicStorageModule } from '@ionic/storage';
     SplashScreen,
     ItemService,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    RecommendationServiceProvider,
+    RecommendationService,
     CheckoutService,
     UrlService,
   ]
