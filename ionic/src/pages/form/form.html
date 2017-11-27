@@ -8,31 +8,10 @@
 
 <ion-content padding>
   <ion-slides #slides (ionSlideDidChange)="slideChanged()">
-    <ion-slide>
-      <h2>Do you prefer your drink hot or cold?</h2>
-      <button ion-button (click)="selectChoice(0)">
-        Hot
-      </button>
-      <button ion-button (click)="selectChoice(1)">
-        Cold
-      </button>
-    </ion-slide>
-    <ion-slide>
-      <h2>Would you like your drink to be caffeinated?</h2>
-      <button ion-button (click)="selectChoice(0)">
-        Yes
-      </button>
-      <button ion-button (click)="selectChoice(1)">
-        No
-      </button>
-    </ion-slide>
-    <ion-slide>
-      <h2>Would you like your drink to be milk-based?</h2>
-      <button ion-button (click)="selectChoice(0)">
-        Yes
-      </button>
-      <button ion-button (click)="selectChoice(1)">
-        No
+    <ion-slide *ngFor="let question of questions">
+      <h2>{{ question.prompt }}</h2>
+      <button ion-button *ngFor="let option of question.options;" (click)="selectAnswer(option)">
+        {{ option }}
       </button>
     </ion-slide>
   </ion-slides>

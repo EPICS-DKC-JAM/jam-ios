@@ -11,7 +11,6 @@ export class ItemService {
 
   data:any;
 
-
   constructor(public http:Http, public loadingCtrl: LoadingController, public alertCtrl:AlertController, public urlService:UrlService, public storage:Storage) {
     // Check if in storage, if not, get from API
     storage.get('items').then((data) => {
@@ -25,11 +24,9 @@ export class ItemService {
     });
   }
 
-
   refreshAllItems() {
     return new Promise(resolve => {
       var allConsumablesUrl = this.urlService.build('/consumables/get/all');
-
       let opt:RequestOptions;
       let headers:Headers = new Headers;
       opt = new RequestOptions({
