@@ -4,10 +4,26 @@ page-home {
       height: 100%;
       width: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
     }
-    background-image: url("../../assets/images/background-v1.png") !important;
+    background-image: url("../../assets/images/homepage-background.png") !important;
     background-size: 100% 100%;
   }
+}
+
+.options {
+  position:absolute;
+  transition: .5s ease;
+  top: 57%;
+  left: 43%;
+  font-size: 24px;
+
+  height:25%;
+  width:50%;
+}
+
+.equal {
+  width: 50%;
+  background-color: #fcfcfc;
+  color: #4f3200;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

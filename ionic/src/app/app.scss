@@ -28,7 +28,7 @@
 }
 
 /*===================== ALL / HEADER */
-.content { // set blur background image
+.content { // set background image
   background-image: url("../assets/images/tan-gradient.svg");
   background-size: 100% 100%;
 }
@@ -37,8 +37,11 @@
   background-color: #8b635c;
 }
 
+.scroll-content {
+  overflow:hidden;
+}
+
 .toolbar-title { // centers the title each page
-  //text-align: center;
   color: #f0ead6;
   font-size: 200%;
 }
