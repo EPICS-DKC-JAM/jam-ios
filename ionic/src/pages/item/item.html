@@ -57,15 +57,17 @@
           </ion-item>
         </div>
 
-        <ion-card class="price">
-          <ion-card-content class="priceinner">
-            {{ item.price }}
-          </ion-card-content>
-        </ion-card>
+        <div margin="0 auto">
+          <ion-card class="price">
+            <ion-card-content class="priceinner">
+              ${{ item.price }}.00
+            </ion-card-content>
+          </ion-card>
 
-        <button ion-button (click)="addToCart(answers)">
-          Add To Cart
-        </button>
+          <button ion-button class="add" (click)="addToCart(answers)">
+            Add To Cart
+          </button>
+        </div>
       </ion-col>
 
     </ion-row>
