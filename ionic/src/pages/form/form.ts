@@ -14,6 +14,8 @@ import { ItemService} from '../../providers/item-service/item-service'
 
 export class FormPage {
 
+  private MAX_RECOMMENDED_ITEMS = 10;
+
   @ViewChild(Slides) slides: Slides;
   private questions: any;
   private answers: any;
@@ -42,7 +44,6 @@ export class FormPage {
 
   /** Sort questions based on question order **/
   sortQuestions() {
-    console.log(this.questions);
     if (this.questions == null || this.questions.length == 0) {
       return;
     }
@@ -53,7 +54,6 @@ export class FormPage {
         }
       }
     }
-    console.log(this.questions);
   }
 
   /** Helper method for sorting **/
@@ -82,23 +82,63 @@ export class FormPage {
 
   /** Retrieve recommended items based on user answers **/
   getRecommendations() {
-    let answerString = this.selectedAnswers.join('');
-    var recommendations = [];
+    var fullMatches = []; // array of items that fully match answers
+    var partialMatchesMap = {}; // map number of matches to array of items with that number
+    var numQuestions = this.selectedAnswers.length;
     for (var i = 0; i < this.answers.length; i++) {
       var answer = this.answers[i];
-      if (answerString == answer.key) {
-        for (var j = 0; j < this.items.length; j++) {
-          var item = this.items[j];
-          if (answer.consumableId == item._id) {
-            recommendations.push(item);
-          }
+      var item = null;
+      /** Find item corresponding to answer id **/
+      for (var j = 0; j < this.items.length; j++) {
+        if (answer.consumableId == this.items[j]._id) {
+          item = this.items[j];
+          break;
+        }
+      }
+      if (item == null) {
+        console.log("Answer does not have a valid consumable id");
+        continue;
+      }
+      /** Count number of matching answers for this item **/
+      var numMatching = 0; // number of answers that match the given item (answer)
+      for (var j = 0; j < numQuestions; j++) {
+        if (this.selectedAnswers[j] == answer.keys[j]) {
+          numMatching++;
+        }
+      }
+      if (numMatching == numQuestions) {
+        fullMatches.push(item);
+        if (fullMatches.length >= this.MAX_RECOMMENDED_ITEMS) {
+          /** Do not recommend more items than max allowed **/
+          break;
+        }
+      } else {
+        if (partialMatchesMap[numMatching] == null) {
+          partialMatchesMap[numMatching] = [item]; // array with the item
+        } else {
+          partialMatchesMap[numMatching].push(item);
         }
       }
     }
-    console.log("RECS");
-    console.log(recommendations);
-    let recommendationsModal = this.modalCtrl.create(RecommendationsPage, recommendations);
-    recommendationsModal.present();
+    /** Get best partial matches until number of recommendations has been met **/
+    var numRecommendations = fullMatches.length; // counter for number of recommendations made so far
+    var partialMatches = [];
+    for (var i = numQuestions - 1; i >= 0 && numRecommendations < this.MAX_RECOMMENDED_ITEMS; i--) {
+      var currentMatchesArr = partialMatchesMap[i];
+      if (currentMatchesArr) {
+        for (var j = 0; numRecommendations < this.MAX_RECOMMENDED_ITEMS && j < currentMatchesArr.length; j++) {
+          partialMatches.push(currentMatchesArr[j]);
+          numRecommendations++;
+        }
+      }
+    }
+    var data = {
+      "numFullMatches" : fullMatches.length,
+      "numPartialMatches" : partialMatches.length,
+      "fullMatches" : fullMatches,
+      "partialMatches" : partialMatches
+    };
+    this.modalCtrl.create(RecommendationsPage, data).present();
   }
 
   /** Determine if slides should be locked for forward advancement when user changes slide **/

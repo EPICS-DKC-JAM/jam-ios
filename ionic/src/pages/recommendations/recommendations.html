@@ -7,9 +7,14 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-list>
-        <button ion-item *ngFor="let item of items" (click)="openItemPage(item)">
-            {{ item.name }}
-        </button>
-    </ion-list>
+  <ion-list>
+    <button ion-item *ngFor="let item of fullMatches" (click)="openItemPage(item)">
+      {{ item.name }}
+    </button>
+  </ion-list>
+  <ion-list>
+    <button ion-item *ngFor="let item of partialMatches" (click)="openItemPage(item)">
+      {{ item.name }}
+    </button>
+  </ion-list>
 </ion-content>

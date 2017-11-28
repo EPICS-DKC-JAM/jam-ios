@@ -9,10 +9,17 @@ import {ItemPage} from "../item/item";
 
 export class RecommendationsPage {
 
-  items = [];
+  numFullMatches: Number;
+  numPartialMatches: Number;
+  fullMatches = [];
+  partialMatches = [];
+
 
   constructor(public navCtrl:NavController, public navParams:NavParams) {
-    this.items = navParams.data;
+    this.numFullMatches = navParams.data.numFullMatches;
+    this.numPartialMatches = navParams.data.numPartialMatches;
+    this.fullMatches = navParams.data.fullMatches;
+    this.partialMatches = navParams.data.partialMatches;
   }
 
   openItemPage(item) {
