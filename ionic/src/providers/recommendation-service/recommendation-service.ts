@@ -51,22 +51,11 @@ export class RecommendationService {
         headers: headers
       });
       headers.set('x-access-token', this.urlService.getToken());
-
-      let loader = this.loadingCtrl.create({
-        content: 'Updating questions...'
-      });
-      loader.present();
-
-      console.log("Refreshing questions");
-      console.log("QUESTION URL: " + allQuestionsURL);
-
-      //noinspection TypeScriptUnresolvedFunction
       this.http.get(allQuestionsURL, opt)
         .map(res => res.json())
         .subscribe(data => {
           this.questions = data.data;
           this.storage.set("questions", this.questions);
-          loader.dismiss();
           resolve(this.questions);
         }, err => {
           let alert = this.alertCtrl.create({
@@ -75,7 +64,6 @@ export class RecommendationService {
             buttons: ['OK']
           });
           alert.present();
-          loader.dismiss();
         });
     });
   }
@@ -89,19 +77,11 @@ export class RecommendationService {
         headers: headers
       });
       headers.set('x-access-token', this.urlService.getToken());
-
-      let loader = this.loadingCtrl.create({
-        content: 'Updating answers...'
-      });
-      loader.present();
-
-      //noinspection TypeScriptUnresolvedFunction
       this.http.get(allAnswersURL, opt)
         .map(res => res.json())
         .subscribe(data => {
           this.answers = data.data;
           this.storage.set("answers", this.answers);
-          loader.dismiss();
           resolve(this.answers);
         }, err => {
           let alert = this.alertCtrl.create({
@@ -110,7 +90,6 @@ export class RecommendationService {
             buttons: ['OK']
           });
           alert.present();
-          loader.dismiss();
         });
     });
   }

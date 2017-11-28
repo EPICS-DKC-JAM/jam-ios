@@ -33,19 +33,11 @@ export class ItemService {
         headers: headers
       });
       headers.set('x-access-token', this.urlService.getToken());
-
-      let loader = this.loadingCtrl.create({
-        content: 'Updating items...'
-      });
-      loader.present();
-
-      //noinspection TypeScriptUnresolvedFunction
       this.http.get(allConsumablesUrl, opt)
         .map(res => res.json())
         .subscribe(data => {
           this.data = data.data;
           this.storage.set("items", this.data);
-          loader.dismiss();
           resolve(this.data);
         }, err => {
           let alert = this.alertCtrl.create({
@@ -54,7 +46,6 @@ export class ItemService {
             buttons: ['OK']
           });
           alert.present();
-          loader.dismiss();
         });
     });
   }
