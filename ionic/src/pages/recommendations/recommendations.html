@@ -25,9 +25,15 @@
   <!-- perfect matches -->
   <ion-card class="menu clickable" *ngFor="let item of fullMatches" (click)="openItemPage(item)">
     <ion-card-content>
-      <span class="item-name"><strong>{{ item.name }}</strong></span>
-      <span class="item-price">${{ item.price}}</span>
-      <div class="item-description">{{ item.description }}</div>
+      <ion-row>
+        <ion-col col-11>
+          <span class="item-name"><strong>{{ item.name }}</strong></span>
+          <div class="item-description">{{ item.description }}</div>
+        </ion-col>
+        <ion-col col-1 class="item-price">
+          ${{ item.price}}
+        </ion-col>
+      </ion-row>
     </ion-card-content>
   </ion-card>
 
@@ -41,9 +47,15 @@
   <!-- partial matches -->
   <ion-card class="menu clickable" *ngFor="let item of partialMatches" (click)="openItemPage(item)">
     <ion-card-content>
-      <span class="item-name"><strong>{{ item.name }}</strong></span>
-      <span class="item-price">${{ item.price}}</span>
-      <div class="item-description">{{ item.description }}</div>
+      <ion-row>
+        <ion-col col-11>
+          <span class="item-name"><strong>{{ item.name }}</strong></span>
+          <div class="item-description">{{ item.description }}</div>
+        </ion-col>
+        <ion-col col-1 class="item-price">
+          ${{ item.price}}
+        </ion-col>
+      </ion-row>
     </ion-card-content>
   </ion-card>
 

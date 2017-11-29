@@ -4,8 +4,10 @@
 }
 
 .item-price {
-  float: right;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 110%;
 }
 
 .item-description {
