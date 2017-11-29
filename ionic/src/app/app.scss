@@ -28,42 +28,42 @@
 }
 
 /*===================== ALL / HEADER */
-.content { // set background image
+.content, .content-default, .content-ios, .content-md { // set background image
   background-image: url("../assets/images/tan-gradient.svg");
   background-size: 100% 100%;
 }
 
-.toolbar-background { // background color of top toolbar
+.toolbar-background, .toolbar-background-default, .toolbar-background-ios, .toolbar-content-md { // background color of top toolbar
   background-color: #8b635c;
 }
 
-.scroll-content {
+.scroll-content, .scroll-content-default, .scroll-content-ios, .scroll-content-md {
   overflow:hidden;
 }
 
-.toolbar-title { // centers the title each page
+.toolbar-title, .toolbar-title-default, .toolbar-title-ios, .toolbar-title-md { // centers the title each page
   color: #f0ead6;
   font-size: 200%;
 }
 
-.card {
+.card, .card-default, .card-ios, .card-md {
   background-color: #fff;
   overflow: hidden;
 }
 
-.card-content {
+.card-content, .card-content-default, .card-content-ios, .card-content-md {
   font-size: 120%;
   color: #8b635c;
 }
 
-.card-header {
+.card-header, .card-header-default, .card-header-ios, .card-header-md {
   color: #f0ead6;
   background-color: #8b635c;
   font-size: 150%;
 }
 
 /*===================== BUTTONS */
-.button, .button-default, .button-ios {
+.button, .button-default, .button-ios, .button-md {
   border-color: #dcbf85;
   color: #f0ead6;
   background-color: #8b635c;
