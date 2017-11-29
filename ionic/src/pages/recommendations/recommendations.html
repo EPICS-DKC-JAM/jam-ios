@@ -1,13 +1,13 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-       Here's what we recommend!
+      Here's what we recommend!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-list>
+  <!--<ion-list>
     <button ion-item *ngFor="let item of fullMatches" (click)="openItemPage(item)">
       {{ item.name }}
     </button>
@@ -16,5 +16,34 @@
     <button ion-item *ngFor="let item of partialMatches" (click)="openItemPage(item)">
       {{ item.name }}
     </button>
-  </ion-list>
+  </ion-list>-->
+
+  <ion-card class="section">
+    <ion-card-header>
+      <strong>It's a perfect match! These items fit all your preferences.</strong>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="menu clickable" *ngFor="let item of fullMatches" (click)="openItemPage(item)">
+    <ion-card-content>
+      <span class="item-name"><strong>{{ item.name }}</strong></span>
+      <span class="item-price">${{ item.price}}</span>
+      <div class="item-description">{{ item.description }}</div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="section">
+    <ion-card-header>
+      <strong>Here are some other great items that fit some of your preferences.</strong>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="menu clickable" *ngFor="let item of partialMatches" (click)="openItemPage(item)">
+    <ion-card-content>
+      <span class="item-name"><strong>{{ item.name }}</strong></span>
+      <span class="item-price">${{ item.price}}</span>
+      <div class="item-description">{{ item.description }}</div>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
