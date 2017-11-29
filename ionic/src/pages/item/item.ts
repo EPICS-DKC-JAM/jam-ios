@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {NavParams} from "ionic-angular/index";
 import { CheckoutService } from '../../providers/checkout-service/checkout-service'
+import { CheckoutPage } from '../checkout/checkout';
 import { LoadingController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 
@@ -65,5 +66,9 @@ export class ItemPage {
       });
       toast.present();
     }, 500);
+  }
+
+  openCheckoutPage() {
+    this.navCtrl.push(CheckoutPage);
   }
 }

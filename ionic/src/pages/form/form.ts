@@ -4,6 +4,7 @@ import { Slides } from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import { RecommendationsPage } from '../recommendations/recommendations'
 import { RecommendationService} from '../../providers/recommendation-service/recommendation-service'
+import { CheckoutPage } from '../checkout/checkout';
 import { ItemService} from '../../providers/item-service/item-service'
 
 @Component({
@@ -162,4 +163,7 @@ export class FormPage {
     }
   }
 
+  openCheckoutPage() {
+    this.navCtrl.push(CheckoutPage);
+  }
 }

@@ -7,23 +7,22 @@
 </ion-header>
 
 <ion-content padding>
-  <!--<ion-list>
-    <button ion-item *ngFor="let item of fullMatches" (click)="openItemPage(item)">
-      {{ item.name }}
-    </button>
-  </ion-list>
-  <ion-list>
-    <button ion-item *ngFor="let item of partialMatches" (click)="openItemPage(item)">
-      {{ item.name }}
-    </button>
-  </ion-list>-->
 
-  <ion-card class="section">
+  <!-- header for perfect matches -->
+  <ion-card class="section" *ngIf="numFullMatches">
     <ion-card-header>
       <strong>It's a perfect match! These items fit all your preferences.</strong>
     </ion-card-header>
   </ion-card>
 
+  <!-- header for no perfect matches -->
+  <ion-card class="section" *ngIf="!numFullMatches">
+    <ion-card-header>
+      <strong>Looks like there aren't any items that perfectly match your preferences.</strong>
+    </ion-card-header>
+  </ion-card>
+
+  <!-- perfect matches -->
   <ion-card class="menu clickable" *ngFor="let item of fullMatches" (click)="openItemPage(item)">
     <ion-card-content>
       <span class="item-name"><strong>{{ item.name }}</strong></span>
@@ -32,12 +31,14 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-card class="section">
+  <!-- header for partial matches -->
+  <ion-card class="section" *ngIf="numPartialMatches">
     <ion-card-header>
       <strong>Here are some other great items that fit some of your preferences.</strong>
     </ion-card-header>
   </ion-card>
 
+  <!-- partial matches -->
   <ion-card class="menu clickable" *ngFor="let item of partialMatches" (click)="openItemPage(item)">
     <ion-card-content>
       <span class="item-name"><strong>{{ item.name }}</strong></span>

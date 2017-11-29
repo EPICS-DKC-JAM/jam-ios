@@ -1,14 +1,14 @@
-#item-name {
+.item-name {
   float: left;
   display: inline-block;
 }
 
-#item-price {
+.item-price {
   float: right;
   display: inline-block;
 }
 
-#item-description {
+.item-description {
   width: 95%;
   overflow: hidden;
   white-space: nowrap;

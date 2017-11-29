@@ -2,11 +2,11 @@
 <ion-header>
   <ion-navbar>
     <ion-title>Menu</ion-title>
+    <ion-buttons end>
+      <button ion-button class="clickable" (click)="openCheckoutPage()">My Cart</button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
-
-<!--<button ion-item *ngFor="let item of items" (click)="openItemPage(item)" icon-start>-->
-<!--<ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>-->
 
 <ion-content padding>
   <ion-grid>
@@ -15,9 +15,9 @@
 
         <ion-card class="menu clickable" *ngFor="let item of items" (click)="openItemPage(item)">
           <ion-card-content>
-            <span id="item-name"><strong>{{ item.name }}</strong></span>
-            <span id="item-price">${{ item.price}}</span>
-            <div id="item-description">{{ item.description }}</div>
+            <span class="item-name"><strong>{{ item.name }}</strong></span>
+            <span class="item-price">${{ item.price}}</span>
+            <div class="item-description">{{ item.description }}</div>
           </ion-card-content>
         </ion-card>
 

@@ -5,9 +5,9 @@
   }
 }
 
-.row-border {
+.row-border, .row-border-default, .row-border-ios, .row-border-md {
   border-top: 1px solid lightgray;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0px 0px 0px;
 }
 
 .edit, .remove {
