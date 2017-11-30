@@ -42,12 +42,12 @@
 }
 
 .toolbar-title, .toolbar-title-default, .toolbar-title-ios, .toolbar-title-md { // centers the title each page
-  color: #f0ead6;
+  color: #fcfaf5;
   font-size: 200%;
 }
 
 .card, .card-default, .card-ios, .card-md {
-  background-color: #fff;
+  background-color: #fcfaf5;
   overflow: hidden;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -58,15 +58,14 @@
 }
 
 .card-header, .card-header-default, .card-header-ios, .card-header-md {
-  color: #f0ead6;
+  color: #fcfaf5;
   background-color: #271a0c;
   font-size: 150%;
 }
 
 /*===================== BUTTONS */
 .button, .button-default, .button-ios, .button-md {
-  //border-color: #dcbf85;
-  color: #f0ead6;
+  color: #fcfaf5;
   background-color: #271a0c;
   font-size: 100%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);

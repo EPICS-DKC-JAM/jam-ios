@@ -37,12 +37,16 @@
 .priceinner { // for content of price card
   font-size: 200%;
   text-align: center;
-  color: #f0ead6;
+  color: #fcfaf5;
 }
 
 .description {
   color: #271a0c;
   font-size: 150%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 /*===================== IMAGES */

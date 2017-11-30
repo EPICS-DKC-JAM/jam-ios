@@ -28,8 +28,16 @@
   color: #f0ead6;
   float: right;
   height: 0%;
+
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0); // no shadow please!
 }
 
 .checkout {
   border-radius: 8px;
+}
+
+page-checkout {
+  .scroll-content {
+    overflow: scroll;
+  }
 }
