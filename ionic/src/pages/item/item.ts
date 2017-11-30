@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {NavParams} from "ionic-angular/index";
+import { NavParams } from "ionic-angular/index";
 import { CheckoutService } from '../../providers/checkout-service/checkout-service'
 import { CheckoutPage } from '../checkout/checkout';
 import { LoadingController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-item',
@@ -19,8 +20,13 @@ export class ItemPage {
   item = {};
   answers:{itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
 
-  constructor(public navCtrl:NavController, public toastCtrl:ToastController, public loadingCtrl:LoadingController, navParams:NavParams, public checkoutService:CheckoutService) {
-
+  constructor(public navCtrl:NavController,
+              public toastCtrl:ToastController,
+              public loadingCtrl:LoadingController,
+              public alertCtrl: AlertController,
+              public checkoutService:CheckoutService,
+              navParams:NavParams) {
+    console.log(this.navCtrl.getViews());
     this.item = navParams.data.item;
 
     // options for size
@@ -67,9 +73,35 @@ export class ItemPage {
       });
       toast.present();
     }, 500);
+    this.addOrCheckout()
   }
 
   openCheckoutPage() {
-    this.navCtrl.push(CheckoutPage);
+    this.navCtrl.popToRoot();
+    this.navCtrl.push(CheckoutPage)
+  }
+
+  addOrCheckout() {
+    let decision = this.alertCtrl.create({
+      title: 'Where to next?',
+      message: 'Would you like to add more items or checkout now?',
+      buttons: [
+        {
+          text: 'Add more items.',
+          handler: () => {
+            this.navCtrl.pop();
+            //console.log('Disagree clicked');
+          }
+        },
+        {
+          text: 'Go to checkout.',
+          handler: () => {
+            this.openCheckoutPage();
+            //console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    decision.present();
   }
 }
