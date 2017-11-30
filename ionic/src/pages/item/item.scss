@@ -18,7 +18,7 @@
 
 /*===================== BUTTON */
 .add { // add to cart button width/height
-  width: 46%;
+  width: 48%;
   float: right;
   height: 87px;
   margin-top: 10px;
@@ -29,12 +29,12 @@
 /*===================== CARD */
 
 .price { // for price card
-  background-color: #271a0c;
-  width: 46%;
+  width: 48%;
   float: left;
   padding: 10px;
-  margin-top: 10px;
+  margin: 10px 0 0 3px;
   border: 1px solid tan;
+  background-color: #271a0c;
 }
 
 .priceinner { // for content of price card
