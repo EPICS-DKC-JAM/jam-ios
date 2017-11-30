@@ -14,7 +14,7 @@ import { ItemService} from '../../providers/item-service/item-service'
 
 export class FormPage {
 
-  private MAX_RECOMMENDED_ITEMS = 10;
+  private MAX_RECOMMENDED_ITEMS = 5;
 
   @ViewChild(Slides) slides: Slides;
   private questions: any;
