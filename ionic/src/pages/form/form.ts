@@ -10,7 +10,6 @@ import { ItemService} from '../../providers/item-service/item-service'
 @Component({
   selector: 'page-form',
   templateUrl: 'form.html',
-  providers: [RecommendationService, ItemService]
 })
 
 export class FormPage {
