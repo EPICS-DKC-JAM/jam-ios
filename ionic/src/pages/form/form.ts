@@ -33,7 +33,9 @@ export class FormPage {
     this.recommendationService.getAllQuestions().then(questions => {
       this.questions = questions;
       this.selectedAnswers = new Array(this.questions.length);
-      this.sortQuestions();
+      this.sortQuestions(function(sorted) {
+        if (!sorted) console.log("Questions failed to sort");
+      });
     });
   }
 
@@ -43,17 +45,18 @@ export class FormPage {
   }
 
   /** Sort questions based on question order **/
-  sortQuestions() {
+  sortQuestions(callback) {
     if (this.questions == null || this.questions.length == 0) {
-      return;
+      callback(false);
     }
     for (var i = 0; i < this.questions.length; i++) {
-      for (var j = i; j < this.questions.length; j++) {
-        if (this.questions[j].questionOrder = i) {
+      for (var j = i + 1; j < this.questions.length; j++) {
+        if (this.questions[j].questionOrder < this.questions[i].questionOrder) {
           this.swapElements(this.questions, j, i);
         }
       }
     }
+    callback(true);
   }
 
   /** Helper method for sorting **/
