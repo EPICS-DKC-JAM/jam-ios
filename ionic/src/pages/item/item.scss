@@ -13,6 +13,8 @@
   margin: 12px;
   border-radius: 3px;
   width: 95%;
+  //height: 19.4%; //iPad Pro
+  height: 14.7%; //iPad
   background-color: #fcfaf5;
 }
 
@@ -39,17 +41,23 @@
 
 .priceinner { // for content of price card
   font-size: 200%;
-  text-align: center;
+  display: flex;
+  align-items: center;
   color: #fcfaf5;
+}
+
+.descHeader {
+  color: #271a0c;
+  font-size: 170%;
+  text-align: center;
+  border-bottom: 1px solid tan;
+  padding: 10px 0 10px 0;
 }
 
 .description {
   color: #271a0c;
   font-size: 150%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  height: 75%;
 }
 
 .jslCard {

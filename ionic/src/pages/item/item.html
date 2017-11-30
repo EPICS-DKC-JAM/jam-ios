@@ -22,6 +22,9 @@
 
       <ion-col col-6>
         <ion-card style="height:90%;">
+          <ion-card-content class="descHeader">
+            <strong>Item Description</strong>
+          </ion-card-content>
           <ion-card-content class="description">
             {{ item.description }}
           </ion-card-content>
@@ -54,15 +57,13 @@
           </ion-select>
         </ion-item>
 
-        <div *ngIf="item.caffeine">
-          <ion-item>
-            <ion-label>Caffeine</ion-label>
-            <ion-select [(ngModel)]="answers.caffeine" [selectOptions]="caffeineOpts">
-              <ion-option value="YES" class="options">Regular</ion-option>
-              <ion-option value="NO" class="options">Decaf</ion-option>
-            </ion-select>
-          </ion-item>
-        </div>
+        <ion-item *ngIf="item.caffeine">
+          <ion-label>Caffeine</ion-label>
+          <ion-select [(ngModel)]="answers.caffeine" [selectOptions]="caffeineOpts">
+            <ion-option value="YES" class="options">Regular</ion-option>
+            <ion-option value="NO" class="options">Decaf</ion-option>
+          </ion-select>
+        </ion-item>
 
         <div margin="0 auto">
           <ion-card class="price">
