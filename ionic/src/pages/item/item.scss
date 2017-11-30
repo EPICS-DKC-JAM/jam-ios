@@ -21,24 +21,27 @@
   height: 87px;
   margin-top: 12px;
   font-size: 200%;
+  border: 1px solid tan;
 }
 
 /*===================== CARD */
 
 .price { // for price card
-  background-color: #dcbf85;
-  color: #8b635c;
+  background-color: #271a0c;
   width: 46%;
   float: left;
   padding: 10px;
+  border: 1px solid tan;
 }
 
 .priceinner { // for content of price card
   font-size: 200%;
   text-align: center;
+  color: #f0ead6;
 }
 
 .description {
+  color: #271a0c;
   font-size: 150%;
 }
 

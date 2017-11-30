@@ -8,19 +8,17 @@
 
 <ion-content padding>
 
-  <!-- header for perfect matches -->
-  <ion-card class="section" *ngIf="numFullMatches">
-    <ion-card-header>
+  <ion-card class="section">
+    <!-- header for perfect matches -->
+    <ion-card-header *ngIf="numFullMatches">
       <strong>It's a perfect match! These items fit all your preferences.</strong>
     </ion-card-header>
-  </ion-card>
 
-  <!-- header for no perfect matches -->
-  <ion-card class="section" *ngIf="!numFullMatches">
-    <ion-card-header>
-      <strong>Looks like there aren't any items that perfectly match your preferences.</strong>
-    </ion-card-header>
-  </ion-card>
+    <!-- header for no perfect matches -->
+      <ion-card-header *ngIf="!numFullMatches">
+        <strong>Looks like there aren't any items that perfectly match your preferences.</strong>
+      </ion-card-header>
+    </ion-card>
 
   <!-- perfect matches -->
   <ion-card class="menu clickable" *ngFor="let item of fullMatches" (click)="openItemPage(item)">

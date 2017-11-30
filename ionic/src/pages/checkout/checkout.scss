@@ -7,13 +7,21 @@
 
 .row-border, .row-border-default, .row-border-ios, .row-border-md {
   border-top: 1px solid lightgray;
-  padding: 15px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+  .col{
+    display: flex;
+    align-items: center;
+  }
 }
 
 .edit, .remove {
-  color: #8b635c;
   background-color: transparent;
+  border: 1px solid #271a0c;
+  color: #271a0c;
+  width: 50%;
   font-size: 80%;
+
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0); // no shadow please!
 }
 
 .clear {

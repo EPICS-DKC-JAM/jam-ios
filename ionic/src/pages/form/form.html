@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-       Help Me Decide
+      Help Me Decide
     </ion-title>
     <ion-buttons end>
       <button ion-button class="clickable" (click)="openCheckoutPage()">My Cart</button>
@@ -12,10 +12,10 @@
 <ion-content padding>
   <ion-slides #slides (ionSlideDidChange)="slideChanged()">
     <ion-slide *ngFor="let question of questions">
-      <h2>{{ question.prompt }}</h2>
-      <button ion-button *ngFor="let option of question.options;" (click)="selectAnswer(option)">
-        {{ option }}
-      </button>
+
+            <h2>{{ question.prompt }}</h2>
+            <button ion-button *ngFor="let option of question.options;" (click)="selectAnswer(option)">{{ option }}</button>
+
     </ion-slide>
   </ion-slides>
 </ion-content>

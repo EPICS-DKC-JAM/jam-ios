@@ -29,12 +29,12 @@
 
 /*===================== ALL / HEADER */
 .content, .content-default, .content-ios, .content-md { // set background image
-  background-image: url("../assets/images/tan-gradient.svg");
+  background-image: url("../assets/images/general-background-1.jpg");
   background-size: 100% 100%;
 }
 
 .toolbar-background, .toolbar-background-default, .toolbar-background-ios, .toolbar-content-md { // background color of top toolbar
-  background-color: #8b635c;
+  background-color: #271a0c;
 }
 
 .scroll-content, .scroll-content-default, .scroll-content-ios, .scroll-content-md {
@@ -49,25 +49,27 @@
 .card, .card-default, .card-ios, .card-md {
   background-color: #fff;
   overflow: hidden;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .card-content, .card-content-default, .card-content-ios, .card-content-md {
   font-size: 120%;
-  color: #8b635c;
+  color: #271a0c;
 }
 
 .card-header, .card-header-default, .card-header-ios, .card-header-md {
   color: #f0ead6;
-  background-color: #8b635c;
+  background-color: #271a0c;
   font-size: 150%;
 }
 
 /*===================== BUTTONS */
 .button, .button-default, .button-ios, .button-md {
-  border-color: #dcbf85;
+  //border-color: #dcbf85;
   color: #f0ead6;
-  background-color: #8b635c;
+  background-color: #271a0c;
   font-size: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .clickable:active {
