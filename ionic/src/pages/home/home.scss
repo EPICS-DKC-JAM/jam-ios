@@ -27,3 +27,21 @@ page-home {
   color: #4f3200;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+/* SECRET ADMIN BUTTON */
+.secret {
+  position:absolute;
+  transition: .5s ease;
+  top: 7%;
+  left: 56%;
+
+  height:44%;
+  width:26.1%;
+}
+
+.admin {
+  width:100%;
+  height: 100%;
+  background-color: transparent;
+  border: 2px solid rgba(210, 180, 140, 0.8);
+}
