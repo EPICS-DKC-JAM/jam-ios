@@ -6,7 +6,6 @@ import { AlertController } from "ionic-angular/index";
 import { LoadingController } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 
-@Injectable()
 /*
  Generated class for the RecommendationServiceProvider provider.
 
