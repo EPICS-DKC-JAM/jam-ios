@@ -17,6 +17,7 @@ export class FormPage {
   private MAX_RECOMMENDED_ITEMS = 5;
 
   @ViewChild(Slides) slides: Slides;
+
   private questions: any;
   private answers: any;
   private items: any;
@@ -91,6 +92,7 @@ export class FormPage {
     for (var i = 0; i < this.answers.length; i++) {
       var answer = this.answers[i];
       var item = null;
+
       /** Find item corresponding to answer id **/
       for (var j = 0; j < this.items.length; j++) {
         if (answer.consumableId == this.items[j]._id) {
@@ -102,6 +104,7 @@ export class FormPage {
         console.log("Answer does not have a valid consumable id");
         continue;
       }
+
       /** Count number of matching answers for this item **/
       var numMatching = 0; // number of answers that match the given item (answer)
       for (var j = 0; j < numQuestions; j++) {
@@ -123,6 +126,7 @@ export class FormPage {
         }
       }
     }
+
     /** Get best partial matches until number of recommendations has been met **/
     var numRecommendations = fullMatches.length; // counter for number of recommendations made so far
     var partialMatches = [];
@@ -135,13 +139,21 @@ export class FormPage {
         }
       }
     }
+
     var data = {
       "numFullMatches" : fullMatches.length,
       "numPartialMatches" : partialMatches.length,
       "fullMatches" : fullMatches,
       "partialMatches" : partialMatches
     };
-    this.modalCtrl.create(RecommendationsPage, data).present();
+
+    let recommendationsModal = this.modalCtrl.create(RecommendationsPage, data);
+    recommendationsModal.onDidDismiss(data => {
+      this.slides.slideTo(0, 500);
+      this.selectedAnswers = new Array(this.questions.length);
+      this.maxSlideIndex = 0;
+    });
+    recommendationsModal.present()
   }
 
   /** Determine if slides should be locked for forward advancement when user changes slide **/
