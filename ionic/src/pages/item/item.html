@@ -16,14 +16,14 @@
 
       <ion-col col-6>
         <ion-card class="jslCard">
-          <img class="jslImg" src="../../assets/gifs/{{ item.jslImage }}">
+          <img class="jslImg" src="assets/gifs/{{ item.jslImage }}">
         </ion-card>
       </ion-col>
 
       <ion-col col-6>
         <ion-card style="height:90%;">
           <ion-card-content class="descHeader">
-            <strong>Item Description</strong>
+            <strong>Item Description {{ cwd }}</strong>
           </ion-card-content>
           <ion-card-content class="description">
             {{ item.description }}

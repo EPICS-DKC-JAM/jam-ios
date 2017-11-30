@@ -20,6 +20,7 @@ export class ItemPage {
   answers:{itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
 
   constructor(public navCtrl:NavController, public toastCtrl:ToastController, public loadingCtrl:LoadingController, navParams:NavParams, public checkoutService:CheckoutService) {
+
     this.item = navParams.data.item;
 
     // options for size
