@@ -25,7 +25,9 @@
   height: 87px;
   margin-top: 10px;
   font-size: 200%;
-  border: 1px solid tan;
+  border: 1px solid #fcfaf5;
+
+  background-color: transparent;
 }
 
 /*===================== CARD */
@@ -35,8 +37,8 @@
   float: left;
   padding: 10px;
   margin: 10px 0 0 3px;
-  border: 1px solid tan;
-  background-color: #271a0c;
+  border: 1px solid #fcfaf5;
+  background-color: transparent;//#271a0c;
 }
 
 .priceinner { // for content of price card
@@ -49,7 +51,7 @@
   color: #271a0c;
   font-size: 170%;
   text-align: center;
-  border-bottom: 1px solid tan;
+  border-bottom: 2px solid tan;
   padding: 10px 0 10px 0;
 }
 

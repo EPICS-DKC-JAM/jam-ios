@@ -2,11 +2,15 @@ page-recommendations {
   .row {
     height:100%;
   }
+  .scroll-content {
+    overflow: scroll;
+  }
 }
 
 .modal-wrapper {
   height: 90% !important;
   top: 8%;
+  border: 1px solid black;
 }
 
 .section {

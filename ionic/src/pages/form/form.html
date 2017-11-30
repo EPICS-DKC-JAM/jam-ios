@@ -14,7 +14,7 @@
     <ion-slide *ngFor="let question of questions">
 
             <h2>{{ question.prompt }}</h2>
-            <button ion-button *ngFor="let option of question.options;" (click)="selectAnswer(option)">{{ option }}</button>
+            <button ion-button class="question" *ngFor="let option of question.options;" (click)="selectAnswer(option)">{{ option }}</button>
 
     </ion-slide>
   </ion-slides>

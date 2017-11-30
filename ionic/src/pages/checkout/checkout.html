@@ -14,6 +14,13 @@
     <ion-row>
       <ion-col col-12 style="margin: 0 auto">
 
+        <!-- summary card -->
+        <ion-card class="checkout">
+          <ion-card-header style="text-align: center">
+            Show this page to the cashier! | TOTAL: ${{ findTotal() }}
+          </ion-card-header>
+        </ion-card>
+
         <!-- cart card -->
         <ion-card class="checkout">
           <ion-card-header>
@@ -27,7 +34,7 @@
               <div class="col"><strong>Size</strong></div>
               <div class="col"><strong>Modifiers</strong></div>
               <div class="col"><strong>Price</strong></div>
-              <div class="col"><strong>Options</strong></div>
+              <div class="col" style="text-align: center;"><strong>Options</strong></div>
             </div>
             <!-- each item -->
             <div class="row row-border" *ngFor="let item of items">
@@ -44,13 +51,6 @@
                 <button ion-button clear class="remove clickable" (click)="removeItem(item)">Remove</button>
               </div>
             </div>
-          </ion-card-content>
-        </ion-card>
-
-        <!-- summary card -->
-        <ion-card class="checkout">
-          <ion-card-content style="text-align: center">
-            Show this page to the cashier! | TOTAL: ${{ findTotal() }}
           </ion-card-content>
         </ion-card>
 
