@@ -1,3 +1,9 @@
+page-menu {
+  .scroll-content {
+    overflow: scroll;
+  }
+}
+
 .item-name {
   float: left;
   display: inline-block;
@@ -21,8 +27,3 @@
   overflow: hidden;
 }
 
-//page-menu {
-//  .scroll-content {
-//    overflow: scroll;
-//  }
-//}

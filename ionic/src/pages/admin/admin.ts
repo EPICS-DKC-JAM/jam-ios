@@ -30,7 +30,8 @@ export class AdminPage {
       inputs: [
         {
           name: 'URL',
-          placeholder: 'https://localhost:3000'
+          placeholder: 'https://localhost:3000',
+          value: 'https://calm-meadow-62208.herokuapp.com'
         },
       ],
       buttons: [
@@ -59,12 +60,14 @@ export class AdminPage {
       inputs: [
         {
           name: 'username',
-          placeholder: 'Username'
+          placeholder: 'Username',
+          value: 'blake'
         },
         {
           name: 'password',
           placeholder: 'Password',
-          type: 'password'
+          type: 'password',
+          value: 'ilovedeafcancoffee'
         }
       ],
       buttons: [
