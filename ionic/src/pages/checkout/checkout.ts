@@ -46,12 +46,7 @@ export class CheckoutPage {
   }
 
   removeItem(item) {
-    let loading = this.loadingCtrl.create({
-      spinner: 'crescent',
-    });
-    loading.present();
     this.items = this.checkoutService.removeItem(item);
-    loading.dismiss();
   }
 
   clearCart() {

@@ -1,10 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ItemPage } from '../item/item';
-import { FormPage } from '../form/form';
-import { MenuPage } from "../menu/menu";
-import { RecommendationsPage } from "../recommendations/recommendations";
-import { CheckoutPage } from '../checkout/checkout';
 import { UrlService } from '../../providers/url-service/url-service';
 import { AlertController } from "ionic-angular/index";
 import { ItemService } from "../../providers/item-service/item-service";

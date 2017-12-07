@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {NavParams} from "ionic-angular/index";
 import {ItemPage} from "../item/item";
 import { CheckoutPage } from '../checkout/checkout';
 import { ItemService } from "../../providers/item-service/item-service"
