@@ -9,6 +9,7 @@ import { MenuPage } from '../pages/menu/menu';
 import { RecommendationsPage } from '../pages/recommendations/recommendations';
 import { HttpModule } from '@angular/http';
 import { CheckoutPage } from '../pages/checkout/checkout'
+import { EditPage } from'../pages/edit/edit'
 
 
 import { MyApp } from './app.component';
@@ -31,8 +32,8 @@ import { IonicStorageModule } from '@ionic/storage';
     MenuPage,
     RecommendationsPage,
     CheckoutPage,
-    AdminPage
-
+    AdminPage,
+    EditPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +50,8 @@ import { IonicStorageModule } from '@ionic/storage';
     MenuPage,
     RecommendationsPage,
     CheckoutPage,
-    AdminPage
+    AdminPage,
+    EditPage
   ],
   providers: [
     StatusBar,

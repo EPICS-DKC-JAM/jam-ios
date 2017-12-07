@@ -26,6 +26,14 @@ export class CheckoutService {
     return this.items;
   }
 
+  editItem(oldItem, newItem) {
+    var index = this.items.indexOf(oldItem, 0);
+    if (index > -1) {
+      this.items[index] = newItem;
+    }
+    return this.items;
+  }
+
   removeItem(item) {
     var index = this.items.indexOf(item, 0);
     if (index > -1) {

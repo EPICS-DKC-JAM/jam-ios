@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {ModalController, NavController} from 'ionic-angular';
 import {NavParams} from "ionic-angular/index";
 import { CheckoutService} from "../../providers/checkout-service/checkout-service";
+import {EditPage} from "../edit/edit";
 
 @Component({
   selector: 'page-checkout',
@@ -11,8 +12,12 @@ import { CheckoutService} from "../../providers/checkout-service/checkout-servic
 export class CheckoutPage {
 
   items = [];
-  constructor(public navCtrl:NavController, navParams:NavParams, public checkoutService:CheckoutService) {
+  constructor(public navCtrl:NavController,
+              public navParams:NavParams,
+              public checkoutService:CheckoutService,
+              public modalCtrl: ModalController) {
     this.items = checkoutService.getCart()
+    console.log(this.items);
   }
 
   findTotal() {
@@ -22,6 +27,14 @@ export class CheckoutPage {
     });
 
     return total.toFixed(2);
+  }
+
+  editItem(item) {
+    let itemModal = this.modalCtrl.create(EditPage, item);
+    itemModal.onDidDismiss(data => {
+      this.items = this.checkoutService.getCart();
+    });
+    itemModal.present();
   }
 
   removeItem(item) {

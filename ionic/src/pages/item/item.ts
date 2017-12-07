@@ -17,7 +17,7 @@ export class ItemPage {
   sizeOpts:{title: string, subTitle: string}
   modifierOpts:{title: string, subTitle: string}
   caffeineOpts:{title: string, subTitle: string}
-  item = {};
+  item: any;
   answers:{itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
 
   constructor(public navCtrl:NavController,
@@ -26,7 +26,6 @@ export class ItemPage {
               public alertCtrl: AlertController,
               public checkoutService:CheckoutService,
               navParams:NavParams) {
-    console.log(this.navCtrl.getViews());
     this.item = navParams.data.item;
 
     // options for size
@@ -65,7 +64,16 @@ export class ItemPage {
 
     setTimeout(() => {
       loader.dismiss();
-      this.checkoutService.addItem(item);
+      let finalItem = {
+        name: this.item.name,
+        description: this.item.description,
+        price: this.item.price,
+        size: this.answers.size,
+        sizeOptions: this.item.size,
+        modifiers: this.answers.modifiers,
+        modifierOptions: this.item.modifiers
+      };
+      this.checkoutService.addItem(finalItem);
       let toast = this.toastCtrl.create({
         message: item.itemName + " added to cart!",
         duration: 2000,

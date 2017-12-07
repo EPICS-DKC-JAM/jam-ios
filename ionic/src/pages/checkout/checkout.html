@@ -38,7 +38,7 @@
             </div>
             <!-- each item -->
             <div class="row row-border" *ngFor="let item of items">
-              <div class="col">{{item.itemName}}</div>
+              <div class="col">{{item.name}}</div>
               <div class="col">{{item.size}}</div>
               <div class="col">
                 <ng-container *ngFor="let modifier of item.modifiers">
@@ -47,7 +47,7 @@
               </div>
               <div class="col">${{item.price}}.00</div>
               <div class="col">
-                <button ion-button clear class="edit clickable">Edit</button>
+                <button ion-button clear class="edit clickable"i (click)="editItem(item)">Edit</button>
                 <button ion-button clear class="remove clickable" (click)="removeItem(item)">Remove</button>
               </div>
             </div>
