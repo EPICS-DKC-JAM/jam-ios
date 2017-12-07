@@ -57,6 +57,16 @@ export class ItemPage {
   }
 
   addToCart(item) {
+    /** Require the user to select a size **/
+    if (item.size == "") {
+      this.toastCtrl.create({
+        message: "You must select a size first!",
+        duration: 3000,
+        position: 'bottom'
+      }).present();
+      return;
+    }
+
     let loader = this.loadingCtrl.create({
       content: 'Adding ' + item.itemName + ' to cart...',
     });
@@ -74,12 +84,11 @@ export class ItemPage {
         modifierOptions: this.item.modifiers
       };
       this.checkoutService.addItem(finalItem);
-      let toast = this.toastCtrl.create({
+      this.toastCtrl.create({
         message: item.itemName + " added to cart!",
         duration: 2000,
         position: 'bottom'
-      });
-      toast.present();
+      }).present();
     }, 500);
     this.addOrCheckout()
   }
