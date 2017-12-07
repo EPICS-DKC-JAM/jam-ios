@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {ModalController, NavController} from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {ModalController, NavController, Navbar} from 'ionic-angular';
 import {NavParams} from "ionic-angular/index";
 import { CheckoutService} from "../../providers/checkout-service/checkout-service";
 import {EditPage} from "../edit/edit";
@@ -11,13 +11,22 @@ import {EditPage} from "../edit/edit";
 
 export class CheckoutPage {
 
+  @ViewChild(Navbar) navBar: Navbar;
   items = [];
+
+
   constructor(public navCtrl:NavController,
               public navParams:NavParams,
               public checkoutService:CheckoutService,
               public modalCtrl: ModalController) {
     this.items = checkoutService.getCart()
     console.log(this.items);
+  }
+
+  ionViewDidLoad() {
+    this.navBar.backButtonClick = (e:UIEvent)=>{
+      this.navCtrl.popToRoot();
+    }
   }
 
   findTotal() {
