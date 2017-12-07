@@ -11,6 +11,7 @@ import { ItemService } from "../../providers/item-service/item-service"
 })
 
 export class MenuPage {
+
   items = [];
 
   constructor(public nav: NavController, public itemService: ItemService) {
@@ -18,6 +19,11 @@ export class MenuPage {
     this.itemService.getAllItems()
       .then(data => {
         this.items = data;
+        this.items.sort(function(a,b) {
+          if (a.name < b.name) return -1;
+          if (a.name > b.name) return 1;
+          return 0;
+        });
         console.log(this.items);
       });
 

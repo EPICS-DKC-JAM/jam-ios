@@ -34,37 +34,17 @@ export class FormPage {
     this.recommendationService.getAllQuestions().then(questions => {
       this.questions = questions;
       this.selectedAnswers = new Array(this.questions.length);
-      this.sortQuestions(function(sorted) {
-        if (!sorted) console.log("Questions failed to sort");
-      });
+      this.questions.sort(function(a,b) {
+        if (a.questionOrder < b.questionOrder) return -1;
+        if (a.questionOrder > b.questionOrder) return 1;
+        return 0;
+      })
     });
   }
 
   /** Lock slide advancement to require question answer when view loads **/
   ionViewDidLoad() {
     this.slides.lockSwipeToNext(true);
-  }
-
-  /** Sort questions based on question order **/
-  sortQuestions(callback) {
-    if (this.questions == null || this.questions.length == 0) {
-      callback(false);
-    }
-    for (var i = 0; i < this.questions.length; i++) {
-      for (var j = i + 1; j < this.questions.length; j++) {
-        if (this.questions[j].questionOrder < this.questions[i].questionOrder) {
-          this.swapElements(this.questions, j, i);
-        }
-      }
-    }
-    callback(true);
-  }
-
-  /** Helper method for sorting **/
-  swapElements(arr, index1, index2) {
-    var temp = arr[index1];
-    arr[index1] = arr[index2]
-    arr[index2] = temp;
   }
 
   /**
