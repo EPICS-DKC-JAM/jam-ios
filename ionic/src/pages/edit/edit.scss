@@ -1,87 +1,24 @@
+page-edit {
 
-/*===================== GENERAL */
-.row { // set row height to 40% of viewheight
-  height: 40vh;
 }
 
-.grid {
-  padding: 30px;
+.desc {
+  height: 100%;
 }
 
-/*===================== SELECT */
-.item-select {
-  margin: 12px;
-  border-radius: 3px;
-  width: 95%;
-  //height: 19.4%; //iPad Pro
-  height: 14.7%; //iPad
-  background-color: #fcfaf5;
-}
-
-/*===================== BUTTON */
-.add { // add to cart button width/height
-  width: 48%;
-  float: right;
-  height: 87px;
-  margin-top: 10px;
-  font-size: 200%;
-  border: 1px solid #fcfaf5;
-
-  //background-color: transparent;
-}
-
-/*===================== CARD */
-
-.price { // for price card
-  width: 48%;
+.editcards {
+  width: 43%;
+  height: 100%;
   float: left;
-  padding: 10px;
-  margin: 10px 0 0 3px;
+  margin: 25px 5px 0 5px !important;
   border: 1px solid #fcfaf5;
   background-color: #271a0c;
+  text-align: center;
 }
 
-.priceinner { // for content of price card
+.editinner {
+  height: 100%;
   font-size: 200%;
-  text-align: center;
   color: #fcfaf5;
-}
-
-.descHeader {
-  color: #271a0c;
-  font-size: 170%;
-  text-align: center;
-  border-bottom: 2px solid tan;
-  padding: 10px 0 10px 0;
-}
-
-.description {
-  color: #271a0c;
-  font-size: 150%;
-  height: 75%;
-}
-
-.jslCard {
-  height: 90%;
-  display: flex;
-  align-items: center;
-}
-
-.imgCard {
-  height: 90%;
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/*===================== IMAGES */
-.itemImg {
-  max-height: 90%;
-  border-radius: 3px;
-  margin: 12px;
-}
-
-.jslImg {
-  max-width: 90%;
-  margin: 12px;
+  padding-top: 9%;
 }

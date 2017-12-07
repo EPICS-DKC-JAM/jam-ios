@@ -17,7 +17,7 @@
         <!-- summary card -->
         <ion-card class="checkout">
           <ion-card-header style="text-align: center">
-            Show this page to the cashier! | TOTAL: ${{ findTotal() }}
+            Show this page to the cashier! | Total: ${{ findTotal() }}
           </ion-card-header>
         </ion-card>
 
@@ -45,7 +45,7 @@
                   {{ modifier }}<br>
                 </ng-container>
               </div>
-              <div class="col">${{item.price}}.00</div>
+              <div class="col">${{item.price}}</div>
               <div class="col">
                 <button ion-button clear class="edit clickable"i (click)="editItem(item)">Edit</button>
                 <button ion-button clear class="remove clickable" (click)="removeItem(item)">Remove</button>

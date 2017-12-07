@@ -1,50 +1,55 @@
 
 /*===================== GENERAL */
-.row { // set row height to 40% of viewheight
-  height: 40vh;
+// 40vh for height
+page-item {
+  .card, .card-default, .card-ios, .card-md {
+    margin: 0px;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-
 .grid {
   padding: 30px;
 }
 
-/*===================== SELECT */
-.item-select {
-  margin: 12px;
-  border-radius: 3px;
-  width: 95%;
-  //height: 19.4%; //iPad Pro
-  height: 14.7%; //iPad
-  background-color: #fcfaf5;
+.skinny {
+  padding: 0px;
 }
 
-/*===================== BUTTON */
-.add { // add to cart button width/height
-  width: 48%;
-  float: right;
-  height: 87px;
-  margin-top: 10px;
-  font-size: 200%;
-  border: 1px solid #fcfaf5;
-
-  //background-color: transparent;
+/*===================== SELECT */
+.item-select {
+  margin: 14.5px 0 0 13px;
+  border-radius: 3px;
+  width: 94.5%;
+  height: 23%;
+  background-color: #fcfaf5;
 }
 
 /*===================== CARD */
 
-.price { // for price card
-  width: 48%;
+.priceadd { // for price/add card
+  width: 46%;
+  height: 100%;
   float: left;
-  padding: 10px;
-  margin: 10px 0 0 3px;
+  margin: 0 5px 0 5px !important;
   border: 1px solid #fcfaf5;
   background-color: #271a0c;
+  text-align: center;
+}
+
+.pa {
+  height: 33%;
+  margin-top: 14.5px;
 }
 
 .priceinner { // for content of price card
+  height: 100%;
   font-size: 200%;
-  text-align: center;
   color: #fcfaf5;
+  padding-top: 13%;
 }
 
 .descHeader {
@@ -58,17 +63,17 @@
 .description {
   color: #271a0c;
   font-size: 150%;
-  height: 75%;
+  height: 75% !important;
 }
 
 .jslCard {
-  height: 90%;
+  height: 90% !important;
   display: flex;
   align-items: center;
 }
 
 .imgCard {
-  height: 90%;
+  height: 90% !important;
   display: flex;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);

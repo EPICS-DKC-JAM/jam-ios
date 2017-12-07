@@ -11,16 +11,16 @@
 
 <ion-content padding>
 
-  <ion-grid>
+  <ion-grid justify-content-center style="height:95%; width:95%">
     <ion-row>
 
-      <ion-col col-6>
+      <ion-col col-6 class="skinny center">
         <ion-card class="jslCard">
           <img class="jslImg" src="assets/gifs/{{ item.jslImage }}">
         </ion-card>
       </ion-col>
 
-      <ion-col col-6>
+      <ion-col col-6 class="skinny center">
         <ion-card style="height:90%;">
           <ion-card-content class="descHeader">
             <strong>Item Description {{ cwd }}</strong>
@@ -35,13 +35,13 @@
 
     <ion-row>
 
-      <ion-col col-6>
+      <ion-col col-6 align-items-center class="center skinny">
         <ion-card class="imgCard">
           <img class="itemImg" src="{{ item.itemImage }}">
         </ion-card>
       </ion-col>
 
-      <ion-col col-6>
+      <ion-col col-6 class="skinny">
         <ion-item>
           <ion-label>Size</ion-label>
           <ion-select [(ngModel)]="answers.size" [selectOptions]="sizeOpts">
@@ -57,28 +57,34 @@
           </ion-select>
         </ion-item>
 
-        <ion-item *ngIf="item.caffeine">
+        <!--<ion-item *ngIf="item.caffeine">
           <ion-label>Caffeine</ion-label>
           <ion-select [(ngModel)]="answers.caffeine" [selectOptions]="caffeineOpts">
             <ion-option value="YES" class="options">Regular</ion-option>
             <ion-option value="NO" class="options">Decaf</ion-option>
           </ion-select>
-        </ion-item>
+        </ion-item>-->
 
-        <div margin="0 auto">
-          <ion-card class="price">
+        <div class="center pa">
+          <ion-card class="priceadd">
             <ion-card-content class="priceinner">
-              ${{ item.price }}.00
+              ${{ item.price }}
             </ion-card-content>
           </ion-card>
 
-          <button ion-button class="add" (click)="addToCart(answers);">
-            Add To Cart
-          </button>
+          <ion-card class="priceadd" (click)="addToCart(answers)">
+            <ion-card-content class="priceinner">
+              Add To Cart
+            </ion-card-content>
+          </ion-card>
         </div>
       </ion-col>
 
     </ion-row>
   </ion-grid>
+
+  <button ion-fab class="cart" (click)="openCheckoutPage()">
+    <ion-icon ios="ios-cart-outline"></ion-icon>
+  </button>
 
 </ion-content>
