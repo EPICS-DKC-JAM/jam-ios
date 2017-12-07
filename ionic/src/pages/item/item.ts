@@ -59,10 +59,12 @@ export class ItemPage {
   addToCart(item) {
     /** Require the user to select a size **/
     if (item.size == "") {
-      this.toastCtrl.create({
-        message: "You must select a size first!",
-        duration: 3000,
-        position: 'bottom'
+      this.alertCtrl.create({
+        title: "Oops!",
+        message: "You must at least select a size.",
+        buttons: [
+          { text: 'OK' }
+        ]
       }).present();
       return;
     }
