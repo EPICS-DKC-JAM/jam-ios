@@ -96,7 +96,6 @@ export class ItemPage {
   }
 
   openCheckoutPage() {
-    this.navCtrl.popToRoot();
     this.navCtrl.push(CheckoutPage)
   }
 
