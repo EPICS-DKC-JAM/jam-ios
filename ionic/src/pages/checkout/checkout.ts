@@ -14,7 +14,6 @@ export class CheckoutPage {
   @ViewChild(Navbar) navBar: Navbar;
   items = [];
 
-
   constructor(public navCtrl:NavController,
               public navParams:NavParams,
               public checkoutService:CheckoutService,
