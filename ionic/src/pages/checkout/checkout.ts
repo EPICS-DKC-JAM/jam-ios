@@ -22,7 +22,7 @@ export class CheckoutPage {
     console.log(this.items);
   }
 
-  ionViewDidLoad() {
+  ionViewWillEnter() {
     this.navBar.backButtonClick = (e:UIEvent)=>{
       this.navCtrl.popToRoot();
     }
