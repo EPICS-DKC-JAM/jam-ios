@@ -16,7 +16,11 @@ import { AdminPage } from "../admin/admin";
 
 export class HomePage {
 
-  adminCount = 0;
+  private adminCount: number;
+
+  ionViewDidEnter() {
+    this.adminCount = 0;
+  }
 
   constructor(public navCtrl:NavController) {
     this.adminCount = 0;
