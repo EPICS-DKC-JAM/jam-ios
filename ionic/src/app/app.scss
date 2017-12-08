@@ -81,3 +81,18 @@
   align-items: center;
   justify-content: center;
 }
+
+.cart {
+  .icon {
+    color: #271a0c;
+  }
+  z-index: 1;
+  background-color: #fcfcfc;
+  border: 1px solid #E8BC7E;
+  position:absolute;
+  transition: .5s ease;
+  top: 89%;
+  left: 92%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+

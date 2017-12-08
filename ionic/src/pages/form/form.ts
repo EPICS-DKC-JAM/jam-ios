@@ -120,6 +120,11 @@ export class FormPage {
       }
     }
 
+    this.presentRecommendationsModal(fullMatches, partialMatches)
+  }
+
+  /** Display the recommendations to the user in a modal **/
+  presentRecommendationsModal(fullMatches, partialMatches) {
     var data = {
       "numFullMatches" : fullMatches.length,
       "numPartialMatches" : partialMatches.length,
