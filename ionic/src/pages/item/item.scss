@@ -15,7 +15,7 @@ page-item {
 }
 
 /*===================== SELECT */
-.item-select {
+.item-select,item-select-ios item-select-md, item-select-default {
   margin: 14.5px 0 0 13px;
   border-radius: 3px;
   width: 94.5%;
@@ -47,6 +47,9 @@ page-item {
   padding-top: 13%;
 }
 
+.descCard {
+  height:90%;
+}
 .descHeader {
   color: #271a0c;
   font-size: 170%;
