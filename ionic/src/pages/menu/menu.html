@@ -8,32 +8,31 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding overflow-scroll="tr">
-  <ion-grid>
-    <ion-row>
-      <ion-col col-8 style="margin: 0 auto">
+<ion-content>
+  <ion-scroll scrollY="true" style="height: 100%">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-8 style="margin: 0 auto">
+          <ion-card class="menu clickable" *ngFor="let item of items" (click)="openItemPage(item)">
+            <ion-card-content>
+              <ion-row>
+                <ion-col col-10>
+                  <span class="item-name"><strong>{{ item.name }}</strong></span>
+                  <div class="item-description">{{ item.description }}</div>
+                </ion-col>
+                <ion-col col-2 class="item-price">
+                  ${{ item.price }}
+                </ion-col>
+              </ion-row>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-scroll>
 
-        <ion-card class="menu clickable" *ngFor="let item of items" (click)="openItemPage(item)">
-          <ion-card-content>
-
-            <ion-row>
-              <ion-col col-10>
-                <span class="item-name"><strong>{{ item.name }}</strong></span>
-                <div class="item-description">{{ item.description }}</div>
-              </ion-col>
-              <ion-col col-2 class="item-price">
-                ${{ item.price }}
-              </ion-col>
-            </ion-row>
-
-          </ion-card-content>
-        </ion-card>
-
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <button ion-fab class="cart" (click)="openCheckoutPage()">
-    <ion-icon ios="ios-cart-outline"></ion-icon>
-  </button>
 </ion-content>
+
+<button ion-fab class="cart" (click)="openCheckoutPage()" style="z-index: 1">
+  <ion-icon ios="ios-cart-outline"></ion-icon>
+</button>
