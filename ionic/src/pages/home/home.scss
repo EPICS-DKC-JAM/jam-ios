@@ -31,6 +31,10 @@
 
   height:44%;
   width:26.1%;
+
+  .button-ios.activated, .button-md.activated, .button-default.activated {
+    background-color: transparent;
+  }
 }
 
 .admin {
@@ -38,8 +42,4 @@
   height: 100%;
   background-color: transparent;
   box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
-}
-
-.button-ios.activated, .button-md.activated, .button-default.activated {
-  background-color: transparent;
 }
