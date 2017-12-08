@@ -14,14 +14,13 @@
     <ion-slide *ngFor="let question of questions">
 
       <h2>{{ question.prompt }}</h2>
-      <button ion-button class="question" *ngFor="let option of question.options;" (click)="selectAnswer(option)">{{ option }}</button>
+      <button ion-button class="question clickable" *ngFor="let option of question.options;" (click)="selectAnswer(option)">{{ option }}</button>
 
     </ion-slide>
   </ion-slides>
 
-  <ion-fab ion-fixed class="fixed">
-    <button class="cart-floating" (click)="openCheckoutPage()">
+    <button ion-fab class="cart" (click)="openCheckoutPage()">
       <ion-icon ios="ios-cart-outline"></ion-icon>
     </button>
-  </ion-fab>
+
 </ion-content>

@@ -73,5 +73,11 @@
 }
 
 .clickable:active {
-  background-color: tan !important;
+  background-color: #E8BC7E !important;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
