@@ -5,6 +5,7 @@ import { AlertController } from "ionic-angular/index";
 import { ItemService } from "../../providers/item-service/item-service";
 import { LoadingController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
+import { ImageService } from '../../providers/image-service/image-service';
 
 
 @Component({
@@ -15,7 +16,7 @@ import { ToastController } from 'ionic-angular';
 
 export class AdminPage {
 
-  constructor(public navCtrl:NavController, public toastCtrl:ToastController, public loadingCtrl:LoadingController, public itemService:ItemService, public urlService:UrlService, public alertCtrl:AlertController) {
+  constructor(public navCtrl:NavController, public toastCtrl:ToastController, public loadingCtrl:LoadingController, public itemService:ItemService, public urlService:UrlService, public alertCtrl:AlertController, public imageService:ImageService) {
   }
 
   showPrompt() {
@@ -110,5 +111,9 @@ export class AdminPage {
           }
         });
     }
+  }
+
+  downloadImages() {
+    this.imageService.downloadImages();
   }
 }

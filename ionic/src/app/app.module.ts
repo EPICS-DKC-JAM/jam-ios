@@ -3,6 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { File } from '@ionic-native/file'
+import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
 import { ItemPage } from '../pages/item/item';
 import { FormPage } from '../pages/form/form';
 import { MenuPage } from '../pages/menu/menu';
@@ -20,6 +22,7 @@ import { CheckoutService } from '../providers/checkout-service/checkout-service'
 import { UrlService } from '../providers/url-service/url-service';
 import { AdminPage } from '../pages/admin/admin'
 import { IonicStorageModule } from '@ionic/storage';
+import { ImageService } from '../providers/image-service/image-service';
 
 
 
@@ -57,10 +60,13 @@ import { IonicStorageModule } from '@ionic/storage';
     StatusBar,
     SplashScreen,
     ItemService,
+    File,
+    FileTransfer,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RecommendationService,
     CheckoutService,
     UrlService,
+    ImageService,
   ]
 })
 export class AppModule {}

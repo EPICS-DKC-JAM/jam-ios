@@ -33,6 +33,7 @@ export class ItemService {
         headers: headers
       });
       headers.set('x-access-token', this.urlService.getToken());
+      //noinspection TypeScriptUnresolvedFunction
       this.http.get(allConsumablesUrl, opt)
         .map(res => res.json())
         .subscribe(data => {

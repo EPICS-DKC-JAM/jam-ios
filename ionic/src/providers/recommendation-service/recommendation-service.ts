@@ -50,6 +50,7 @@ export class RecommendationService {
         headers: headers
       });
       headers.set('x-access-token', this.urlService.getToken());
+      //noinspection TypeScriptUnresolvedFunction
       this.http.get(allQuestionsURL, opt)
         .map(res => res.json())
         .subscribe(data => {
@@ -76,6 +77,7 @@ export class RecommendationService {
         headers: headers
       });
       headers.set('x-access-token', this.urlService.getToken());
+      //noinspection TypeScriptUnresolvedFunction
       this.http.get(allAnswersURL, opt)
         .map(res => res.json())
         .subscribe(data => {
