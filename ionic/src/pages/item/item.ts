@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { NavParams } from "ionic-angular/index";
 import { CheckoutService } from '../../providers/checkout-service/checkout-service'
+import { ImageService } from '../../providers/image-service/image-service'
 import { CheckoutPage } from '../checkout/checkout';
 import { LoadingController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
@@ -25,6 +26,7 @@ export class ItemPage {
               public loadingCtrl:LoadingController,
               public alertCtrl: AlertController,
               public checkoutService:CheckoutService,
+              public imageService:ImageService,
               navParams:NavParams) {
     this.item = navParams.data.item;
 
@@ -121,5 +123,9 @@ export class ItemPage {
       ]
     });
     decision.present();
+  }
+
+  getImagePath(name) {
+    this.imageService.getImage(name);
   }
 }

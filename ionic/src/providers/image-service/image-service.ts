@@ -20,6 +20,14 @@ export class ImageService {
 
   }
 
+  getImage(name) {
+    var fileName = name.replace(' ', '') + 'Image.jpg';
+    //this.file.checkFile(this.file.dataDirectory, fileName).then(data => {
+    //
+    //});
+    return this.file.dataDirectory + fileName;
+  }
+
   downloadImages() {
     this.itemService.getAllItems()
       .then(data => {
