@@ -6,50 +6,52 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-scroll scrollY="true" style="height: 100%">
+  <ion-content padding>
 
-  <div class="center" style="height: 40%; margin-bottom: 5%">
-    <ion-card class="desc">
-      <ion-card-content class="descHeader">
-        <strong>Item Description {{ cwd }}</strong>
-      </ion-card-content>
-      <ion-card-content class="description">
-        {{ newItem.description }}
-      </ion-card-content>
-    </ion-card>
-  </div>
+    <div class="center" style="height: 40%; margin-bottom: 5%">
+      <ion-card class="desc">
+        <ion-card-content class="descHeader">
+          <strong>Item Description {{ cwd }}</strong>
+        </ion-card-content>
+        <ion-card-content class="description">
+          {{ newItem.description }}
+        </ion-card-content>
+      </ion-card>
+    </div>
 
-  <div style="height:15%">
-    <ion-item class="center" style="height: 90%">
-      <ion-label>Size</ion-label>
-      <ion-select [(ngModel)]="newItem.size" [selectOptions]="newItem.sizeOptions">
-        <ion-option value="{{ size }}" class="options" *ngFor="let size of newItem.sizeOptions">{{ size }}</ion-option>
-      </ion-select>
-    </ion-item>
-  </div>
+    <div style="height:15%">
+      <ion-item class="center" style="height: 90%">
+        <ion-label>Size</ion-label>
+        <ion-select [(ngModel)]="newItem.size" [selectOptions]="newItem.sizeOptions">
+          <ion-option value="{{ size }}" class="options" *ngFor="let size of newItem.sizeOptions">{{ size }}</ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
 
-  <div style="height:15%">
-    <ion-item class="center" style="height: 90%">
-      <ion-label>Modifiers</ion-label>
-      <ion-select [(ngModel)]="newItem.modifiers" [selectOptions]="newItem.modifierOptions" multiple="true">
-        <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of newItem.modifierOptions">{{ modifier }}
-        </ion-option>
-      </ion-select>
-    </ion-item>
-  </div>
+    <div style="height:15%">
+      <ion-item class="center" style="height: 90%">
+        <ion-label>Modifiers</ion-label>
+        <ion-select [(ngModel)]="newItem.modifiers" [selectOptions]="newItem.modifierOptions" multiple="true">
+          <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of newItem.modifierOptions">{{ modifier }}
+          </ion-option>
+        </ion-select>
+      </ion-item>
+    </div>
 
-  <div class="center" style="height: 15%">
-    <ion-card class="editcards" (click)="save()">
-      <ion-card-content class="editinner">
-        Save
-      </ion-card-content>
-    </ion-card>
+    <div class="center" style="height: 15%">
+      <ion-card class="editcards" (click)="save()">
+        <ion-card-content class="editinner">
+          Save
+        </ion-card-content>
+      </ion-card>
 
-    <ion-card class="editcards" (click)="cancel()">
-      <ion-card-content class="editinner">
-        Cancel
-      </ion-card-content>
-    </ion-card>
-  </div>
+      <ion-card class="editcards" (click)="cancel()">
+        <ion-card-content class="editinner">
+          Cancel
+        </ion-card-content>
+      </ion-card>
+    </div>
 
-</ion-content>
+  </ion-content>
+</ion-scroll>
