@@ -11,17 +11,17 @@
 
 <ion-content padding>
 
-  <ion-grid justify-content-center style="height:95%; width:95%">
-    <ion-row>
+  <ion-grid style="height:95%; width:95%">
+    <ion-row justify-content-center>
 
       <ion-col col-6 class="skinny center">
-        <ion-card class="jslCard">
-          <img class="jslImg" src="assets/gifs/{{ item.jslImage }}">
+        <ion-card class="imgCard">
+          <img class="itemImg" src="assets/gifs/{{ item.jslImage }}">
         </ion-card>
       </ion-col>
 
       <ion-col col-6 class="skinny center">
-        <ion-card class="descCard">
+        <ion-card class="imgCard">
           <ion-card-content class="descHeader">
             <strong>Item Description {{ cwd }}</strong>
           </ion-card-content>
@@ -37,54 +37,57 @@
 
       <ion-col col-6 align-items-center class="center skinny">
         <ion-card class="imgCard">
-          <img class="itemImg" src="{{ getImagePath(item.name) }}">
+          <img class="itemImg" src="{{ item.itemImage }}">
         </ion-card>
       </ion-col>
 
+
       <ion-col col-6 class="skinny">
-        <ion-item>
-          <ion-label>Size</ion-label>
-          <ion-select [(ngModel)]="answers.size" [selectOptions]="sizeOpts">
-            <ion-option value="{{ size }}" class="options" *ngFor="let size of item.size">{{ size }}</ion-option>
-          </ion-select>
-        </ion-item>
+        <ion-card class="imgCard" style="background-color: transparent; box-shadow: none">
+          <ion-item>
+            <ion-label>Size</ion-label>
+            <ion-select [(ngModel)]="answers.size" [selectOptions]="sizeOpts">
+              <ion-option value="{{ size }}" class="options" *ngFor="let size of item.size">{{ size }}</ion-option>
+            </ion-select>
+          </ion-item>
 
-        <ion-item>
-          <ion-label>Modifiers</ion-label>
-          <ion-select [(ngModel)]="answers.modifiers" [selectOptions]="modifierOpts" multiple="true">
-            <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of item.modifiers">{{ modifier }}
-            </ion-option>
-          </ion-select>
-        </ion-item>
+          <ion-item>
+            <ion-label>Modifiers</ion-label>
+            <ion-select [(ngModel)]="answers.modifiers" [selectOptions]="modifierOpts" multiple="true">
+              <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of item.modifiers">{{ modifier }}
+              </ion-option>
+            </ion-select>
+          </ion-item>
 
-        <!--<ion-item *ngIf="item.caffeine">
-          <ion-label>Caffeine</ion-label>
-          <ion-select [(ngModel)]="answers.caffeine" [selectOptions]="caffeineOpts">
-            <ion-option value="YES" class="options">Regular</ion-option>
-            <ion-option value="NO" class="options">Decaf</ion-option>
-          </ion-select>
-        </ion-item>-->
+          <!--<ion-item *ngIf="item.caffeine">
+            <ion-label>Caffeine</ion-label>
+            <ion-select [(ngModel)]="answers.caffeine" [selectOptions]="caffeineOpts">
+              <ion-option value="YES" class="options">Regular</ion-option>
+              <ion-option value="NO" class="options">Decaf</ion-option>
+            </ion-select>
+          </ion-item>-->
 
-        <div class="center pa">
-          <ion-card class="priceadd">
-            <ion-card-content class="priceinner">
-              ${{ item.price }}
-            </ion-card-content>
-          </ion-card>
+          <div class="center pa">
+            <ion-card justify-content-center class="priceadd">
+              <ion-card-content class="priceinner">
+                ${{ item.price }}
+              </ion-card-content>
+            </ion-card>
 
-          <ion-card class="priceadd" (click)="addToCart(answers)">
-            <ion-card-content class="priceinner">
-              Add To Cart
-            </ion-card-content>
-          </ion-card>
-        </div>
+            <ion-card class="priceadd" (click)="addToCart(answers)">
+              <ion-card-content class="priceinner">
+                Add To Cart
+              </ion-card-content>
+            </ion-card>
+          </div>
+        </ion-card>
       </ion-col>
 
     </ion-row>
   </ion-grid>
 
   <button ion-fab class="cart" (click)="openCheckoutPage()">
-    <ion-icon ios="ios-cart-outline"></ion-icon>
+    <ion-icon name="cart"></ion-icon>
   </button>
 
 </ion-content>
