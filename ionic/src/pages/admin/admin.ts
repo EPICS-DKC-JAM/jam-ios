@@ -6,6 +6,7 @@ import { ItemService } from "../../providers/item-service/item-service";
 import { LoadingController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { ImageService } from '../../providers/image-service/image-service';
+import {RecommendationService} from "../../providers/recommendation-service/recommendation-service";
 
 
 @Component({
@@ -16,7 +17,7 @@ import { ImageService } from '../../providers/image-service/image-service';
 
 export class AdminPage {
 
-  constructor(public navCtrl:NavController, public toastCtrl:ToastController, public loadingCtrl:LoadingController, public itemService:ItemService, public urlService:UrlService, public alertCtrl:AlertController, public imageService:ImageService) {
+  constructor(public navCtrl:NavController, public toastCtrl:ToastController, public loadingCtrl:LoadingController, public itemService:ItemService, public urlService:UrlService, public alertCtrl:AlertController, public imageService:ImageService, public recommendationService:RecommendationService) {
   }
 
   showPrompt() {
@@ -104,6 +105,42 @@ export class AdminPage {
           } else {
             let toast = this.toastCtrl.create({
               message: 'Could not update items',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          }
+        });
+      this.recommendationService.refreshAllQuestions()
+        .then( data => {
+          if (data) {
+            let toast = this.toastCtrl.create({
+              message: 'Successfully updated questions!',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          } else {
+            let toast = this.toastCtrl.create({
+              message: 'Could not update questions',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          }
+        });
+      this.recommendationService.refreshAllAnswers()
+        .then( data => {
+          if (data) {
+            let toast = this.toastCtrl.create({
+              message: 'Successfully updated answers!',
+              duration: 3000,
+              position: 'bottom'
+            });
+            toast.present();
+          } else {
+            let toast = this.toastCtrl.create({
+              message: 'Could not update answers',
               duration: 3000,
               position: 'bottom'
             });
