@@ -75,12 +75,11 @@ page-item {
 
 .jslCard {
   height:90%;
-  width:75%;
+  width:95%;
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  bottom: 10px;
 }
 
 .imgCard {
@@ -90,6 +89,9 @@ page-item {
   margin: 0 auto;
   left: 0;
   right: 0;
+
+  background-color: #1f1408;
+  opacity: 0.9;
 }
 
 /*===================== IMAGES */
