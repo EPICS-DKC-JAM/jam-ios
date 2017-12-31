@@ -24,6 +24,9 @@ export class ItemService {
     });
   }
 
+  dummy() {}
+
+
   refreshAllItems() {
     return new Promise(resolve => {
       var allConsumablesUrl = this.urlService.build('/consumables/get/all');

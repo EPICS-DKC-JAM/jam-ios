@@ -41,6 +41,8 @@ export class RecommendationService {
   }
 
 
+  dummy() {}
+
   refreshAllQuestions() {
     return new Promise(resolve => {
       var allQuestionsURL = this.urlService.build('/recommendations/questions/get');
