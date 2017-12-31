@@ -18,15 +18,19 @@ page-item {
 .item-select,item-select-ios item-select-md, item-select-default {
   margin: 14.5px 0 0 13px;
   border-radius: 3px;
-  width: 94.5%;
+  width: 95%;
   height: 23%;
   background-color: #fcfaf5;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 /*===================== CARD */
 
+.no-padding {
+  padding: 0px !important;
+}
 .priceadd { // for price/add card
-  width: 46%;
+  width: 50%;
   height: 100%;
   float: left;
   margin: 0 5px 0 5px !important;
@@ -44,11 +48,15 @@ page-item {
   height: 100%;
   font-size: 200%;
   color: #fcfaf5;
-  padding-top: 13%;
 }
 
 .descCard {
   height:90%;
+  width:100%;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 .descHeader {
   color: #271a0c;
@@ -61,30 +69,49 @@ page-item {
 .description {
   color: #271a0c;
   font-size: 150%;
-  height: 75% !important;
+  //height: 75% !important;
 }
 
 .jslCard {
-  height: 90% !important;
-  display: flex;
-  align-items: center;
+  height:90%;
+  width:75%;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
 }
 
 .imgCard {
-  height: 90% !important;
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  height:90%;
+  width:95%;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 
 /*===================== IMAGES */
 .itemImg {
-  max-height: 90%;
-  border-radius: 3px;
-  margin: 12px;
+  height:90%;
+  width:auto;
+  max-width:90%;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .jslImg {
-  max-width: 90%;
-  margin: 12px;
+  height:100%;
+  width:80%;
+  //position: absolute;
+  margin: 0 auto;
+  //left: 0;
+  //right: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }

@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{ item.name }}
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button class="clickable" (click)="openCheckoutPage()">My Cart</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+
+
+    <!-- TOP ROW -->
+    <ion-row>
+      <ion-col col-4>
+        <ion-card class="item-card">
+          <ion-card-content>
+            <!-- ITEM JSL -->
+            <img src="assets/gifs/{{ item.jslImage }}">
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-4>
+        <ion-card class="item-card">
+          <ion-card-header>
+            <!-- Name of Item -->
+          </ion-card-header>
+          <ion-card-content>
+            <!-- ITEM Description -->
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
+
+    <!-- BOTTOM ROW -->
+    <ion-row>
+      <ion-col col-4>
+        <ion-card class="item-card">
+            <!-- ITEM IMG -->
+            <img class="item-image" src="assets/images/ded.jpg">
+        </ion-card>
+      </ion-col>
+
+      <ion-col col-4>
+        <ion-card class="item-card">
+          <ion-card-content>
+            <!-- ITEM Modifiers, Price, Add to Cart-->
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-grid>
+</ion-content>
