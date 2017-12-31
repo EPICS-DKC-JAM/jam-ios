@@ -23,6 +23,7 @@ import { UrlService } from '../providers/url-service/url-service';
 import { AdminPage } from '../pages/admin/admin'
 import { IonicStorageModule } from '@ionic/storage';
 import { ImageService } from '../providers/image-service/image-service';
+import { AndroidFullScreen } from "@ionic-native/android-full-screen";
 
 
 
@@ -66,6 +67,7 @@ import { ImageService } from '../providers/image-service/image-service';
     RecommendationService,
     CheckoutService,
     UrlService,
+    AndroidFullScreen,
     ImageService,
   ]
 })

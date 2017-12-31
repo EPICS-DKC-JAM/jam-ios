@@ -6,6 +6,7 @@ import { MenuPage } from "../menu/menu";
 import { RecommendationsPage } from "../recommendations/recommendations";
 import { CheckoutPage } from '../checkout/checkout';
 import { AdminPage } from "../admin/admin";
+import { AndroidFullScreen } from '@ionic-native/android-full-screen';
 
 
 @Component({
@@ -20,9 +21,12 @@ export class HomePage {
 
   ionViewDidEnter() {
     this.adminCount = 0;
+    this.androidFullScreen.isImmersiveModeSupported()
+      .then(() => this.androidFullScreen.immersiveMode())
+      .catch((error: any) => console.log(error));
   }
 
-  constructor(public navCtrl:NavController) {
+  constructor(public navCtrl:NavController, private androidFullScreen: AndroidFullScreen) {
     this.adminCount = 0;
   }
 
