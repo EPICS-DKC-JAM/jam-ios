@@ -8,6 +8,7 @@ import { CheckoutPage } from '../checkout/checkout';
 import { AdminPage } from "../admin/admin";
 import { AndroidFullScreen } from '@ionic-native/android-full-screen';
 import { ItemService } from "../../providers/item-service/item-service";
+import {RecommendationService} from "../../providers/recommendation-service/recommendation-service";
 
 
 @Component({
@@ -27,9 +28,10 @@ export class HomePage {
       .catch((error: any) => console.log(error));
   }
 
-  constructor(public navCtrl:NavController, private androidFullScreen: AndroidFullScreen, private itemService:ItemService) {
+  constructor(public navCtrl:NavController, private androidFullScreen: AndroidFullScreen, private itemService:ItemService, private recommendationService:RecommendationService) {
     this.adminCount = 0;
     this.itemService.dummy();
+    this.recommendationService.dummy();
   }
 
   openFullMenu() {

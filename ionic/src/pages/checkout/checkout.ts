@@ -2,6 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {ModalController, NavController, Navbar, LoadingController} from 'ionic-angular';
 import { CheckoutService} from "../../providers/checkout-service/checkout-service";
 import {EditPage} from "../edit/edit";
+import {HomePage} from "../home/home";
 
 @Component({
   selector: 'page-checkout',
@@ -24,6 +25,7 @@ export class CheckoutPage {
   ionViewDidEnter() {
     console.log("DidEnter");
     this.navBar.backButtonClick = (e:UIEvent)=>{
+      this.navCtrl.setRoot(HomePage);
       this.navCtrl.popToRoot();
     }
   }
