@@ -61,6 +61,22 @@ page-item {
   opacity: 0.9;
 }
 
+.left {
+  text-align: left;
+  float: left;
+}
+
+.right {
+  text-align: right;
+  float: right;
+}
+
+.left, .right {
+  display: inline-block;
+  width: 50%;
+  clear: none;
+}
+
 /*===================== IMAGES */
 .itemImg {
   height:90%;

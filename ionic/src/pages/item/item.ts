@@ -18,9 +18,12 @@ export class ItemPage {
   sizeOpts:{title: string, subTitle: string}
   modifierOpts:{title: string, subTitle: string}
   caffeineOpts:{title: string, subTitle: string}
-  item: any;
-  answers:{itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
 
+  sizeChoice: any;
+  modifierChoice: Array<any>;
+
+  item: any;
+  answers:{itemName: string, size: {}, modifiers: {name: string, price:number}[], caffeine: string, price: number};
   constructor(public navCtrl:NavController,
               public toastCtrl:ToastController,
               public loadingCtrl:LoadingController,
@@ -49,13 +52,19 @@ export class ItemPage {
     };
 
     // SELECTED OPTIONS
+    // this.answers = {};
+    // this.answers.itemName = navParams.data.item.name;
+    // this.answers.price = navParams.data.item.price;
     this.answers = {
       itemName: navParams.data.item.name,
-      size: '',
+      size: navParams.data.item.size[0],
       modifiers: [],
       caffeine: '',
       price: navParams.data.item.price
     };
+
+    this.sizeChoice = this.item.size[0];
+    this.modifierChoice = new Array();
   }
 
   addToCart(item) {
@@ -71,6 +80,11 @@ export class ItemPage {
       return;
     }
 
+    let selectModifiers = new Array();
+    for (var i = 0; i < this.modifierChoice.length; i++) {
+      selectModifiers.push(this.modifierChoice[i].name);
+    }
+
     let loader = this.loadingCtrl.create({
       content: 'Adding ' + item.itemName + ' to cart...',
     });
@@ -81,10 +95,10 @@ export class ItemPage {
       let finalItem = {
         name: this.item.name,
         description: this.item.description,
-        price: this.item.price,
-        size: this.answers.size,
+        price: this.answers.price,
+        size: this.sizeChoice.name,
         sizeOptions: this.item.size,
-        modifiers: this.answers.modifiers,
+        modifiers: selectModifiers,
         modifierOptions: this.item.modifiers
       };
       this.checkoutService.addItem(finalItem);
@@ -123,6 +137,23 @@ export class ItemPage {
       ]
     });
     decision.present();
+  }
+
+  updatePrice() {
+    let totalPrice = this.item.price;
+    if (this.sizeChoice) {
+      totalPrice += Number(this.sizeChoice.price);
+    }
+    for (var i = 0; i < this.modifierChoice.length; i++) {
+      totalPrice += Number(this.modifierChoice[i].price);
+    }
+    var priceBox = document.getElementById("priceBox");
+    this.answers.price = totalPrice;
+    priceBox.textContent = "$" + totalPrice;
+  }
+
+  compareFn(a: any, b: any) {
+    return a.name == b.name;
   }
 
   getImagePath(name) {
