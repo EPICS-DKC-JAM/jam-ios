@@ -126,6 +126,6 @@ export class ItemPage {
   }
 
   getImagePath(name) {
-    this.imageService.getImage(name);
+    return this.imageService.getImage(name);
   }
 }

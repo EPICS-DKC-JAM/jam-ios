@@ -3,6 +3,7 @@ import { Http } from '@angular/http';
 import { File } from '@ionic-native/file';
 import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
 import { ItemService } from '../item-service/item-service'
+import { LoadingController } from 'ionic-angular';
 import 'rxjs/add/operator/map';
 
 /*
@@ -16,7 +17,7 @@ export class ImageService {
 
   items = [];
 
-  constructor(public http:Http, public file:File, public itemService:ItemService, public transfer:FileTransfer) {
+  constructor(public http:Http, public file:File, public itemService:ItemService, public transfer:FileTransfer, public loadingCtrl:LoadingController) {
 
   }
 
@@ -34,15 +35,24 @@ export class ImageService {
         this.items = data;
         const fileTransfer:FileTransferObject = this.transfer.create();
         console.log(this.items.length);
+        let loader = this.loadingCtrl.create({
+          content: "Downloading 0/" + this.items.length + "images",
+        });
+        let downloaded = 0;
+        let success = 0;
+        loader.present();
+
         console.log(this.items);
         for (var i = 0; i < this.items.length; i++) {
           var name = this.items[i].name;
           var imageUrl = this.items[i].itemImage;
           var downloadName = name.replace(' ', '') + 'Image.jpg';
           console.log('Downloading ' + downloadName);
-          fileTransfer.download(encodeURI(imageUrl), this.file.dataDirectory + downloadName).then((entry) => {
-            alert('download complete: ' + entry.toURL());
+          fileTransfer.download(encodeURI(imageUrl), this.file.externalDataDirectory + downloadName).then((entry) => {
+            downloaded++;
+            success++;
           }, (error) => {
+            downloaded++;
             alert(error);
           });
         }
