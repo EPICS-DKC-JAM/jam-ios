@@ -1,6 +1,4 @@
-
 /*===================== GENERAL */
-// 40vh for height
 page-item {
   .card, .card-default, .card-ios, .card-md {
     margin: 0px;
@@ -9,46 +7,15 @@ page-item {
 .grid {
   padding: 30px;
 }
-
+/*
 .skinny {
   padding: 0px;
 }
-
-/*===================== SELECT */
-.item-select,item-select-ios item-select-md, item-select-default {
-  margin: 14.5px 0 0 13px;
-  border-radius: 3px;
-  width: 95%;
-  height: 23%;
-  background-color: #fcfaf5;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+*/
 
 /*===================== CARD */
-
 .no-padding {
   padding: 0px !important;
-}
-.priceadd { // for price/add card
-  width: 50%;
-  height: 100%;
-  float: left;
-  margin: 0 5px 0 5px !important;
-  padding-top: 10px;
-  border: 1px solid #fcfaf5;
-  background-color: #271a0c;
-  text-align: center;
-}
-
-.pa {
-  height: 33%;
-  margin-top: 14.5px;
-}
-
-.priceinner { // for content of price card
-  height: 100%;
-  font-size: 200%;
-  color: #fcfaf5;
 }
 
 .descCard {
@@ -111,10 +78,54 @@ page-item {
 .jslImg {
   height:100%;
   width:80%;
-  //position: absolute;
   margin: 0 auto;
-  //left: 0;
-  //right: 0;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+/*===================== OPTIONS */
+.label, .label-ios, .label-md, .label-default {
+  color: #271a0c !important;
+}
+
+.item-select, item-select-ios, item-select-md, item-select-default {
+  //margin: 14.5px 0 0 13px;
+  border-radius: 3px;
+  //width: 95%;
+  height: 60%;
+  //color: #000;
+  background-color: #fcfaf5;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.item-toggle, item-toggle-ios, item-toggle-md, item-toggle-default {
+  border-radius: 3px;
+  background-color: #fcfaf5;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  //color: #271a0c;
+}
+
+.priceadd { // for price/add card
+  width: 100%;
+  //height: 100%;
+  float: left;
+  //margin: 0 5px 0 5px !important;
+  //padding-top: 10px;
+  border: 1px solid #fcfaf5;
+  background-color: #271a0c;
+  text-align: center;
+}
+
+.priceinner { // for content of price card
+  height: 100%;
+  font-size: 200%;
+  color: #fcfaf5;
+}
+
+.third { // one third of the height
+  height: 33% !important;
+}
+
+.fullHeight {
+  height: 90% !important;
 }

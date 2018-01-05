@@ -42,43 +42,58 @@
       </ion-col>
 
 
-      <ion-col col-6 class="skinny">
-        <ion-card class="jslCard" style="background-color: transparent; box-shadow: none">
-          <ion-item>
-            <ion-label>Size</ion-label>
-            <ion-select [(ngModel)]="answers.size" [selectOptions]="sizeOpts">
-              <ion-option value="{{ size }}" class="options" *ngFor="let size of item.size">{{ size }}</ion-option>
-            </ion-select>
-          </ion-item>
+      <ion-col col-6 class="skinny" style="margin-top: 7px;">
+        <ion-card class="jslCard" style="height: 98%; background-color: transparent; box-shadow: none">
+          <div class="row third">
+            <div class="col">
+              <ion-item class="fullHeight">
+                <ion-label>Size</ion-label>
+                <ion-select [(ngModel)]="answers.size" [selectOptions]="sizeOpts">
+                  <ion-option value="{{ size }}" class="options" *ngFor="let size of item.size">{{ size }}</ion-option>
+                </ion-select>
+              </ion-item>
+            </div>
+            <div class="col">
+              <ion-item class="fullHeight">
+                <ion-label>Flavors</ion-label>
+                <ion-select [(ngModel)]="answers.modifiers" [selectOptions]="modifierOpts" multiple="true">
+                  <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of item.modifiers">{{ modifier }}
+                  </ion-option>
+                </ion-select>
+              </ion-item>
+            </div>
+          </div>
 
-          <ion-item>
-            <ion-label>Modifiers</ion-label>
-            <ion-select [(ngModel)]="answers.modifiers" [selectOptions]="modifierOpts" multiple="true">
-              <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of item.modifiers">{{ modifier }}
-              </ion-option>
-            </ion-select>
-          </ion-item>
+          <div class="row third">
+            <div class="col">
+              <ion-item class="fullHeight">
+                <ion-label>Whipped Cream</ion-label>
+                <ion-toggle [(ngModel)]="hasWhippedCream"></ion-toggle>
+              </ion-item>
+            </div>
+            <div class="col">
+              <ion-item class="fullHeight">
+                <ion-label>Extra Espresso Shot</ion-label>
+                <ion-toggle [(ngModel)]="hasExtraShot"></ion-toggle>
+              </ion-item>
+            </div>
+          </div>
 
-          <!--<ion-item *ngIf="item.caffeine">
-            <ion-label>Caffeine</ion-label>
-            <ion-select [(ngModel)]="answers.caffeine" [selectOptions]="caffeineOpts">
-              <ion-option value="YES" class="options">Regular</ion-option>
-              <ion-option value="NO" class="options">Decaf</ion-option>
-            </ion-select>
-          </ion-item>-->
-
-          <div class="center pa">
-            <ion-card justify-content-center class="priceadd">
-              <ion-card-content class="priceinner">
-                ${{ item.price }}
-              </ion-card-content>
-            </ion-card>
-
-            <ion-card class="priceadd" (click)="addToCart(answers)">
-              <ion-card-content class="priceinner">
-                Add To Cart
-              </ion-card-content>
-            </ion-card>
+          <div class="row third">
+            <div class="col">
+              <ion-card justify-content-center class="priceadd fullHeight ">
+                <ion-card-content class="priceinner">
+                  ${{ item.price }}
+                </ion-card-content>
+              </ion-card>
+            </div>
+            <div class="col">
+              <ion-card class="priceadd fullHeight clickable" (click)="addToCart(answers)">
+                <ion-card-content class="priceinner">
+                  Add To Cart
+                </ion-card-content>
+              </ion-card>
+            </div>
           </div>
         </ion-card>
       </ion-col>

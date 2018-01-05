@@ -37,6 +37,7 @@
               <div class="col"><strong>Size</strong></div>
               <div class="col"><strong>Modifiers</strong></div>
               <div class="col"><strong>Price</strong></div>
+              <div class="col"><strong>Quantity</strong></div>
               <div class="col" style="text-align: center;"><strong>Options</strong></div>
             </div>
             <!-- each item -->
@@ -49,6 +50,7 @@
                 </ng-container>
               </div>
               <div class="col">${{item.price}}</div>
+              <div class="col">1</div>
               <div class="col">
                 <button ion-button clear class="edit clickable"i (click)="editItem(item)">Edit</button>
                 <button ion-button clear class="remove clickable" (click)="removeItem(item)">Remove</button>

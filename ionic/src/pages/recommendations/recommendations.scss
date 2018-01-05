@@ -10,11 +10,12 @@ page-recommendations {
 }
 
 .modal-wrapper {
-  // CHANGE MODIFY EDIT FIX MODAL
-  height: 690px;
+  max-height: 720px;
+  height: 90%;
   top: 8%;
   border: 1px solid black;
 }
+
 .section {
   font-size: 65%;
   text-align: center;
