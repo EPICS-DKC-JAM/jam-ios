@@ -4,6 +4,7 @@ import { File } from '@ionic-native/file';
 import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
 import { ItemService } from '../item-service/item-service'
 import { LoadingController } from 'ionic-angular';
+import { AlertController } from "ionic-angular/index";
 import 'rxjs/add/operator/map';
 
 /*
@@ -17,7 +18,7 @@ export class ImageService {
 
   items = [];
 
-  constructor(public http:Http, public file:File, public itemService:ItemService, public transfer:FileTransfer, public loadingCtrl:LoadingController) {
+  constructor(public http:Http, public file:File, public itemService:ItemService, public transfer:FileTransfer, public loadingCtrl:LoadingController, public alertCtrl:AlertController) {
 
   }
 
@@ -38,6 +39,7 @@ export class ImageService {
         let loader = this.loadingCtrl.create({
           content: "Downloading 0/" + this.items.length + "images",
         });
+        let items = this.items.length;
         let downloaded = 0;
         let success = 0;
         loader.present();
@@ -51,8 +53,26 @@ export class ImageService {
           fileTransfer.download(encodeURI(imageUrl), this.file.externalDataDirectory + downloadName).then((entry) => {
             downloaded++;
             success++;
+            loader.setContent("Downloading " + downloaded +"/" + this.items.length + "images");
+            if (downloaded == items) {
+              loader.dismissAll();
+              let failed = downloaded - success;
+              let alert = this.alertCtrl.create({
+                title: success + ' images downloaded, ' + failed + ' images failed to download',
+                buttons: ['OK']
+              });
+              alert.present();
+            }
           }, (error) => {
             downloaded++;
+            if (downloaded == items) {
+              loader.dismissAll();
+              let failed = downloaded - success;
+              let alert = this.alertCtrl.create({
+                title: success + ' images downloaded, ' + failed + ' images failed to download',
+                buttons: ['OK']
+              });
+              alert.present();            }
             alert(error);
           });
         }
