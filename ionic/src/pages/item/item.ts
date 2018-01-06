@@ -80,7 +80,7 @@ export class ItemPage {
     this.sizeChoice = this.item.size[0];
     this.modifierChoice = new Array();
 
-    this.selectQuantity();
+    //this.selectQuantity();
   }
 
   addToCart(item) {
@@ -191,19 +191,4 @@ export class ItemPage {
     return this.imageService.getImage(name);
   }
 
-  selectQuantity() {
-
-
-    this.selector.show({
-      title: "How Many?",
-      items: [
-        this.wheelData.numbers
-      ],
-    }).then(
-      result => {
-        console.log(result[0].description + ' at index: ' + result[0].index);
-      },
-      err => console.log('Error: ', err)
-    );
-  }
 }

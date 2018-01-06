@@ -27,7 +27,7 @@ export class ImageService {
     //this.file.checkFile(this.file.dataDirectory, fileName).then(data => {
     //
     //});
-    return this.file.dataDirectory + fileName;
+    return this.file.externalDataDirectory + fileName;
   }
 
   downloadImages() {
