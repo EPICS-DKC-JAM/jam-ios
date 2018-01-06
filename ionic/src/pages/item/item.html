@@ -48,16 +48,21 @@
             <div class="col" style="min-width:50%; max-width:50%;">
               <ion-item class="fullHeight">
                 <ion-label>Size</ion-label>
-                <ion-select [(ngModel)]="answers.size" [selectOptions]="sizeOpts">
-                  <ion-option value="{{ size }}" class="options" *ngFor="let size of item.size">{{ size }}</ion-option>
+                <ion-select [(ngModel)]="sizeChoice" [selectOptions]="sizeOpts" (ionChange)="updatePrice()">
+                  <ion-option *ngFor="let size of item.size" [value]="size" class="options">
+                    <div class="left"> {{ size.name }} </div>
+                    <div class="right"> (+${{ size.price }}) </div>
+                  </ion-option>
                 </ion-select>
               </ion-item>
             </div>
             <div class="col" style="min-width:50%; max-width:50%;">
               <ion-item class="fullHeight">
                 <ion-label>Flavors</ion-label>
-                <ion-select [(ngModel)]="answers.modifiers" [selectOptions]="modifierOpts" multiple="true">
-                  <ion-option value="{{ modifier }}" class="options" *ngFor="let modifier of item.modifiers">{{ modifier }}
+                <ion-select [(ngModel)]="modifierChoice" [selectOptions]="modifierOpts" multiple="true" (ionChange)="updatePrice()" [compareWith]="compareFn">
+                  <ion-option [value]="modifier" class="options" *ngFor="let modifier of item.modifiers">
+                    <div class="left"> {{ modifier.name }} </div>
+                    <div class="right"> (+${{ modifier.price }}) </div>
                   </ion-option>
                 </ion-select>
               </ion-item>
@@ -88,7 +93,7 @@
               <div class="row">
                 <div class="col" style="padding-left:0px;">
                   <ion-card class="priceadd fullHeight">
-                    <ion-card-content class="priceinner" style="font-size:200%;">${{ item.price }}</ion-card-content>
+                    <ion-card-content class="priceinner" id="priceBox" style="font-size:200%;">${{ item.price }}</ion-card-content>
                   </ion-card>
                 </div>
                 <div class="col" style="padding-right:0px;">
