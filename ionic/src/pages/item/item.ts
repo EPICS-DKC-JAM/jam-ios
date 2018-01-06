@@ -25,15 +25,7 @@ export class ItemPage {
   modifierChoice: Array<any>;
 
   item: any;
-  answers:{itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
-
-  wheelData = {
-    numbers: [
-      { description: "1" },
-      { description: "2" },
-      { description: "3" }
-    ]
-  };
+  wheelData: any;
 
   answers:{itemName: string, size: {}, modifiers: {name: string, price:number}[], caffeine: string, price: number};
   constructor(public navCtrl:NavController,
@@ -45,6 +37,14 @@ export class ItemPage {
               navParams:NavParams,
               public selector:WheelSelector) {
     this.item = navParams.data.item;
+
+    this.wheelData = {
+      numbers: [
+        { description: "1" },
+        { description: "2" },
+        { description: "3" }
+      ]
+    };
 
     // options for size
     this.sizeOpts = {
