@@ -27,6 +27,9 @@ export class ItemPage {
   item: any;
   wheelData: any;
 
+  hasWhippedCream: boolean = false;
+  hasExtraShot: boolean = false;
+
   answers:{itemName: string, size: {}, modifiers: {name: string, price:number}[], caffeine: string, price: number};
   constructor(public navCtrl:NavController,
               public toastCtrl:ToastController,
@@ -37,6 +40,9 @@ export class ItemPage {
               navParams:NavParams,
               public selector:WheelSelector) {
     this.item = navParams.data.item;
+
+    console.log("ITEM");
+    console.log(this.item);
 
     this.wheelData = {
       numbers: [
@@ -64,10 +70,7 @@ export class ItemPage {
       subTitle: 'Select the caffeine level!'
     };
 
-    // SELECTED OPTIONS
-    // this.answers = {};
-    // this.answers.itemName = navParams.data.item.name;
-    // this.answers.price = navParams.data.item.price;
+    // answers to pass to checkout page
     this.answers = {
       itemName: navParams.data.item.name,
       size: navParams.data.item.size[0],
@@ -96,6 +99,12 @@ export class ItemPage {
     }
 
     let selectModifiers = new Array();
+    if (this.hasWhippedCream) {
+      selectModifiers.push("Whipped Cream");
+    }
+    if (this.hasExtraShot) {
+      selectModifiers.push("Extra Shot");
+    }
     for (var i = 0; i < this.modifierChoice.length; i++) {
       selectModifiers.push(this.modifierChoice[i].name);
     }
@@ -155,12 +164,19 @@ export class ItemPage {
   }
 
   updatePrice() {
+    console.log("Updating price");
     let totalPrice = this.item.price;
     if (this.sizeChoice) {
       totalPrice += Number(this.sizeChoice.price);
     }
     for (var i = 0; i < this.modifierChoice.length; i++) {
       totalPrice += Number(this.modifierChoice[i].price);
+    }
+    if (this.hasWhippedCream) {
+      totalPrice += Number(this.item.cream.price);
+    }
+    if (this.hasExtraShot) {
+      totalPrice += Number(this.item.shot.price);
     }
     var priceBox = document.getElementById("priceBox");
     this.answers.price = totalPrice;

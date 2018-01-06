@@ -72,14 +72,17 @@
           <div class="row third">
             <div class="col fiftyWidth">
               <ion-item class="fullHeight">
-                <ion-label>Whipped Cream</ion-label>
-                <ion-toggle [(ngModel)]="hasWhippedCream"></ion-toggle>
+                <ion-label>
+                  Whipped Cream <span *ngIf="item.cream.enabled">(+${{item.cream.price}})</span>
+                </ion-label>
+                <ion-toggle [disabled]="!(item.cream.enabled)" [(ngModel)]="hasWhippedCream" (ionChange)="updatePrice()"></ion-toggle>
               </ion-item>
             </div>
             <div class="col fiftyWidth">
               <ion-item class="fullHeight">
-                <ion-label>Extra Espresso Shot</ion-label>
-                <ion-toggle [(ngModel)]="hasExtraShot"></ion-toggle>
+                <ion-label>
+                  Extra Espresso Shot <span *ngIf="item.shot.enabled">(+${{item.shot.price}})</span></ion-label>
+                <ion-toggle [disabled]="!(item.shot.enabled)" [(ngModel)]="hasExtraShot" (ionChange)="updatePrice()"></ion-toggle>
               </ion-item>
             </div>
           </div>
