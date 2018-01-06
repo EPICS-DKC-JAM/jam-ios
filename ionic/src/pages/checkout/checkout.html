@@ -50,7 +50,7 @@
                 </ng-container>
               </div>
               <div class="col">${{item.price}}</div>
-              <div class="col">1</div>
+              <div class="col">{{item.quantity}}</div>
               <div class="col">
                 <button ion-button clear class="edit clickable"i (click)="editItem(item)">Edit</button>
                 <button ion-button clear class="remove clickable" (click)="removeItem(item)">Remove</button>
