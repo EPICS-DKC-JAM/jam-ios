@@ -12,7 +12,7 @@
     <ion-grid>
       <ion-row>
         <ion-col col-8 style="margin: 0 auto">
-          <ion-card class="menu clickable" *ngFor="let item of items" (click)="openItemPage(item)">
+          <ion-card class="menu clickable" *ngFor="let item of items" (tap)="openItemPage(item)">
             <ion-card-content>
               <ion-row>
                 <ion-col col-10>
@@ -32,6 +32,6 @@
 
 </ion-content>
 
-<button ion-fab class="cart" (click)="openCheckoutPage()">
+<button ion-fab class="cart" (tap)="openCheckoutPage()">
   <ion-icon name="cart"></ion-icon>
 </button>

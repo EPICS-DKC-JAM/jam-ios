@@ -14,12 +14,12 @@
     <ion-slide *ngFor="let question of questions">
 
       <h2>{{ question.prompt }}</h2>
-      <button ion-button class="question clickable" *ngFor="let option of question.options;" (click)="selectAnswer(option)">{{ option }}</button>
+      <button ion-button class="question clickable" *ngFor="let option of question.options;" (tap)="selectAnswer(option)">{{ option }}</button>
 
     </ion-slide>
   </ion-slides>
 
-    <button ion-fab class="cart" (click)="openCheckoutPage()">
+    <button ion-fab class="cart" (tap)="openCheckoutPage()">
       <ion-icon name="cart"></ion-icon>
     </button>
 

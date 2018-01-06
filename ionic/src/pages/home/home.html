@@ -1,18 +1,18 @@
 <ion-content class="bg" style="text-align: center">
 
   <div class="options">
-    <ion-card ion-button class="equal clickable" (click)="openForm()">
+    <ion-card ion-button class="equal clickable" (tap)="openForm()">
       Help Me Decide
     </ion-card>
-    <ion-card ion-button class="equal clickable" (click)="openFullMenu()">
+    <ion-card ion-button class="equal clickable" (tap)="openFullMenu()">
       Full Menu
     </ion-card>
   </div>
   <div class="secret">
-    <ion-card style="background-color: transparent" ion-button class="admin" (click)="openAdminPage()"></ion-card>
+    <ion-card style="background-color: transparent" ion-button class="admin" (tap)="openAdminPage()"></ion-card>
   </div>
 
-  <button ion-fab class="cart" (click)="openCheckoutPage()">
+  <button ion-fab class="cart" (tap)="openCheckoutPage()">
     <ion-icon name="cart"></ion-icon>
   </button>
 

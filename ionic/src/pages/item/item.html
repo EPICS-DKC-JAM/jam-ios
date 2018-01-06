@@ -89,7 +89,7 @@
 
           <div class="row third">
             <div class="col">
-              <ion-item class="quantity fullHeight" (click)="selectQuantity()">
+              <ion-item class="quantity fullHeight" (tap)="selectQuantity()">
                 <ion-label>Quantity</ion-label>
                 <ion-select [(ngModel)]="quantity" (ionChange)="updatePrice()">
                   <ion-option>1</ion-option>
@@ -109,11 +109,11 @@
               <div class="row">
                 <div class="col" style="padding-left:0px;">
                   <ion-card class="priceadd fullHeight">
-                    <ion-card-content class="priceinner" id="priceBox" style="font-size:200%;">${{ item.price }}</ion-card-content>
+                    <ion-card-content class="priceinner" id="priceBox" style="font-size:180%;">${{ item.price }}</ion-card-content>
                   </ion-card>
                 </div>
                 <div class="col" style="padding-right:0px;">
-                  <ion-card class="priceadd fullHeight clickable" style="font-size:110%;" (click)="addToCart(answers)">
+                  <ion-card class="priceadd fullHeight clickable" style="font-size:110%;" (tap)="addToCart(answers)">
                     <ion-card-content class="priceinner">Add To Cart</ion-card-content>
                   </ion-card>
                 </div>
@@ -126,7 +126,7 @@
     </ion-row>
   </ion-grid>
 
-  <button ion-fab class="cart" (click)="openCheckoutPage()">
+  <button ion-fab class="cart" (tap)="openCheckoutPage()">
     <ion-icon name="cart"></ion-icon>
   </button>
 
