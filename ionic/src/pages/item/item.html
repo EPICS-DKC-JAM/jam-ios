@@ -91,7 +91,7 @@
             <div class="col">
               <ion-item class="quantity fullHeight" (click)="selectQuantity()">
                 <ion-label>Quantity</ion-label>
-                <ion-select>
+                <ion-select [(ngModel)]="quantity" (ionChange)="updatePrice()">
                   <ion-option>1</ion-option>
                   <ion-option>2</ion-option>
                   <ion-option>3</ion-option>

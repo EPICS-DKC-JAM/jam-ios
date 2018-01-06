@@ -29,6 +29,7 @@ export class ItemPage {
 
   hasWhippedCream: boolean = false;
   hasExtraShot: boolean = false;
+  quantity: number = 1;
 
   answers:{itemName: string, size: {}, modifiers: {name: string, price:number}[], caffeine: string, price: number};
   constructor(public navCtrl:NavController,
@@ -40,9 +41,6 @@ export class ItemPage {
               navParams:NavParams,
               public selector:WheelSelector) {
     this.item = navParams.data.item;
-
-    console.log("ITEM");
-    console.log(this.item);
 
     this.wheelData = {
       numbers: [
@@ -123,7 +121,8 @@ export class ItemPage {
         size: this.sizeChoice.name,
         sizeOptions: this.item.size,
         modifiers: selectModifiers,
-        modifierOptions: this.item.modifiers
+        modifierOptions: this.item.modifiers,
+        quantity: this.quantity
       };
       this.checkoutService.addItem(finalItem);
       this.toastCtrl.create({
@@ -178,6 +177,7 @@ export class ItemPage {
     if (this.hasExtraShot) {
       totalPrice += Number(this.item.shot.price);
     }
+    totalPrice *= this.quantity;
     var priceBox = document.getElementById("priceBox");
     this.answers.price = totalPrice;
     priceBox.textContent = "$" + totalPrice;
