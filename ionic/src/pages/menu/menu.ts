@@ -12,6 +12,9 @@ import { ItemService } from "../../providers/item-service/item-service"
 export class MenuPage {
 
   items = [];
+  hotItems = [];
+  coldItems = [];
+  blendedItems = [];
 
   constructor(public nav: NavController, public itemService: ItemService) {
 
@@ -24,6 +27,22 @@ export class MenuPage {
           return 0;
         });
         console.log(this.items);
+        for (var i = 0; i < this.items.length; i++) {
+          switch (this.items[i].category) {
+            case 'Hot':
+              this.hotItems.push(this.items[i]);
+              break;
+            case 'Cold':
+              this.coldItems.push(this.items[i]);
+              break;
+            case 'Blended':
+              this.blendedItems.push(this.items[i]);
+              break;
+          }
+        }
+        console.log(this.hotItems);
+        console.log(this.coldItems);
+        console.log(this.blendedItems);
       });
 
   }
