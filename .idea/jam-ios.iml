@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/ionic/node_modules/cordova-android/spec/e2e/fixtures/cordova-plugin-fake/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/ionic/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/ionic/plugins/cordova-wheel-selector-plugin/examples/ionic2/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/ionic/plugins/cordova-wheel-selector-plugin/examples/ionic2/www" />
       <excludeFolder url="file://$MODULE_DIR$/ionic/www" />
     </content>
     <orderEntry type="inheritedJdk" />
