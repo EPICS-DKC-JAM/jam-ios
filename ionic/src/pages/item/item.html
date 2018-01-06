@@ -45,7 +45,7 @@
       <ion-col col-6 class="skinny center" style="margin-top: 7px; ">
         <ion-card class="jslCard" style="height: 98%; background-color: transparent; box-shadow: none">
           <div class="row third">
-            <div class="col" style="min-width:50%; max-width:50%;">
+            <div class="col fiftyWidth">
               <ion-item class="fullHeight">
                 <ion-label>Size</ion-label>
                 <ion-select [(ngModel)]="sizeChoice" [selectOptions]="sizeOpts" (ionChange)="updatePrice()">
@@ -56,7 +56,7 @@
                 </ion-select>
               </ion-item>
             </div>
-            <div class="col" style="min-width:50%; max-width:50%;">
+            <div class="col fiftyWidth">
               <ion-item class="fullHeight">
                 <ion-label>Flavors</ion-label>
                 <ion-select [(ngModel)]="modifierChoice" [selectOptions]="modifierOpts" multiple="true" (ionChange)="updatePrice()" [compareWith]="compareFn">
@@ -70,13 +70,13 @@
           </div>
 
           <div class="row third">
-            <div class="col">
+            <div class="col fiftyWidth">
               <ion-item class="fullHeight">
                 <ion-label>Whipped Cream</ion-label>
                 <ion-toggle [(ngModel)]="hasWhippedCream"></ion-toggle>
               </ion-item>
             </div>
-            <div class="col">
+            <div class="col fiftyWidth">
               <ion-item class="fullHeight">
                 <ion-label>Extra Espresso Shot</ion-label>
                 <ion-toggle [(ngModel)]="hasExtraShot"></ion-toggle>
