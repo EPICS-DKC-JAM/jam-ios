@@ -7,6 +7,8 @@ import { CheckoutPage } from '../checkout/checkout';
 import { LoadingController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { WheelSelector } from '@ionic-native/wheel-selector';
+
 
 @Component({
   selector: 'page-item',
@@ -21,13 +23,22 @@ export class ItemPage {
   item: any;
   answers:{itemName: string, size: string, modifiers: string[], caffeine: string, price: number};
 
+  wheelData = {
+    numbers: [
+      { description: "1" },
+      { description: "2" },
+      { description: "3" }
+    ]
+  };
+
   constructor(public navCtrl:NavController,
               public toastCtrl:ToastController,
               public loadingCtrl:LoadingController,
               public alertCtrl: AlertController,
               public checkoutService:CheckoutService,
               public imageService:ImageService,
-              navParams:NavParams) {
+              navParams:NavParams,
+              public selector:WheelSelector) {
     this.item = navParams.data.item;
 
     // options for size
@@ -56,6 +67,8 @@ export class ItemPage {
       caffeine: '',
       price: navParams.data.item.price
     };
+
+    this.selectQuantity();
   }
 
   addToCart(item) {
@@ -127,5 +140,21 @@ export class ItemPage {
 
   getImagePath(name) {
     return this.imageService.getImage(name);
+  }
+
+  selectQuantity() {
+
+
+    this.selector.show({
+      title: "How Many?",
+      items: [
+        this.wheelData.numbers
+      ],
+    }).then(
+      result => {
+        console.log(result[0].description + ' at index: ' + result[0].index);
+      },
+      err => console.log('Error: ', err)
+    );
   }
 }

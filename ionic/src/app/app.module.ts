@@ -24,7 +24,7 @@ import { AdminPage } from '../pages/admin/admin'
 import { IonicStorageModule } from '@ionic/storage';
 import { ImageService } from '../providers/image-service/image-service';
 import { AndroidFullScreen } from "@ionic-native/android-full-screen";
-
+import { WheelSelector } from "@ionic-native/wheel-selector"
 
 
 @NgModule({
@@ -69,6 +69,7 @@ import { AndroidFullScreen } from "@ionic-native/android-full-screen";
     UrlService,
     AndroidFullScreen,
     ImageService,
+    WheelSelector
   ]
 })
 export class AppModule {}

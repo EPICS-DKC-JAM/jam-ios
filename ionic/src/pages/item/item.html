@@ -35,17 +35,17 @@
 
     <ion-row>
 
-      <ion-col col-6 align-items-center class="center skinny">
+      <ion-col col-6 align-items-center class="skinny center">
         <ion-card class="imgCard">
           <img class="itemImg" src="{{ getImagePath(item.name) }}">
         </ion-card>
       </ion-col>
 
 
-      <ion-col col-6 class="skinny" style="margin-top: 7px;">
+      <ion-col col-6 class="skinny center" style="margin-top: 7px; ">
         <ion-card class="jslCard" style="height: 98%; background-color: transparent; box-shadow: none">
           <div class="row third">
-            <div class="col">
+            <div class="col" style="min-width:50%; max-width:50%;">
               <ion-item class="fullHeight">
                 <ion-label>Size</ion-label>
                 <ion-select [(ngModel)]="answers.size" [selectOptions]="sizeOpts">
@@ -53,7 +53,7 @@
                 </ion-select>
               </ion-item>
             </div>
-            <div class="col">
+            <div class="col" style="min-width:50%; max-width:50%;">
               <ion-item class="fullHeight">
                 <ion-label>Flavors</ion-label>
                 <ion-select [(ngModel)]="answers.modifiers" [selectOptions]="modifierOpts" multiple="true">
@@ -81,18 +81,22 @@
 
           <div class="row third">
             <div class="col">
-              <ion-card justify-content-center class="priceadd fullHeight ">
-                <ion-card-content class="priceinner">
-                  ${{ item.price }}
-                </ion-card-content>
-              </ion-card>
+              <ion-item class="quantity fullHeight clickable" (click)="selectQuantity()">
+              </ion-item>
             </div>
-            <div class="col">
-              <ion-card class="priceadd fullHeight clickable" (click)="addToCart(answers)">
-                <ion-card-content class="priceinner">
-                  Add To Cart
-                </ion-card-content>
-              </ion-card>
+            <div class="col" style="padding-top:0; padding-bottom:0;">
+              <div class="row">
+                <div class="col" style="padding-left:0px;">
+                  <ion-card class="priceadd fullHeight">
+                    <ion-card-content class="priceinner" style="font-size:200%;">${{ item.price }}</ion-card-content>
+                  </ion-card>
+                </div>
+                <div class="col" style="padding-right:0px;">
+                  <ion-card class="priceadd fullHeight clickable" style="font-size:110%;" (click)="addToCart(answers)">
+                    <ion-card-content class="priceinner">Add To Cart</ion-card-content>
+                  </ion-card>
+                </div>
+              </div>
             </div>
           </div>
         </ion-card>
