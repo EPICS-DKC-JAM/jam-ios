@@ -52,8 +52,8 @@
               <div class="col">${{item.price}}</div>
               <div class="col">{{item.quantity}}</div>
               <div class="col">
-                <button ion-button clear class="edit clickable"i (tap)="editItem(item)">Edit</button>
-                <button ion-button clear class="remove clickable" (tap)="removeItem(item)">Remove</button>
+                <button ion-button clear class="edit clickable" (click)="editItem(item)">Edit</button>
+                <button ion-button clear class="remove clickable" (click)="removeItem(item)">Remove</button>
               </div>
             </div>
           </ion-card-content>
